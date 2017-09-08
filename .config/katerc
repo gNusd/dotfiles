@@ -19,8 +19,8 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/nextCloud/Notes/systemd-nspawn.txt,file:$HOME/projects/python/audio video/tmp.rss,file:$HOME/projects/python/gotr/w_req.py,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/gotr/data_manipulation.py,file:$HOME/projects/python/gotr/rss_xml.py,file:$HOME/projects/python/audio video/videoconverter,file:$HOME/projects/python/gotr/db_manipulation.py,file:$HOME/.vimrc,file:$HOME/nextCloud/Notes/Spara denna anteckning\\, 2016-04-25.txt,file:$HOME/nextCloud/Notes/2016-02-07 13:01:35.txt,file:$HOME/nextCloud/Notes/2016-02-07 10:22:15.txt,file:$HOME/nextCloud/Dokument/gnus/videocast.txt,file:$HOME/.config/kwinrc
-Recent URLs[$e]=file:$HOME/nextCloud/Notes/,file:$HOME/nextCloud/,file:$HOME/projects/python/gotr/,file:$HOME/projects/python/,file:$HOME/projects/python/audio video/,file:$HOME/projects/
+Recent Files[$e]=file:$HOME/nextCloud/Notes/apt-get fails.txt,file:$HOME/tmp/sshd_config_tyrell,file:$HOME/projects/python/gotr/w_req.py,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/gotr/data_manipulation.py,file:$HOME/projects/python/gotr/rss_xml.py,file:$HOME/projects/python/audio video/videoconverter,file:$HOME/projects/python/gotr/db_manipulation.py,file:$HOME/.vimrc,file:$HOME/nextCloud/Notes/Spara denna anteckning\\, 2016-04-25.txt,file:$HOME/nextCloud/Notes/2016-02-07 13:01:35.txt,file:$HOME/nextCloud/Notes/2016-02-07 10:22:15.txt,file:$HOME/nextCloud/Dokument/gnus/videocast.txt,file:$HOME/.config/kwinrc
+Recent URLs[$e]=file:$HOME/nextCloud/Notes/,file:$HOME/nextCloud/,file:$HOME/projects/python/gotr/,file:$HOME/projects/python/,file:$HOME/projects/python/audio video/,file:$HOME/projects/,file:$HOME/tmp/
 
 [KTextEditor::Search]
 Search History=add,with open

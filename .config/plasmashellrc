@@ -9,8 +9,8 @@ Width 1920=678
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=neon.png,file:$HOME/174531-Separator.tar.gz,file:$HOME/nextCloud/bilder/backgrounds/öken.jpg,file:$HOME/nextCloud/bilder/backgrounds/uppskjutning02.jpg,file:$HOME/nextCloud/bilder/backgrounds/uppskjutning01.jpg,file:$HOME/nextCloud/bilder/backgrounds/jorden_rör_sig.jpg,file:$HOME/nextCloud/bilder/backgrounds/bro.jpg,file:$HOME/nextCloud/bilder/backgrounds/meddow.jpg,file:$HOME/nextCloud/bilder/backgrounds/raket.jpg,file:$HOME/nextCloud/bilder/backgrounds/iss.jpg,file:$HOME/nextCloud/bilder/backgrounds/bridge.jpg,file:$HOME/nextCloud/bilder/backgrounds/berg.jpg,file:$HOME/nextCloud/bilder/backgrounds/20160505_114617_HDR.jpg,file:$HOME/nextCloud/bilder/icon/neon.png
-Recent URLs[$e]=file:$HOME/nextCloud/bilder/icon/,file:$HOME/nextCloud/bilder/backgrounds/,file:$HOME/nextCloud/bilder/,file:$HOME/Hämtningar/,file:$HOME/audio/
+Recent Files[$e]=neon.png,file:$HOME/Hämtningar/Latte-Dock-0.7.0.tar.gz,file:$HOME/nextCloud/bilder/backgrounds/öken.jpg,file:$HOME/nextCloud/bilder/backgrounds/uppskjutning02.jpg,file:$HOME/nextCloud/bilder/backgrounds/uppskjutning01.jpg,file:$HOME/nextCloud/bilder/backgrounds/jorden_rör_sig.jpg,file:$HOME/nextCloud/bilder/backgrounds/bro.jpg,file:$HOME/nextCloud/bilder/backgrounds/meddow.jpg,file:$HOME/nextCloud/bilder/backgrounds/raket.jpg,file:$HOME/nextCloud/bilder/backgrounds/iss.jpg,file:$HOME/nextCloud/bilder/backgrounds/bridge.jpg,file:$HOME/nextCloud/bilder/backgrounds/berg.jpg,file:$HOME/nextCloud/bilder/backgrounds/20160505_114617_HDR.jpg,file:$HOME/nextCloud/bilder/icon/neon.png
+Recent URLs[$e]=file:$HOME/nextCloud/bilder/icon/,file:$HOME/nextCloud/bilder/backgrounds/,file:$HOME/nextCloud/bilder/,file:$HOME/Hämtningar/,file:$HOME/audio/,file:$HOME/nextCloud/
 
 [KPropertiesDialog]
 Height 1080=456
@@ -20,7 +20,7 @@ Width 1920=439
 calendars=32,33,36,37,38,39,40
 
 [PlasmaRunnerManager]
-LaunchCounts=1 services_org.kde.kate.desktop,1 services_org.kde.konsole.desktop,1 services_vlc.desktop,1 services_x2goclient.desktop,1 services_audacity.desktop,1 services_org.kde.yakuake.desktop,1 services_pavucontrol.desktop
+LaunchCounts=1 services_org.kde.kate.desktop,1 services_vlc.desktop,1 services_pavucontrol.desktop,1 services_x2goclient.desktop,1 services_alacritty_alacritty.desktop,1 services_org.kde.yakuake.desktop,1 services_org.kde.konsole.desktop,1 services_audacity.desktop
 pluginWhiteList=services,desktopsessions,PowerDevil,bookmarks,baloosearch,locations
 
 [PlasmaViews][Panel 2][Horizontal1920]

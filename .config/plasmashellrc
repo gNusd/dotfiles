@@ -1,0 +1,53 @@
+[ActionsWidget]
+ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhEAAAACAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAA+gAAAAEAAAAAAAABFwAAAAEAAAAAAAAD6AAAAABk
+
+[ConfigDialog]
+Height 1080=545
+Width 1920=675
+
+[Containments][21][General]
+showToolbox=false
+
+[Containments][39][General]
+showToolbox=false
+
+[DownloadDialog Settings]
+Height 1080=522
+Width 1920=700
+
+[General]
+Number of Actions=0
+
+[KFileDialog Settings]
+Recent Files[$e]=xubuntu-18-04-blank-beaver.png,file:$HOME/Hämtningar/logoicon.png,file:$HOME/Bilder/David_Lynch_The_Art_Life_-_I_Have_a_Radio.jpg,file:$HOME/Bilder/twin-peaks.jpg,file:$HOME/Bilder/twin-peaks.png,file:$HOME/Bilder/t-twin-peaks-opener.png,file:$HOME/Hämtningar/BB.png,file:$HOME/Hämtningar/ubuntu-18.04-default-wallpaper-2.jpg,file:$HOME/Hämtningar/18.04_beaver_wp_4096x2304_optimized_AW.png,file:$HOME/Hämtningar/xubuntu-18-04-blank-beaver.png
+Recent URLs[$e]=file:$HOME/Hämtningar/,file:$HOME/Bilder/
+
+[KPropertiesDialog]
+Height 1080=456
+Width 1920=439
+
+[PIMEventsPlugin]
+calendars=4,15,16,17,18,19
+
+[PlasmaRunnerManager]
+LaunchCounts=1 services_x2goclient.desktop,2 services_org.kde.kate.desktop,1 services_nextcloud-client_nextcloud-client.desktop,1 services_Adobe Digital Editions.desktop,1 services_org.kde.konsole.desktop,1 services_winBox.desktop,1 baloosearch_/home/gnus/snap/spotify,1 services_org.kde.korganizer.desktop,1 baloosearch_/home/gnus/nextCloud/Notes/computers/--edge nextcloud-client-kyrofa.txt,1 services_calibre-gui.desktop,1 services_telegram-desktop_telegramdesktop.desktop,2 services_emacs25-term.desktop,1 services_emacs25.desktop,2 services_keepassxc_keepassxc.desktop,1 services_org.kde.yakuake.desktop,1 services_winetricks.desktop,1 services_gimp.desktop
+pluginWhiteList=services,desktopsessions,PowerDevil,shell,bookmarks,baloosearch,locations
+
+[PlasmaViews][Panel 2][Horizontal1920]
+thickness=36
+
+[PlasmaViews][Panel 22]
+alignment=2
+
+[PlasmaViews][Panel 22][Horizontal1920]
+thickness=36
+
+[PlasmaViews][Panel 22][Vertical1080]
+minLength=1044
+thickness=38
+
+[ScreenConnectors]
+0=eDP-1
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js

@@ -1,0 +1,42 @@
+[Desktop Entry]
+DefaultProfile=default.profile
+
+[Favorite Profiles]
+Favorites=
+
+[General]
+Config Revision=10
+Days Meta Infos=30
+Last Session=
+Modified Notification=false
+Recent File List Entry Count=10
+Restore Window Configuration=true
+Save Meta Infos=true
+Show Full Path in Title=false
+Show Menu Bar=true
+Show Status Bar=true
+Show Tab Bar=true
+Startup Session=manual
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/projects/python/tmp/test.py,file:$HOME/nextCloud/Notes/__ansökan__ - Verksamhetsexpert frivård i region syd (vikariat).md,file:$HOME/.vimrc,file:$HOME/projects/matsedel/mat.yaml,file:$HOME/projects/apps/grocery_management/.gitignore,file:$HOME/projects/apps/grocery_management/grocery_management/__pycache__/db_dialog.cpython-36.pyc,file:$HOME/projects/apps/tmp/conf.py,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py,file:$HOME/projects/python/gotr/db_manipulation.py,file:$HOME/projects/apps/grocery_management/pantry.log,file:$HOME/projects/apps/grocery_management/requirements.txt,file:$HOME/projects/python/stella/berg.py,file:$HOME/projects/python/anagram.py,file:$HOME/projects/python/stella/infinit_while_loop.py
+Recent URLs[$e]=file:$HOME/projects/apps/grocery_management/grocery_management/__pycache__/,file:$HOME/nextCloud/,file:$HOME/projects/python/tmp/,file:$HOME/projects/apps/grocery_management/,file:$HOME/projects/matsedel/,file:$HOME/nextCloud/Notes/
+
+[KTextEditor::Search]
+Search History=jedi
+
+[MainWindow]
+Height 1080=781
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB1oAAAQUAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1400
+Window-Maximized 1080x1920=true
+
+[filetree]
+editShade=179,218,246
+listMode=false
+shadingEnabled=true
+showFullPathOnRoots=false
+sortRole=0
+viewShade=193,208,209

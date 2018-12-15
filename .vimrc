@@ -1,4 +1,12 @@
 " .vimrc gnus@telia.com
+" My .vimrc is a collection from other people's .vimrc
+" Special thanks to LukeSmithxyz, mbrochh and http://vimdoc.sourceforge.net/htmldoc/options.html
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+"      __   _(_)_ __ ___  _ __ ___
+"      \ \ / / | '_ ` _ \| '__/ __|
+"   _   \ V /| | | | | | | | | (__
+"  |_|   \_/ |_|_| |_| |_|_|  \___|
+"
 
 " <leaderkey>
 let mapleader = " "

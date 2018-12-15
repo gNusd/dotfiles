@@ -1,1 +1,0 @@
-/home/gnus/.sync/.spacemacs

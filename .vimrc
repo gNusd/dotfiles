@@ -58,7 +58,7 @@ set background=dark                             " When set to "dark", Vim will t
 set mouse=a                                     " Enable the use of the mouse.
 
 set modeline
-set clipboard=unnamed
+set clipboard=unnamedplus
 set splitbelow splitright                       "Resets the default open split
 set wildmenu
 set wildmode=list:longest,full                  "tab complitian
@@ -96,3 +96,8 @@ let g:jedi#usages_command = "<leader>z"
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+
+" Settings for vim-ecliptic
+" cd ~/.vim/bundle
+" git clone git://github.com/richsoni/vim-ecliptic.git
+let g:ecliptic_prefix = 'c'

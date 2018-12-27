@@ -101,3 +101,28 @@ map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 " cd ~/.vim/bundle
 " git clone git://github.com/richsoni/vim-ecliptic.git
 let g:ecliptic_prefix = 'c'
+
+" Setting for syntastic
+" cd ~/.vim/bundle
+" git clone https://github.com/vim-syntastic/syntastic.git
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Setting for vim-clevertab
+" cd ~/.vim/bundle/
+" git clone https://github.com/neitanod/vim-clevertab.git
+
+inoremap <silent><tab> <c-r>=CleverTab#Complete('start')<cr>
+                      \<c-r>=CleverTab#Complete('tab')<cr>
+                      \<c-r>=CleverTab#Complete('ultisnips')<cr>
+                      \<c-r>=CleverTab#Complete('keyword')<cr>
+                      \<c-r>=CleverTab#Complete('neocomplete')<cr>
+                      \<c-r>=CleverTab#Complete('omni')<cr>
+                      \<c-r>=CleverTab#Complete('stop')<cr>
+inoremap <silent><s-tab> <c-r>=CleverTab#Complete('prev')<cr>

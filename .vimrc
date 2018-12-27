@@ -75,7 +75,7 @@ filetype plugin indent on
 syntax on
 
 " powerline
-set rtp+=/usr/local/lib/python3.6/dist-packages/powerline/bindings/vim/
+set rtp+=/usr/share/powerline/bindings/vim/
 " Always show statusline
 set laststatus=2
 "Use 256 colours (Use this setting only if your terminal supports 256 colours)

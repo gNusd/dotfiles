@@ -123,3 +123,4 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 source /usr/share/powerline/bindings/bash/powerline.sh
 export PATH="home/gnus/bin:$PATH"
+# export SSH_ASKPASS=$HOME/.local/bin/askpass

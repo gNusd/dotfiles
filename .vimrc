@@ -1,5 +1,4 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"    _  _    __     ___                                             "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" "    _  _    __     ___                                             "
 "  _| || |_  \ \   / (_)_ __ ___  _ __ ___  __/\__     __/\__       "
 " |_  ..  _|  \ \ / /| | '_ ` _ \| '__/ __| \    /_____\    /       "
 " |_      _|  _\ V / | | | | | | | | | (__  /_  _\_____/_  _\       "
@@ -32,7 +31,6 @@ call matchadd('ColorColumn', '\%81v', 100)      "checks if you write over the 80
 :autocmd InsertEnter * set nocul                " cursor in insertmode
 :autocmd InsertLeave * set cul                  " cursor in normalmode
 
-
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -46,8 +44,10 @@ Plugin 'tpope/vim-commentary'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'edkolev/tmuxline.vim'
-Plugin 'Gabirel/molokai'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Valloric/YouCompleteMe'
 
 " set the runtime path to include Vundle and initialize
 " All of your Plugins must be added before the following line
@@ -60,3 +60,21 @@ let g:jedi#auto_initialization = 1
 let g:jedi#auto_vim_configuration = 1
 let g:jedi#use_tabs_not_buffers = 1
 let g:jedi#use_splits_not_buffers = "left"
+
+" NerdTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-n> :NERDTreeToggle<CR>
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
+
+" fugitive
+autocmd QuickFixCmdPost *grep* cwindow
+
+
+" Youcompleteme
+let g:ycm_python_binary_path = 'python3'
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_min_num_of_chars_for_completion = 1

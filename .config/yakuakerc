@@ -1,5 +1,7 @@
 [Appearance]
+BackgroundColorOpacity=25
 Skin=Solarized Dark
+Translucency=true
 
 [Desktop Entry]
 DefaultProfile=Profile 1.profile

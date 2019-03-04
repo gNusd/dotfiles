@@ -116,11 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 PATH=$PATH:/snap/bin
+export PATH="home/gnus/bin:$PATH"
+
 source /etc/profile.d/undistract-me.sh
 
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 source /usr/share/powerline/bindings/bash/powerline.sh
-export PATH="home/gnus/bin:$PATH"
-# export SSH_ASKPASS=$HOME/.local/bin/askpass

@@ -1,23 +1,27 @@
 [Appearance]
 BackgroundColorOpacity=25
-Skin=Solarized Dark
+Skin=arc-dark
+TerminalHighlightOnManualActivation=true
 Translucency=true
 
 [Desktop Entry]
-DefaultProfile=Profile 1.profile
+DefaultProfile=default.profile
 
 [Dialogs]
+ConfirmQuit=false
 FirstRun=false
 
 [DownloadDialog Settings]
 Height 1080=522
+Height 1440=494
 Width 1920=700
+Width 2560=700
 
 [Favorite Profiles]
 Favorites=
 
 [KFileDialog Settings]
-Recent Files[$e]=161721-Solarized Dark.tar.gz,file:$HOME/Hämtningar/breeze-thin-dark.tar.gz,file:$HOME/Hämtningar/161721-Solarized Dark.tar.gz
+Recent Files[$e]=161721-Solarized Dark.tar.gz,file:$HOME/Hämtningar/arc-dark-yakuake.tar.gz
 Recent URLs[$e]=file:$HOME/Hämtningar/
 
 [Shortcuts]
@@ -48,5 +52,6 @@ view-full-screen=Ctrl+Shift+F11
 
 [Window]
 Height=40
+Position=52
 ShowTabBar=false
 Width=100

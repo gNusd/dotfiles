@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -117,6 +120,9 @@ if ! shopt -oq posix; then
 fi
 PATH=$PATH:/snap/bin
 export PATH="home/gnus/bin:$PATH"
+
+alias vim='nvim'
+alias vi='nvim'
 
 source /etc/profile.d/undistract-me.sh
 

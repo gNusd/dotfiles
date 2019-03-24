@@ -1,19 +1,19 @@
+"/***************************************************/
+"/*                            _                    */
+"/*   __ _ _ __  _   _ ___  __| | __/\__     __/\__ */
+"/*  / _` | '_ \| | | / __|/ _` | \    /_____\    / */
+"/* | (_| | | | | |_| \__ \ (_| | /_  _\_____/_  _\ */
+"/*  \__, |_| |_|\__,_|___/\__,_|   \/         \/   */
+"/*  |___/                                          */
+"/*  _       _ _         _                          */
+"/* (_)_ __ (_) |___   _(_)_ __ ___                 */
+"/* | | '_ \| | __\ \ / / | '_ ` _ \                */
+"/* | | | | | | |_ \ V /| | | | | | |               */
+"/* |_|_| |_|_|\__(_)_/ |_|_| |_| |_|               */
+"/*                                                 */
+"/***************************************************/
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"    _	_    __     ___                                             "
-"  _| || |_  \ \   / (_)_ __ ___  _ __ ___  __/\__     __/\__       "
-" |_  ..  _|  \ \ / /| | '_ ` _ \| '__/ __| \    /_____\    /       "
-" |_      _|  _\ V / | | | | | | | | | (__  /_  _\_____/_  _\       "
-"   |_||_|   (_)\_/  |_|_| |_| |_|_|  \___|   \/         \/         "
-"                                                                   "
-"                            _  _                                   "
-"   __ _ _ __  _   _ ___   _| || |_                                 "
-"  / _` | '_ \| | | / __| |_  ..  _|                                "
-" | (_| | | | | |_| \__ \ |_      _|                                "
-"  \__, |_| |_|\__,_|___/   |_||_|                                  "
-"  |___/                                                            "
-"                                                                   "
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 set nocompatible 		             	" be iMproved, required
 filetype off                 			" required
 let mapleader = " "
@@ -26,9 +26,17 @@ set mouse=a                                     " Enable the use of the mouse.
 autocmd BufWritePre * %s/\s\+$//e               " Remove trailing whitespace
 call matchadd('ColorColumn', '\%81v', 100)      " checks if you write over the 80 character line
 
-
 autocmd InsertEnter * set cul                    " cursor in insertmode
 autocmd InsertLeave * set nocul                  " cursor in normalmode
+
+" Spellchecking
+set complete+=kspell
+map <leader>s :setlocal spell! spelllang=sv_se<CR>
+map <leader>e :setlocal spell! spelllang=en_us<CR>
+
+" markdown to pdf and open file in zathura
+map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
+
 
 "
 
@@ -65,6 +73,12 @@ autocmd InsertLeave * set nocul                  " cursor in normalmode
       NeoBundle 'tpope/vim-commentary'
       NeoBundle 'plasticboy/vim-markdown'
       NeoBundle 'godlygeek/tabular'
+      NeoBundle 'rust-lang/rust.vim'
+      NeoBundle 'sebastianmarkow/deoplete-rust'
+      NeoBundle 'racer-rust/vim-racer'
+      NeoBundle 'ervandew/supertab'
+      NeoBundle 'junegunn/fzf'
+      NeoBundle 'dhruvasagar/vim-table-mode'
       " You can specify revision/branch/tag.
       NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
@@ -79,4 +93,15 @@ autocmd InsertLeave * set nocul                  " cursor in normalmode
       NeoBundleCheck
       "End NeoBundle Scripts-------------------------
 
+" airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='deus'
+
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+    \ 'AcceptSelection("t")': ['<cr>'],
+    \ }
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:table_mode_corner="|"
 let g:deoplete#enable_at_startup = 1

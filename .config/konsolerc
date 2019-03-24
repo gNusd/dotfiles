@@ -7,14 +7,13 @@ Favorites=
 [MainWindow]
 Height 1080=1044
 Height 1108=1071
-Height 1200=1131
+Height 1200=1160
 State=AAAA/wAAAAD9AAAAAAAAA7wAAAPZAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1882
 Width 1969=966
-Width 2133=1036
+Width 2133=1039
 Window-Maximized 1080x1920=true
-Window-Maximized 1200x2133=true
 
 [TabBar]
 TabBarVisibility=AlwaysHideTabBar

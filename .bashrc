@@ -129,6 +129,7 @@ alias vim='nvim'
 alias vi='nvim'
 
 source /etc/profile.d/undistract-me.sh
+source /home/gnus/.ssh/ssh_alias
 
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1

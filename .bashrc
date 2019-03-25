@@ -1,4 +1,12 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
+#/**************************************************************/
+#/*                            _               _               */
+#/*   __ _ _ __  _   _ ___    | |__   __ _ ___| |__  _ __ ___  */
+#/*  / _` | '_ \| | | / __|   | '_ \ / _` / __| '_ \| '__/ __| */
+#/* | (_| | | | | |_| \__ \  _| |_) | (_| \__ \ | | | | | (__  */
+#/*  \__, |_| |_|\__,_|___/ (_)_.__/ \__,_|___/_| |_|_|  \___| */
+#/*  |___/                                                     */
+#/**************************************************************/
+
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -123,7 +131,7 @@ export EDITOR=vim
 export VISUAL=vim
 
 PATH=$PATH:/snap/bin
-export PATH="home/gnus/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
 
 alias vim='nvim'
 alias vi='nvim'

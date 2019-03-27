@@ -135,7 +135,7 @@ export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
 
 alias vim='nvim'
 alias vi='nvim'
-
+alias :q='exit'
 source /etc/profile.d/undistract-me.sh
 source /home/gnus/.ssh/ssh_alias
 

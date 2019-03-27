@@ -34,6 +34,8 @@ set complete+=kspell
 map <leader>s :setlocal spell! spelllang=sv_se<CR>
 map <leader>e :setlocal spell! spelllang=en_us<CR>
 
+set spellfile=~/.config/nvim/spell/sv.utf-8.add
+
 " markdown to pdf and open file in zathura
 map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
 

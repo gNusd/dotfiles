@@ -21,7 +21,7 @@ let mapleader = " "
 set number relativenumber                       " Show line numbers and relativnumbers
 set background=dark
 
-set mouse=a                                     " Enable the use of the mouse.
+set mouse=                                     " Disable mouse. Enable the use of the mouse mouse=a.
 
 autocmd BufWritePre * %s/\s\+$//e               " Remove trailing whitespace
 call matchadd('ColorColumn', '\%81v', 100)      " checks if you write over the 80 character line
@@ -29,18 +29,27 @@ call matchadd('ColorColumn', '\%81v', 100)      " checks if you write over the 8
 autocmd InsertEnter * set cul                    " cursor in insertmode
 autocmd InsertLeave * set nocul                  " cursor in normalmode
 
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
 " Spellchecking
 set complete+=kspell
-map <leader>s :setlocal spell! spelllang=sv_se<CR>
-map <leader>e :setlocal spell! spelllang=en_us<CR>
+map <leader>s :setlocal spell! spelllang=sv_se spellfile=~/.config/nvim/spell/sv.utf-8.add<CR>
+map <leader>e :setlocal spell! spelllang=en_us spellfile=~/.config/nvim/spell/en.utf-8.add<CR>
 
-set spellfile=~/.config/nvim/spell/sv.utf-8.add
+"" local spellcheck file
+set spellfile=~/.config/nvim/spell/$spelllang.utf-8.add
+
+"map <k5> z=
+"nmap <k1> [s
+"nmap <k3> ]s
+"nmap <k8> zg
+"nmap <k9> zug
 
 " markdown to pdf and open file in zathura
 map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
-
-
-"
 
   "NeoBundle Scripts-----------------------------
   if has('vim_starting')

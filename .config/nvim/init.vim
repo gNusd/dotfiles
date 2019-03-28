@@ -39,14 +39,14 @@ set complete+=kspell
 map <leader>s :setlocal spell! spelllang=sv spellfile=~/.config/nvim/spell/sv.utf-8.add<CR>
 map <leader>e :setlocal spell! spelllang=en_us spellfile=~/.config/nvim/spell/en.utf-8.add<CR>
 
-"" local spellcheck file
-set spellfile=~/.config/nvim/spell/$spelllang.utf-8.add
+" Reload init.vim
+map <leader>r :source ~/.config/nvim/init.vim<CR>
 
 nmap <leader>c z=
 nmap <leader>N [s
 nmap <leader>n ]s
 nmap <leader>a zg
-nmap <leader>r zug
+nmap <leader>d zug
 
 " markdown to pdf and open file in zathura
 map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>

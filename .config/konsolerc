@@ -1,6 +1,10 @@
 [Desktop Entry]
 DefaultProfile=default.profile
 
+[DownloadDialog Settings]
+Height 1200=494
+Width 2133=700
+
 [Favorite Profiles]
 Favorites=
 
@@ -12,7 +16,7 @@ State=AAAA/wAAAAD9AAAAAAAAA7wAAAPZAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1882
 Width 1969=966
-Width 2133=2085
+Width 2133=1039
 Window-Maximized 1080x1920=true
 
 [TabBar]

@@ -1,4 +1,4 @@
-#/**************************************************************/
+##/**************************************************************/
 #/*                            _               _               */
 #/*   __ _ _ __  _   _ ___    | |__   __ _ ___| |__  _ __ ___  */
 #/*  / _` | '_ \| | | / __|   | '_ \ / _` / __| '_ \| '__/ __| */
@@ -136,10 +136,20 @@ export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
 alias vim='nvim'
 alias vi='nvim'
 alias :q='exit'
+alias reload="source $HOME/.bashrc"
+
 source /etc/profile.d/undistract-me.sh
-source /home/gnus/.ssh/ssh_alias
+source $HOME/.ssh/ssh_alias
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/oceanic-next.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 source /usr/share/powerline/bindings/bash/powerline.sh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export FZF_DEFAULT_OPS="--extended"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULR_COMMAND"

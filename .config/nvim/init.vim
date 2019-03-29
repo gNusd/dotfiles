@@ -19,39 +19,44 @@ filetype off                 			" required
 let mapleader = " "
 
 set number relativenumber                       " Show line numbers and relativnumbers
-set background=dark
+
+" For Neovim 0.1.3 and 0.1.4
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 set mouse=                                     " Disable mouse. Enable the use of the mouse mouse=a.
 
 autocmd BufWritePre * %s/\s\+$//e               " Remove trailing whitespace
 call matchadd('ColorColumn', '\%81v', 100)      " checks if you write over the 80 character line
 
+" mode indicators
 autocmd InsertEnter * set cul                    " cursor in insertmode
 autocmd InsertLeave * set nocul                  " cursor in normalmode
 
+" block arrow keys
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-" Spellchecking
+" Spell checking
 set complete+=kspell
 map <leader>s :setlocal spell! spelllang=sv spellfile=~/.config/nvim/spell/sv.utf-8.add<CR>
 map <leader>e :setlocal spell! spelllang=en_us spellfile=~/.config/nvim/spell/en.utf-8.add<CR>
 
-" Reload init.vim
-map <leader>r :source ~/.config/nvim/init.vim<CR>
-
+" remap key connected to spell checks
 nmap <leader>c z=
 nmap <leader>N [s
 nmap <leader>n ]s
 nmap <leader>a zg
 nmap <leader>d zug
 
+" Reload init.vim
+map <leader>r :source ~/.config/nvim/init.vim<CR>
+
 " markdown to pdf and open file in zathura
 map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
 
-  "NeoBundle Scripts-----------------------------
+"NeoBundle Scripts-----------------------------
   if has('vim_starting')
     " Required:
       set runtimepath+=/home/gnus/.config/nvim/bundle/neobundle.vim/
@@ -65,10 +70,6 @@ map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
       NeoBundleFetch 'Shougo/neobundle.vim'
 
       " Add or remove your Bundles here:
-      NeoBundle 'Shougo/neosnippet.vim'
-      NeoBundle 'Shougo/neosnippet-snippets'
-      NeoBundle 'tpope/vim-fugitive'
-      NeoBundle 'ctrlpvim/ctrlp.vim'
       " Deoplete
 	if has('nvim')
  		NeoBundle 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -77,24 +78,39 @@ map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
   		NeoBundle 'roxma/nvim-yarp'
   		NeoBundle 'roxma/vim-hug-neovim-rpc'
 	endif
-      NeoBundle 'vim-airline/vim-airline'
-      NeoBundle 'vim-airline/vim-airline-themes'
       NeoBundle 'deoplete-plugins/deoplete-jedi'
-      NeoBundle 'tpope/vim-surround'
-      NeoBundle 'tpope/vim-commentary'
+
+      " Languages
       NeoBundle 'plasticboy/vim-markdown'
-      NeoBundle 'godlygeek/tabular'
       NeoBundle 'rust-lang/rust.vim'
       NeoBundle 'sebastianmarkow/deoplete-rust'
       NeoBundle 'racer-rust/vim-racer'
+
+      " git plugins
+      NeoBundle 'tpope/vim-fugitive'
+      NeoBundle 'airblade/vim-gitgutter'
+
+      " snippets
+      NeoBundle 'Shougo/neosnippet.vim'
+      NeoBundle 'Shougo/neosnippet-snippets'
+      NeoBundle 'ctrlpvim/ctrlp.vim'
+      NeoBundle 'vim-airline/vim-airline'
+      NeoBundle 'vim-airline/vim-airline-themes'
+      NeoBundle 'tpope/vim-surround'
+      NeoBundle 'tpope/vim-commentary'
+      NeoBundle 'tpope/vim-repeat'
+      NeoBundle 'godlygeek/tabular'
       NeoBundle 'ervandew/supertab'
       NeoBundle 'junegunn/fzf'
       NeoBundle 'dhruvasagar/vim-table-mode'
+      NeoBundle 'mhartington/oceanic-next'
+      NeoBundle 'christoomey/vim-tmux-navigator'
       " You can specify revision/branch/tag.
       NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
       " Required:
       call neobundle#end()
+
 
       " Required:
       filetype plugin indent on
@@ -106,8 +122,9 @@ map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='deus'
+let g:airline_theme='oceanicnext'
 
+" ctrlp
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
     \ 'AcceptSelection("t")': ['<cr>'],
@@ -115,4 +132,15 @@ let g:ctrlp_prompt_mappings = {
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:table_mode_corner="|"
+
+" Or if you have Neovim >= 0.1.5
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+" Theme
+syntax enable
+colorscheme OceanicNext
+
+" deoplete required, last in file
 let g:deoplete#enable_at_startup = 1

@@ -85,6 +85,7 @@ map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
       NeoBundle 'rust-lang/rust.vim'
       NeoBundle 'sebastianmarkow/deoplete-rust'
       NeoBundle 'racer-rust/vim-racer'
+      NeoBundle 'deoplete-plugins/deoplete-go', {'build': {'unix': 'make'}}
 
       " git plugins
       NeoBundle 'tpope/vim-fugitive'
@@ -101,7 +102,7 @@ map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
       NeoBundle 'tpope/vim-repeat'
       NeoBundle 'godlygeek/tabular'
       NeoBundle 'ervandew/supertab'
-      NeoBundle 'junegunn/fzf'
+      NeoBundle 'junegunn/fzf', { 'dir': '~/.fzf' }
       NeoBundle 'dhruvasagar/vim-table-mode'
       NeoBundle 'mhartington/oceanic-next'
       NeoBundle 'christoomey/vim-tmux-navigator'
@@ -124,6 +125,9 @@ map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='oceanicnext'
 
+" gitgutter
+let g:gitgutter_enabled = 1
+nmap <leader>g :GitGutterToggle<CR>
 " ctrlp
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<2-LeftMouse>'],

@@ -18,11 +18,11 @@ set nocompatible 		             	" be iMproved, required
 filetype off                 			" required
 let mapleader = " "
 
+set encoding=UTF-8
+
 set number relativenumber                       " Show line numbers and relativnumbers
 
-" For Neovim 0.1.3 and 0.1.4
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-
+set tabstop=4
 set mouse=                                     " Disable mouse. Enable the use of the mouse mouse=a.
 
 autocmd BufWritePre * %s/\s\+$//e               " Remove trailing whitespace
@@ -31,6 +31,7 @@ call matchadd('ColorColumn', '\%81v', 100)      " checks if you write over the 8
 " mode indicators
 autocmd InsertEnter * set cul                    " cursor in insertmode
 autocmd InsertLeave * set nocul                  " cursor in normalmode
+
 
 " block arrow keys
 noremap <Up> <Nop>
@@ -90,6 +91,7 @@ map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
       " git plugins
       NeoBundle 'tpope/vim-fugitive'
       NeoBundle 'airblade/vim-gitgutter'
+      NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 
       " snippets
       NeoBundle 'Shougo/neosnippet.vim'
@@ -106,6 +108,8 @@ map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
       NeoBundle 'dhruvasagar/vim-table-mode'
       NeoBundle 'mhartington/oceanic-next'
       NeoBundle 'christoomey/vim-tmux-navigator'
+      NeoBundle 'scrooloose/nerdtree'
+      NeoBundle 'ryanoasis/vim-devicons'
       " You can specify revision/branch/tag.
       NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
@@ -136,6 +140,29 @@ let g:ctrlp_prompt_mappings = {
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:table_mode_corner="|"
+
+" NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+map <leader>t :NERDTreeToggle<CR>
+autocmd FileType nerdtree setlocal nolist
+let g:NERDTreeShowIgnoredStatus = 1
+" vimscript
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
 
 " Or if you have Neovim >= 0.1.5
 if (has("termguicolors"))

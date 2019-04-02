@@ -13,6 +13,8 @@
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
+tmux source-file $HOME/.tmux.conf
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -130,13 +132,7 @@ fi
 export EDITOR=vim
 export VISUAL=vim
 
-PATH=$PATH:/snap/bin
-export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
-
-alias vim='nvim'
-alias vi='nvim'
-alias :q='exit'
-alias reload="source $HOME/.bashrc"
+export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
 source /etc/profile.d/undistract-me.sh
 source $HOME/.ssh/ssh_alias

@@ -13,7 +13,6 @@
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
-tmux source-file $HOME/.tmux.conf
 
 # If not running interactively, don't do anything
 case $- in

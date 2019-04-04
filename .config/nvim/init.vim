@@ -15,7 +15,6 @@
 
 
 set nocompatible 		             	" be iMproved, required
-filetype off                 			" required
 let mapleader = " "
 
 set encoding=UTF-8
@@ -57,73 +56,74 @@ map <leader>r :source ~/.config/nvim/init.vim<CR>
 " markdown to pdf and open file in zathura
 map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
 
-"NeoBundle Scripts-----------------------------
-  if has('vim_starting')
-    " Required:
-      set runtimepath+=/home/gnus/.config/nvim/bundle/neobundle.vim/
-      endif
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
+endif
 
-      " Required:
-      call neobundle#begin(expand('/home/gnus/.config/nvim/bundle'))
+" Required:
+set runtimepath+=/home/gnus/.cache/dein/repos/github.com/Shougo/dein.vim
 
-      " Let NeoBundle manage NeoBundle
-      " Required:
-      NeoBundleFetch 'Shougo/neobundle.vim'
+" Required:
+if dein#load_state('/home/gnus/.cache/dein')
+  call dein#begin('/home/gnus/.cache/dein')
 
-      " Add or remove your Bundles here:
-      " Deoplete
-	if has('nvim')
- 		NeoBundle 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-		else
-  		NeoBundle 'Shougo/deoplete.nvim'
-  		NeoBundle 'roxma/nvim-yarp'
-  		NeoBundle 'roxma/vim-hug-neovim-rpc'
-	endif
-      NeoBundle 'deoplete-plugins/deoplete-jedi'
+  " Let dein manage dein
+  " Required:
+  call dein#add('/home/gnus/.cache/dein/repos/github.com/Shougo/dein.vim')
 
-      " Languages
-      NeoBundle 'plasticboy/vim-markdown'
-      NeoBundle 'rust-lang/rust.vim'
-      NeoBundle 'sebastianmarkow/deoplete-rust'
-      NeoBundle 'racer-rust/vim-racer'
-      NeoBundle 'deoplete-plugins/deoplete-go', {'build': {'unix': 'make'}}
+  " Add or remove your plugins here like this:
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('Shougo/deoplete.nvim')
 
-      " git plugins
-      NeoBundle 'tpope/vim-fugitive'
-      NeoBundle 'airblade/vim-gitgutter'
-      NeoBundle 'Xuyuanp/nerdtree-git-plugin'
+" Languages
+  call dein#add('plasticboy/vim-markdown')
+  call dein#add('rust-lang/rust.vim')
+  call dein#add('sebastianmarkow/deoplete-rust')
+  call dein#add('racer-rust/vim-racer')
+  call dein#add('deoplete-plugins/deoplete-jedi')
+  call dein#add('deoplete-plugins/deoplete-go')
 
-      " snippets
-      NeoBundle 'Shougo/neosnippet.vim'
-      NeoBundle 'Shougo/neosnippet-snippets'
-      NeoBundle 'ctrlpvim/ctrlp.vim'
-      NeoBundle 'vim-airline/vim-airline'
-      NeoBundle 'vim-airline/vim-airline-themes'
-      NeoBundle 'tpope/vim-surround'
-      NeoBundle 'tpope/vim-commentary'
-      NeoBundle 'tpope/vim-repeat'
-      NeoBundle 'godlygeek/tabular'
-      NeoBundle 'ervandew/supertab'
-      NeoBundle 'junegunn/fzf', { 'dir': '~/.fzf' }
-      NeoBundle 'dhruvasagar/vim-table-mode'
-      NeoBundle 'mhartington/oceanic-next'
-      NeoBundle 'christoomey/vim-tmux-navigator'
-      NeoBundle 'scrooloose/nerdtree'
-      NeoBundle 'ryanoasis/vim-devicons'
-      " You can specify revision/branch/tag.
-      NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+" git plugins
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('airblade/vim-gitgutter')
+  call dein#add('Xuyuanp/nerdtree-git-plugin')
 
-      " Required:
-      call neobundle#end()
+" snippets
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('ctrlpvim/ctrlp.vim')
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('tpope/vim-surround')
+  call dein#add('tpope/vim-commentary')
+  call dein#add('tpope/vim-repeat')
+  call dein#add('godlygeek/tabular')
+  call dein#add('ervandew/supertab')
+  call dein#add('junegunn/fzf', { 'dir': '~/.fzf' })
+  call dein#add('dhruvasagar/vim-table-mode')
+  call dein#add('mhartington/oceanic-next')
+  call dein#add('christoomey/vim-tmux-navigator')
+  call dein#add('scrooloose/nerdtree')
+  call dein#add('ryanoasis/vim-devicons')
 
 
-      " Required:
-      filetype plugin indent on
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
 
-      " If there are uninstalled bundles found on startup,
-      " this will conveniently prompt you to install them.
-      NeoBundleCheck
-      "End NeoBundle Scripts-------------------------
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+"if dein#check_install()
+"  call dein#install()
+"endif
+
+"End dein Scripts-------------------------
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
@@ -138,7 +138,7 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>'],
     \ }
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:table_mode_corner="|"
 
 " NERDTree

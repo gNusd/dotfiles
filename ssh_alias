@@ -1,0 +1,6 @@
+#!/bin/bash
+
+alias stimagst="ssh gnus@207.154.212.191"
+alias tyrellCorp="ssh gnus@192.168.1.234"
+alias deckard="ssh gnus@192.168.1.113"
+alias jfsebastian="ssh gnus@192.168.1.99"

@@ -129,23 +129,19 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR=nvim
+export VISUAL=nvim
 
 export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
-source /etc/profile.d/undistract-me.sh
+#source /etc/profile.d/undistract-me.sh
 source $HOME/.ssh/ssh_alias
 
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/oceanic-next.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+#powerline-daemon -q
+#POWERLINE_BASH_CONTINUATION=1
+#POWERLINE_BASH_SELECT=1
+#source /usr/share/powerline/bindings/bash/powerline.sh
 
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-source /usr/share/powerline/bindings/bash/powerline.sh
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export FZF_DEFAULT_OPS="--extended"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+#export FZF_DEFAULT_OPS="--extended"
+#export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"

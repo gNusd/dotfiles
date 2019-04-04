@@ -14,9 +14,9 @@ set editing-mode vi
 set show-mode-in-prompt on
 
 ## without powerline
-#set vi-cmd-mode-string "\1\e[1 q\2:"
-#set vi-ins-mode-string "\1\e[5 q\2 "
+set vi-cmd-mode-string "\1\e[1 q\2:"
+set vi-ins-mode-string "\1\e[5 q\2 "
 
 ## with powerline
-set vi-cmd-mode-string \1\e[48;5;208;1m\2 N \1\e[38;5;208;48;5;31;1m\2\1\e[0m\2
-set vi-ins-mode-string \1\e[48;5;24;1m\2 I \1\e[38;5;24;48;5;31;1m\2\1\e[0m\2
+# set vi-cmd-mode-string \1\e[48;5;208;1m\2 N \1\e[38;5;208;48;5;31;1m\2\1\e[0m\2
+# set vi-ins-mode-string \1\e[48;5;24;1m\2 I \1\e[38;5;24;48;5;31;1m\2\1\e[0m\2

@@ -20,8 +20,8 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/tmp/tmp.py,file:///tmp/lnet_scan,file:$HOME/projects/apps/grocery_management/grocery_management/conf.py,file:///tmp/lnet_scan.diff,file:///tmp/lnet_scan.back,file:$HOME/projects/apps/grocery_management/grocery_management/database.py,file:$HOME/projects/apps/grocery_management/grocery_management/alter.py,file:$HOME/projects/apps/grocery_management/grocery_management/interface_add.py,file:$HOME/.vimrc,file:$HOME/projects/matsedel/mat.yaml,file:$HOME/projects/apps/grocery_management/.gitignore,file:$HOME/projects/apps/grocery_management/grocery_management/__pycache__/db_dialog.cpython-36.pyc,file:$HOME/projects/apps/tmp/conf.py,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
-Recent URLs[$e]=file:$HOME/nextCloud/Notes/,file:$HOME/projects/apps/grocery_management/grocery_management/,file:$HOME/Hämtningar/,file:$HOME/tmp/,file:///tmp/,file:$HOME/projects/apps/grocery_management/
+Recent Files[$e]=file:$HOME/projects/matsedel/mat.yaml,file:$HOME/repositories/dotfiles/.bashrc,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
+Recent URLs[$e]=file:$HOME/repositories/dotfiles/
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -121,7 +121,7 @@ MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAABXgAAAIlAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1400
-Width 2560=1246
+Width 2560=2500
 Window-Maximized 1080x1920=true
 Window-Maximized 1108x1969=true
 Window-Maximized 1200x2133=true

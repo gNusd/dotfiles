@@ -8,6 +8,6 @@ There are some legacy files that is not being used currently.
 
 Files not currently in use:
 
-* .vimrc
+* .vimrc - are using neovim now, '.neovimrc' -> .config/nvim/init.vim
 * .ncmpcpp
 * .config/qutebrowser

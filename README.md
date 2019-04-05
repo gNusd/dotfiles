@@ -1,6 +1,6 @@
 ##### README.md
 
-# gnus * - * .files
+# .files gnus
 
 These are some of my dotfiles.
 

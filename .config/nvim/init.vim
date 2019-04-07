@@ -31,7 +31,6 @@ call matchadd('ColorColumn', '\%81v', 100)      " checks if you write over the 8
 autocmd InsertEnter * set cul                    " cursor in insertmode
 autocmd InsertLeave * set nocul                  " cursor in normalmode
 
-
 " block arrow keys
 noremap <Up> <Nop>
 noremap <Down> <Nop>
@@ -53,8 +52,36 @@ nmap <leader>d zug
 " Reload init.vim
 map <leader>r :source ~/.config/nvim/init.vim<CR>
 
+" npm install -g markdown-pdf
 " markdown to pdf and open file in zathura
-map <leader>m :!markdown-pdf % && zathura %:r.pdf<CR>
+map <leader>m :!markdown-pdf % && zathura %:r.pdf &<CR><CR>
+
+" treminal window at the bottom, F4 to invoke
+let g:term_buf = 0
+function! Term_toggle()
+  1wincmd w
+  if g:term_buf == bufnr("")
+    setlocal bufhidden=hide
+    close
+  else
+    rightbelow new
+    12winc -
+    try
+      exec "buffer ".g:term_buf
+    catch
+      call termopen("bash", {"detach": 0})
+      let g:term_buf = bufnr("")
+    endtry
+    set laststatus=0
+    startinsert!
+  endif
+endfunction
+nnoremap <leader>t :call Term_toggle()<cr>
+
+" Terminal go back to normal mode
+tnoremap <Esc> <C-\><C-n>
+" When switching to terminal windows it goes into insert mode automatically
+au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
 "dein Scripts-----------------------------
 if &compatible
@@ -76,14 +103,13 @@ if dein#load_state('/home/gnus/.cache/dein')
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/deoplete.nvim')
+  call dein#add('sebastianmarkow/deoplete-rust')
+  call dein#add('deoplete-plugins/deoplete-jedi')
+  call dein#add('deoplete-plugins/deoplete-go')
 
 " Languages
   call dein#add('plasticboy/vim-markdown')
   call dein#add('rust-lang/rust.vim')
-  call dein#add('sebastianmarkow/deoplete-rust')
-  call dein#add('racer-rust/vim-racer')
-  call dein#add('deoplete-plugins/deoplete-jedi')
-  call dein#add('deoplete-plugins/deoplete-go')
 
 " git plugins
   call dein#add('tpope/vim-fugitive')
@@ -95,7 +121,6 @@ if dein#load_state('/home/gnus/.cache/dein')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('ctrlpvim/ctrlp.vim')
   call dein#add('vim-airline/vim-airline')
-  call dein#add('vim-airline/vim-airline-themes')
   call dein#add('tpope/vim-surround')
   call dein#add('tpope/vim-commentary')
   call dein#add('tpope/vim-repeat')
@@ -103,11 +128,14 @@ if dein#load_state('/home/gnus/.cache/dein')
   call dein#add('ervandew/supertab')
   call dein#add('junegunn/fzf', { 'dir': '~/.fzf' })
   call dein#add('dhruvasagar/vim-table-mode')
-  call dein#add('mhartington/oceanic-next')
   call dein#add('christoomey/vim-tmux-navigator')
   call dein#add('scrooloose/nerdtree')
   call dein#add('ryanoasis/vim-devicons')
 
+  " schemes and themes
+  call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('mhartington/oceanic-next')
+  " call dein#add('joshdick/onedark.vim')
 
   " Required:
   call dein#end()
@@ -124,6 +152,13 @@ syntax enable
 "endif
 
 "End dein Scripts-------------------------
+
+" racer
+let g:deoplete#sources#rust#racer_binary="/home/user/.cargo/bin/racer"
+let g:deoplete#sources#rust#rust_source_path="/home/gnus/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
+let g:deoplete#sources#rust#show_duplicates=1
+let g:deoplete#sources#rust#disable_keymap=1
+let g:deoplete#sources#rust#documentation_max_height=20
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
@@ -147,7 +182,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
-map <leader>t :NERDTreeToggle<CR>
+map <leader>f :NERDTreeToggle<CR>
 autocmd FileType nerdtree setlocal nolist
 let g:NERDTreeShowIgnoredStatus = 1
 " vimscript

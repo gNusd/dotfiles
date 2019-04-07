@@ -132,17 +132,14 @@ fi
 
 export EDITOR=nvim
 export VISUAL=nvim
-
+export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
 export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
-#source /etc/profile.d/undistract-me.sh
+eval "$(ntfy shell-integration)"
+export AUTO_NTFY_DONE_IGNORE="vim screen meld"
+
 source $HOME/.ssh/ssh_alias
 
-#powerline-daemon -q
-#POWERLINE_BASH_CONTINUATION=1
-#POWERLINE_BASH_SELECT=1
-#source /usr/share/powerline/bindings/bash/powerline.sh
-
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-#export FZF_DEFAULT_OPS="--extended"
-#export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export FZF_DEFAULT_OPS="--extended"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"

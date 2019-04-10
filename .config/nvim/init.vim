@@ -110,6 +110,7 @@ if dein#load_state('/home/gnus/.cache/dein')
 " Languages
   call dein#add('plasticboy/vim-markdown')
   call dein#add('rust-lang/rust.vim')
+  call dein#add('JamshedVesuna/vim-markdown-preview')
 
 " git plugins
   call dein#add('tpope/vim-fugitive')
@@ -152,6 +153,11 @@ syntax enable
 "endif
 
 "End dein Scripts-------------------------
+
+" markdown preview
+let vim_markdown_preview_toggle=0
+let vim_markdown_preview_hotkey='<leader>p'
+let vim_markdown_preview_browser='Firefox'
 
 " racer
 let g:deoplete#sources#rust#racer_binary="/home/user/.cargo/bin/racer"

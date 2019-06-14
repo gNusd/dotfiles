@@ -2,7 +2,7 @@
 
 # gnus' .files
 
-These are some of my dotfiles.
+These are some of my dotfiles. I have gotten a lot of inspiration from other peoples dotfiles and it also contain snippets from some of these files.
 
 There are some legacy files that is not being used currently.
 

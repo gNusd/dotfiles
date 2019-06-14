@@ -4,6 +4,7 @@ alias :q='exit'
 alias reload='source $HOME/.bashrc'
 alias x='clear'
 alias xnvimswap=' rm * $HOME/.local/share/nvim/swap/'
+alias pkupdate='sudo pkcon refresh -p && sudo pkcon update -p'
 
 alias dotfiles='cd $HOME/repositories/dotfiles && ls -la'
 alias config='cd $HOME/.config'

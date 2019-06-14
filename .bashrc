@@ -10,6 +10,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+pyjoke -c all | cowsay
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
@@ -21,6 +22,9 @@ case $- in
     *i*) ;;
       *) return;;
 esac
+
+# color man-pages
+export PAGER='most'
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options

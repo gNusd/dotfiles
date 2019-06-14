@@ -111,6 +111,7 @@ if dein#load_state('/home/gnus/.cache/dein')
   call dein#add('plasticboy/vim-markdown')
   call dein#add('rust-lang/rust.vim')
   call dein#add('JamshedVesuna/vim-markdown-preview')
+  call dein#add('nvie/vim-flake8')
 
 " git plugins
   call dein#add('tpope/vim-fugitive')

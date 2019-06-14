@@ -1,0 +1,7 @@
+source account.muttrc
+set from = "magnus.lindstroem@telia.com"
+set realname = "magnus.lindstroem@telia.com"
+
+set spoolfile = "+INBOX"
+
+source color.muttrc

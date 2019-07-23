@@ -110,7 +110,8 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Search History=jedi
+Replace History=\\0
+Search History=×ÖÄ»,jedi
 
 [Konsole]
 AutoSyncronize=true
@@ -122,7 +123,7 @@ SetEditor=false
 Height 1080=433
 Height 1440=1392
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAABN4AAAVoAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABN8AAAVwAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1400
 Width 2560=1247

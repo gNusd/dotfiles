@@ -1,5 +1,5 @@
 #!/bin/bash
-rd=pwd
+rd=$(pwd)
 
 # ROOT
 tmp=$HOME/tmp/backup
@@ -76,6 +76,10 @@ ln -s $rd/.config/* $conf/
 
 # mozilla
 if [ ! -e $HOME/.mozilla ]
+then
+		mkdir -p $HOME/.mozilla/firefox/current/
+fi
+if [ ! -e  $HOME/.mozilla/firefox/current/ ]
 then
 		mkdir -p $HOME/.mozilla/firefox/current/
 fi

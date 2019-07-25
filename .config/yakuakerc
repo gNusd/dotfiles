@@ -1,0 +1,25 @@
+[Appearance]
+Skin=arc-dark
+
+[Desktop Entry]
+DefaultProfile=Profil nr. 1.profile
+
+[Dialogs]
+ConfirmQuit=false
+FirstRun=false
+
+[DownloadDialog Settings]
+Height 1440=535
+Width 2560=700
+
+[Favorite Profiles]
+Favorites=default.profile
+
+[KFileDialog Settings]
+Recent Files[$e]=arc-dark-yakuake.tar.gz,file:$HOME/Hämtningar/arc-dark-yakuake.tar.gz
+Recent URLs[$e]=file:$HOME/Hämtningar/
+
+[Window]
+Height=40
+ShowTabBar=false
+Width=100

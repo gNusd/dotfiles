@@ -1,6 +1,0 @@
-set folder = "~/Mail/telia/"
-# set folder = "imaps://magnus.lindstroem@telia.com@mailin.telia.com:993"
-set smtp_url = "smtps://magnus.lindstroem@telia.com@mailout.telia.com:465"
-
-set smtp_pass = "f26cd79a"
-set imap_pass = "f26cd79a"

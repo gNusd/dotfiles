@@ -1,7 +1,7 @@
 #!/bin/bash
 
-alias stimagst="ssh gnus@207.154.212.191"
-alias tyrellCorp="ssh gnus@192.168.1.234"
-alias deckard="ssh gnus@192.168.1.113"
-alias jfsebastian="ssh gnus@192.168.1.99"
-alias off-world="ssh gnus@94.237.93.110"
+alias stimagst="ssh $USER@207.154.212.191"
+alias tyrellCorp="ssh $USER@192.168.1.234"
+alias deckard="ssh $USER@192.168.1.113"
+alias jfsebastian="ssh $USER@192.168.1.99"
+alias off-world="ssh $USER@94.237.93.110"

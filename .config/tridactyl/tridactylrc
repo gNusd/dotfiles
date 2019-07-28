@@ -55,6 +55,7 @@ set searchurls.en https://sv.bab.la/lexikon/engelsk-svensk/
 set searchurls.sv https://sv.bab.la/lexikon/svensk-engelsk/
 set searchurls.snap https://snapcraft.io/search?q=
 set searchurls.flat https://flathub.org/apps/search/
+set searchurls.kde https://store.kde.org/search/projectSearchText/
 
 " New reddit is bad
 autocmd DocStart ^http(s?)://www.reddit.com js tri.excmds.urlmodify("-t", "www", "old")

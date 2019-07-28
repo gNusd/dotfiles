@@ -30,7 +30,7 @@ bind gD composite tabduplicate | tabdetach
 "
 " Misc settings
 "
-
+colourscheme dark
 " Hinting mode
 set hintfiltermode simple
 set hintnames uniform

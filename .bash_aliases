@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# alias vim='neovim-kalikiana'
-
 alias :q='exit'
 alias reload='source $HOME/.bashrc'
 alias x='clear'

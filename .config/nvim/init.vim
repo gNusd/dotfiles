@@ -83,6 +83,7 @@ tnoremap <Esc> <C-\><C-n>
 " When switching to terminal windows it goes into insert mode automatically
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
+map <leader>d :call dein#install()
 "dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
@@ -112,6 +113,7 @@ if dein#load_state('/home/gnus/.cache/dein')
   call dein#add('rust-lang/rust.vim')
   call dein#add('JamshedVesuna/vim-markdown-preview')
   call dein#add('nvie/vim-flake8')
+  call dein#add('itspriddle/vim-shellcheck')
 
 " git plugins
   call dein#add('tpope/vim-fugitive')

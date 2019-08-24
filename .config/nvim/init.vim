@@ -83,7 +83,7 @@ tnoremap <Esc> <C-\><C-n>
 " When switching to terminal windows it goes into insert mode automatically
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
-map <leader>d :call dein#install()
+map <leader>d :call dein#install()<cr>
 "dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved

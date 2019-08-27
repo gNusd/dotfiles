@@ -71,7 +71,7 @@ immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][2][Applets][52][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][2][Applets][52][Configuration][ConfigDialog]
 DialogHeight=720
@@ -89,7 +89,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][6][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 SystrayContainmentId=7
 
 [Containments][2][Applets][8]
@@ -143,6 +143,9 @@ favoritesPortedToKAstats=true
 showRecentContacts=true
 useCustomButtonImage=true
 
+[Containments][42][Applets][21][Shortcuts]
+global=Meta+Space
+
 [Containments][42][Applets][43]
 immutability=1
 plugin=org.kde.plasma.icontasks
@@ -156,7 +159,7 @@ DialogWidth=960
 
 [Containments][42][Applets][43][Configuration][General]
 iconSize=huge
-launchers=applications:firefox.desktop,applications:org.kde.kontact.desktop,applications:org.kde.konsole.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop,applications:nvim-qt.desktop,applications:com.visualstudio.code.desktop
+launchers=applications:firefox.desktop,applications:org.kde.kontact.desktop,applications:org.kde.konsole.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop,applications:nvim-qt.desktop,applications:com.visualstudio.code.desktop,applications:org.kde.konversation.desktop
 maxStripes=1
 
 [Containments][42][Applets][44]
@@ -225,7 +228,7 @@ immutability=1
 plugin=org.kde.windowtitle
 
 [Containments][42][Applets][62][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][42][Applets][62][Configuration][ConfigDialog]
 DialogHeight=720
@@ -260,7 +263,7 @@ DialogHeight=720
 DialogWidth=960
 
 [Containments][61][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][61][General]
 showToolbox=false
@@ -282,7 +285,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][10][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][7][Applets][11]
 immutability=1
@@ -310,14 +313,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][14][Configuration]
-PreloadWeight=49
+PreloadWeight=38
 
 [Containments][7][Applets][15]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=75
+PreloadWeight=69
 
 [Containments][7][Applets][15][Configuration][ConfigDialog]
 DialogHeight=720
@@ -349,7 +352,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][19][Configuration]
-PreloadWeight=60
+PreloadWeight=44
 
 [Containments][7][Applets][19][Configuration][ConfigDialog]
 DialogHeight=720
@@ -363,7 +366,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][7][Applets][20][Configuration]
-PreloadWeight=100
+PreloadWeight=89
 
 [Containments][7][Applets][54]
 immutability=1
@@ -384,14 +387,14 @@ immutability=1
 plugin=org.kde.redshiftControl
 
 [Containments][7][Applets][63][Configuration]
-PreloadWeight=42
+PreloadWeight=26
 
 [Containments][7][Applets][9]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][9][Configuration]
-PreloadWeight=26
+PreloadWeight=10
 
 [Containments][7][ConfigDialog]
 DialogHeight=600

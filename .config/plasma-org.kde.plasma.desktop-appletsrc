@@ -35,15 +35,20 @@ plugin=org.kde.activeWindowControl
 [Containments][2][Applets][47][Configuration]
 PreloadWeight=0
 
+[Containments][2][Applets][47][Configuration][AppMenu]
+appmenuBoldTitleWhenMenuDisplayed=true
+appmenuFillHeight=true
+appmenuFontBold=true
+
 [Containments][2][Applets][47][Configuration][Appearance]
-buttonSize=0.9
-controlButtonsSpacing=1
+buttonSize=0.8
+buttonsVerticalCenter=true
+controlButtonsSpacing=2
 doNotHideControlButtons=true
 horizontalScreenWidthPercent=0.046
 noWindowText=
 showMaximize=true
 showMinimize=true
-showPinToAllDesktops=true
 showWindowIcon=false
 showWindowTitle=false
 
@@ -66,7 +71,7 @@ immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][2][Applets][52][Configuration]
-PreloadWeight=6
+PreloadWeight=2
 
 [Containments][2][Applets][52][Configuration][ConfigDialog]
 DialogHeight=720
@@ -78,38 +83,6 @@ showName=false
 
 [Containments][2][Applets][53][Configuration][General]
 showApplicationIcon=true
-
-[Containments][2][Applets][58]
-immutability=1
-plugin=org.kde.windowtitle
-
-[Containments][2][Applets][58][Configuration]
-PreloadWeight=0
-
-[Containments][2][Applets][58][Configuration][ConfigDialog]
-DialogHeight=720
-DialogWidth=960
-
-[Containments][2][Applets][58][Configuration][General]
-boldFont=false
-capitalFont=false
-containmentType=Plasma
-filterActivityInfo=true
-iconFillThickness=false
-lengthFirstMargin=6
-lengthLastMargin=5
-style=NoText
-
-[Containments][2][Applets][59]
-immutability=1
-plugin=org.kde.redshiftControl
-
-[Containments][2][Applets][59][Configuration]
-PreloadWeight=0
-
-[Containments][2][Applets][59][Configuration][ConfigDialog]
-DialogHeight=720
-DialogWidth=960
 
 [Containments][2][Applets][6]
 immutability=1
@@ -124,7 +97,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][8][Configuration]
-PreloadWeight=15
+PreloadWeight=0
 
 [Containments][2][Applets][8][Configuration][Appearance]
 enabledCalendarPlugins=/usr/lib/x86_64-linux-gnu/qt5/plugins/plasmacalendarplugins/pimevents.so
@@ -142,36 +115,7 @@ DialogWidth=2560
 PreloadWeight=0
 
 [Containments][2][General]
-AppletOrder=58;47;48;46;6;59;8;52
-
-[Containments][22]
-activityId=c9b49d12-c587-48fe-84bf-6485125d9a39
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.desktopcontainment
-wallpaperplugin=org.kde.image
-
-[Containments][22][Applets][45][Configuration][General]
-length=243
-
-[Containments][22][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
-
-[Containments][22][Configuration]
-PreloadWeight=0
-
-[Containments][22][General]
-ToolBoxButtonState=right
-ToolBoxButtonX=2524
-ToolBoxButtonY=40
-pressToMoveHelp=false
-showToolbox=false
-
-[Containments][22][Wallpaper][org.kde.image][General]
-Image=file:///home/gnus/nextcloud/bilder/backgrounds/david-lynch.jpg
+AppletOrder=47;48;46;6;8;52
 
 [Containments][42]
 activityId=
@@ -212,7 +156,7 @@ DialogWidth=960
 
 [Containments][42][Applets][43][Configuration][General]
 iconSize=huge
-launchers=applications:firefox.desktop,applications:org.kde.kontact.desktop,applications:org.kde.konsole.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop
+launchers=applications:firefox.desktop,applications:org.kde.kontact.desktop,applications:org.kde.konsole.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop,applications:nvim-qt.desktop,applications:com.visualstudio.code.desktop
 maxStripes=1
 
 [Containments][42][Applets][44]
@@ -276,6 +220,22 @@ minutesShowNumber=true
 DialogHeight=720
 DialogWidth=960
 
+[Containments][42][Applets][62]
+immutability=1
+plugin=org.kde.windowtitle
+
+[Containments][42][Applets][62][Configuration]
+PreloadWeight=10
+
+[Containments][42][Applets][62][Configuration][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
+
+[Containments][42][Applets][62][Configuration][General]
+containmentType=Plasma
+iconFillThickness=false
+style=NoText
+
 [Containments][42][ConfigDialog]
 DialogHeight=1440
 DialogWidth=323
@@ -284,7 +244,29 @@ DialogWidth=323
 PreloadWeight=0
 
 [Containments][42][General]
-AppletOrder=21;43;44;49;50;51
+AppletOrder=62;21;43;44;49;50;51
+
+[Containments][61]
+activityId=913871cd-0b40-496b-b414-7d56e9f562b8
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.desktopcontainment
+wallpaperplugin=org.kde.image
+
+[Containments][61][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
+
+[Containments][61][Configuration]
+PreloadWeight=10
+
+[Containments][61][General]
+showToolbox=false
+
+[Containments][61][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/SafeLanding/contents/images/5120x2880.jpg
 
 [Containments][7]
 activityId=
@@ -300,7 +282,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][10][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][7][Applets][11]
 immutability=1
@@ -328,14 +310,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][14][Configuration]
-PreloadWeight=89
+PreloadWeight=49
 
 [Containments][7][Applets][15]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=100
+PreloadWeight=75
 
 [Containments][7][Applets][15][Configuration][ConfigDialog]
 DialogHeight=720
@@ -353,21 +335,21 @@ immutability=1
 plugin=org.kde.plasma.vault
 
 [Containments][7][Applets][17][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][7][Applets][18]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][7][Applets][18][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][7][Applets][19]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][19][Configuration]
-PreloadWeight=100
+PreloadWeight=60
 
 [Containments][7][Applets][19][Configuration][ConfigDialog]
 DialogHeight=720
@@ -397,12 +379,19 @@ DialogWidth=960
 [Containments][7][Applets][54][Shortcuts]
 global=Print, P
 
+[Containments][7][Applets][63]
+immutability=1
+plugin=org.kde.redshiftControl
+
+[Containments][7][Applets][63][Configuration]
+PreloadWeight=42
+
 [Containments][7][Applets][9]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][9][Configuration]
-PreloadWeight=61
+PreloadWeight=26
 
 [Containments][7][ConfigDialog]
 DialogHeight=600
@@ -412,9 +401,9 @@ DialogWidth=800
 PreloadWeight=0
 
 [Containments][7][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault
+extraItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.redshiftControl
 knownItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.plasma.keyboardindicator
-shownItems=PRIME Indicator,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect,keepassxc,org.kde.plasma.clipboard,QSyncthingTray,Nextcloud,org.kde.plasma.networkmanagement,Kontact,x2goclient,transmission
+shownItems=PRIME Indicator,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect,keepassxc,org.kde.plasma.clipboard,Nextcloud,org.kde.plasma.networkmanagement,x2goclient,transmission
 
 [Containments22Appletsts][45][Configuration][General]
 length=243
@@ -441,8 +430,12 @@ smoothTransitions=true
 [Containments42Appletsts][21][Configuration][General]
 favoritesPortedToKAstats=true
 
+[Containments61Appletsts][58][Configuration][General]
+formFactor=0
+
 [General]
 immutability=2
 
 [ScreenMapping]
-itemsOnDisabledScreens=
+itemsOnDisabledScreens=0,12,desktop:/install.log,desktop:/repositories,desktop:/Skrivbord,desktop:/virtualbox,desktop:/nextcloud,desktop:/raw,desktop:/hämtningar,desktop:/bin,desktop:/projects,desktop:/Sync,desktop:/tmp,desktop:/snap
+screenMapping=

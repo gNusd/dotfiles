@@ -49,7 +49,7 @@ TopRight=None
 [Plugins]
 desktopchangeosdEnabled=false
 enforcedecoEnabled=true
-kwin-script-tilingEnabled=true
+kwin-script-tilingEnabled=false
 minimizeallEnabled=false
 synchronizeskipswitcherEnabled=false
 videowallEnabled=false
@@ -100,5 +100,5 @@ BorderSize=Normal
 ButtonsOnLeft=MS
 ButtonsOnRight=HIAX
 CloseOnDoubleClickOnMenu=false
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Arc-Dark
+library=org.kde.breeze
+theme=

@@ -1,8 +1,9 @@
 [Appearance]
-Skin=arc-dark
+Skin=breeze-minimal
+SkinInstalledWithKns=true
 
 [Desktop Entry]
-DefaultProfile=Profil nr. 1.profile
+DefaultProfile=Profile 1.profile
 
 [Dialogs]
 ConfirmQuit=false
@@ -13,7 +14,7 @@ Height 1440=535
 Width 2560=700
 
 [Favorite Profiles]
-Favorites=default.profile
+Favorites=
 
 [KFileDialog Settings]
 Recent Files[$e]=arc-dark-yakuake.tar.gz,file:$HOME/Hämtningar/arc-dark-yakuake.tar.gz

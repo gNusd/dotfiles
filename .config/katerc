@@ -42,7 +42,7 @@ Indentation Width=4
 Keep Extra Spaces=false
 Line Length Limit=4096
 Newline at End of File=true
-On-The-Fly Spellcheck=false
+On-The-Fly Spellcheck=true
 Overwrite Mode=false
 PageUp/PageDown Moves Cursor=false
 Remove Spaces=0
@@ -134,6 +134,7 @@ Width 2560=1251
 Window-Maximized 1080x1920=true
 Window-Maximized 1108x1969=true
 Window-Maximized 1200x2133=true
+Window-Maximized 1440x2560=true
 
 [filetree]
 editShade=179,218,246

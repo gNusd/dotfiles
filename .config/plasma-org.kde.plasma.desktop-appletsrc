@@ -179,7 +179,7 @@ DialogWidth=960
 
 [Containments][42][Applets][43][Configuration][General]
 iconSize=huge
-launchers=applications:firefox.desktop,applications:org.kde.kontact.desktop,applications:org.kde.konsole.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop,applications:nvim-qt.desktop,applications:com.visualstudio.code.desktop,applications:org.kde.konversation.desktop
+launchers=applications:firefox.desktop,applications:org.kde.konsole.desktop,applications:org.kde.kontact.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop,applications:com.visualstudio.code.desktop
 maxStripes=1
 
 [Containments][42][Applets][44]
@@ -289,7 +289,7 @@ PreloadWeight=0
 showToolbox=false
 
 [Containments][61][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/Autumn/contents/images/2560x1440.jpg
+Image=file:///home/gnus/nextcloud/bilder/backgrounds/david-lynch.jpg
 
 [Containments][7]
 activityId=
@@ -333,14 +333,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][14][Configuration]
-PreloadWeight=30
+PreloadWeight=14
 
 [Containments][7][Applets][15]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=61
+PreloadWeight=80
 
 [Containments][7][Applets][15][Configuration][ConfigDialog]
 DialogHeight=720
@@ -372,7 +372,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][19][Configuration]
-PreloadWeight=36
+PreloadWeight=20
 
 [Containments][7][Applets][19][Configuration][ConfigDialog]
 DialogHeight=720
@@ -407,14 +407,22 @@ immutability=1
 plugin=org.kde.redshiftControl
 
 [Containments][7][Applets][63][Configuration]
-PreloadWeight=18
+PreloadWeight=2
+
+[Containments][7][Applets][63][Configuration][Advanced]
+latitude=55.6059
+longitude=13.0007
+
+[Containments][7][Applets][63][Configuration][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
 
 [Containments][7][Applets][9]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][9][Configuration]
-PreloadWeight=12
+PreloadWeight=0
 
 [Containments][7][ConfigDialog]
 DialogHeight=600

@@ -84,6 +84,7 @@ tnoremap <Esc> <C-\><C-n>
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
 map <leader>d :call dein#install()<cr>
+map <leader>u :call dein#update()<cr>
 "dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
@@ -138,8 +139,9 @@ if dein#load_state('/home/gnus/.cache/dein')
 
   " schemes and themes
   call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('mhartington/oceanic-next')
+  call dein#add('arcticicestudio/nord-vim')
   " call dein#add('joshdick/onedark.vim')
+  " call dein#add('mhartington/oceanic-next')
 
   " Required:
   call dein#end()
@@ -171,7 +173,7 @@ let g:deoplete#sources#rust#documentation_max_height=20
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='oceanicnext'
+" let g:airline_theme='deus theme'
 
 " gitgutter
 let g:gitgutter_enabled = 1
@@ -215,7 +217,7 @@ endif
 
 " Theme
 syntax enable
-colorscheme OceanicNext
+colorscheme nord
 
 " deoplete required, last in file
 let g:deoplete#enable_at_startup = 1

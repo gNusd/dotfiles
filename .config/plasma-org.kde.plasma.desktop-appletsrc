@@ -86,6 +86,10 @@ plugin=org.kde.plasma.appmenu
 [Containments][2][Applets][48][Configuration]
 PreloadWeight=0
 
+[Containments][2][Applets][48][Configuration][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
+
 [Containments][2][Applets][52]
 immutability=1
 plugin=org.kde.plasma.userswitcher
@@ -128,7 +132,7 @@ DialogHeight=720
 DialogWidth=960
 
 [Containments][2][ConfigDialog]
-DialogHeight=90
+DialogHeight=80
 DialogWidth=2560
 
 [Containments][2][Configuration]
@@ -340,7 +344,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=80
+PreloadWeight=85
 
 [Containments][7][Applets][15][Configuration][ConfigDialog]
 DialogHeight=720

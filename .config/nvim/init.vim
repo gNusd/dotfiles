@@ -13,9 +13,13 @@
 "/*                                                 */
 "/***************************************************/
 
-
 set nocompatible 		             	" be iMproved, required
 let mapleader = " "
+
+map <ctrl>h <ctrl>w h
+map <ctrl>l <ctrl>w l
+map <ctrl>j <ctrl>w j
+map <ctrl>k <ctrl>w k
 
 set encoding=UTF-8
 
@@ -36,6 +40,10 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+map <leader>j :bprevious<cr>
+map <leader>k :bnext<cr>
+map <leader><delete> :bdelete<cr>
 
 " Spell checking
 set complete+=kspell
@@ -83,6 +91,8 @@ tnoremap <Esc> <C-\><C-n>
 " When switching to terminal windows it goes into insert mode automatically
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
+set wildignore+=*.a,*.o,*.gif,*.jpg,*.png,.git,*.swp,*.tmp
+
 map <leader>d :call dein#install()<cr>
 map <leader>u :call dein#update()<cr>
 "dein Scripts-----------------------------
@@ -102,8 +112,6 @@ if dein#load_state('/home/gnus/.cache/dein')
   call dein#add('/home/gnus/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here like this:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('sebastianmarkow/deoplete-rust')
   call dein#add('deoplete-plugins/deoplete-jedi')
@@ -131,7 +139,6 @@ if dein#load_state('/home/gnus/.cache/dein')
   call dein#add('tpope/vim-repeat')
   call dein#add('godlygeek/tabular')
   call dein#add('ervandew/supertab')
-  call dein#add('junegunn/fzf', { 'dir': '~/.fzf' })
   call dein#add('dhruvasagar/vim-table-mode')
   call dein#add('christoomey/vim-tmux-navigator')
   call dein#add('scrooloose/nerdtree')
@@ -140,6 +147,7 @@ if dein#load_state('/home/gnus/.cache/dein')
   " schemes and themes
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('arcticicestudio/nord-vim')
+  call dein#add('edkolev/tmuxline.vim')
   " call dein#add('joshdick/onedark.vim')
   " call dein#add('mhartington/oceanic-next')
 
@@ -158,11 +166,17 @@ syntax enable
 "endif
 
 "End dein Scripts-------------------------
+" This is the default extra key bindings
+
 
 " markdown preview
 let vim_markdown_preview_toggle=0
 let vim_markdown_preview_hotkey='<leader>p'
 let vim_markdown_preview_browser='Firefox'
+
+" vim table mode
+map <leader><tab> :TableModeEnable <cr>
+map <leader><ctrl><tab> :TableModeDsiable <cr>
 
 " racer
 let g:deoplete#sources#rust#racer_binary="/home/user/.cargo/bin/racer"
@@ -184,7 +198,7 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>'],
     \ }
 
-" set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:table_mode_corner="|"
 
 " NERDTree

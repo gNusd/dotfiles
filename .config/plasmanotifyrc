@@ -7,6 +7,9 @@ Seen=true
 [Applications][nextcloud-client_nextcloud-client]
 Seen=true
 
+[Applications][org.clementine_player.clementine]
+Seen=true
+
 [Notifications]
 CriticalAlwaysOnTop=false
 

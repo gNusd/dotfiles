@@ -21,8 +21,9 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/projects/matsedel/mat.yaml,file:$HOME/repositories/scripts/init.sh,file:$HOME/repositories/dotfiles/.bashrc,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
-Recent URLs[$e]=file:$HOME/repositories/scripts/
+Recent Files[$e]=file:$HOME/projects/matsedel/mat.yaml,file:$HOME/nextcloud/backup/rss/antennapod-feeds.opml,file:$HOME/repositories/scripts/init.sh,file:$HOME/repositories/dotfiles/.bashrc,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
+Recent URLs[$e]=file:$HOME/nextcloud/backup/rss/
+detailViewIconSize=0
 listViewIconSize=0
 
 [KTextEditor Document]
@@ -125,16 +126,15 @@ SetEditor=false
 
 [MainWindow]
 Height 1080=433
-Height 1440=1386
+Height 1440=1054
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAABN8AAAVwAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1400
-Width 2560=1251
+Width 2560=1533
 Window-Maximized 1080x1920=true
 Window-Maximized 1108x1969=true
 Window-Maximized 1200x2133=true
-Window-Maximized 1440x2560=true
 
 [filetree]
 editShade=179,218,246

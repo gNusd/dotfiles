@@ -1,8 +1,8 @@
 [Appearance]
-Skin=arc-dark
+Skin=breezly-yakuake-master
 
 [Desktop Entry]
-DefaultProfile=Profile 1.profile
+DefaultProfile=Profil nr. 1.profile
 
 [Dialogs]
 ConfirmQuit=false
@@ -16,7 +16,7 @@ Width 2560=700
 Favorites=
 
 [KFileDialog Settings]
-Recent Files[$e]=arc-dark-yakuake.tar.gz,file:$HOME/hämtningar/arc-dark-yakuake.tar.gz
+Recent Files[$e]=arc-dark-yakuake.tar.gz,file:$HOME/hämtningar/breezly-yakuake-master.tar.gz
 Recent URLs[$e]=file:$HOME/hämtningar/
 detailViewIconSize=0
 

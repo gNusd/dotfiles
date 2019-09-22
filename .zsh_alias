@@ -1,4 +1,3 @@
-alias ll="ls -la"
 alias :q='exit'
 alias reload='source $HOME/.zshrc'
 alias x='clear'
@@ -21,3 +20,10 @@ alias tmuxrc='$EDITOR $HOME/repositories/dotfiles/.tmux.conf'
 alias zshrc='$EDITOR $HOME/repositories/dotfiles/.zshrc'
 alias zshalias='$EDITOR $HOME/repositories/dotfiles/.zsh_alias'
 alias inputrc='$EDITOR $HOME/repositories/dotfiles/.inputrc'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'

@@ -1,18 +1,7 @@
-git_prompt() {
-  BRANCH=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/*\(.*\)/\1/')
-
-  if [ ! -z $BRANCH ]; then
-    echo -n "%F{yellow}$BRANCH"
-
-    if [ ! -z "$(git status --short)" ]; then
-      echo " %F{red}✗"
-    fi
-  fi
-}
-
+#!zsh
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[green]%}%n%{$fg[blue]%}@%{$fg[green]%}%M $(git_prompt) %{$fg[blue]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[red]%}[%{$fg[green]%}%n%{$fg[blue]%}@%{$fg[green]%}%M %{$fg[blue]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # History in cache directory:
 HISTSIZE=10000
@@ -76,6 +65,11 @@ bindkey '^e' edit-command-line
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/repositories/dotfiles/.zsh_alias" ] && source "$HOME/repositories/dotfiles/.zsh_alias"
+
+export EDITOR=nvim
+export VISUAL=nvim
+export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
+export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

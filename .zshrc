@@ -1,7 +1,7 @@
 #!zsh
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[green]%}%n%{$fg[blue]%}@%{$fg[green]%}%M %{$fg[blue]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[green]%}%n%{$fg[blue]%}@%{$fg[green]%}%M %{$fg[blue]%}%~%{$reset_color%} $%b "
 
 # History in cache directory:
 HISTSIZE=10000
@@ -65,6 +65,7 @@ bindkey '^e' edit-command-line
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/repositories/dotfiles/.zsh_alias" ] && source "$HOME/repositories/dotfiles/.zsh_alias"
+[ -f "$HOME/repositories/dotfiles/.ssh/ssh_alias" ] && source "$HOME/repositories/dotfiles/.ssh/ssh_alias"
 
 export EDITOR=nvim
 export VISUAL=nvim

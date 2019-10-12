@@ -61,11 +61,11 @@ appmenuFillHeight=true
 appmenuFontBold=true
 
 [Containments][2][Applets][47][Configuration][Appearance]
-buttonSize=0.8
+buttonSize=0.7000000000000001
 buttonsVerticalCenter=true
-controlButtonsSpacing=2
+controlButtonsSpacing=1
 doNotHideControlButtons=true
-horizontalScreenWidthPercent=0.046
+horizontalScreenWidthPercent=0.032
 noWindowText=
 showMaximize=true
 showMinimize=true
@@ -95,7 +95,7 @@ immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][2][Applets][52][Configuration]
-PreloadWeight=1
+PreloadWeight=0
 
 [Containments][2][Applets][52][Configuration][ConfigDialog]
 DialogHeight=720
@@ -113,7 +113,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][6][Configuration]
-PreloadWeight=84
+PreloadWeight=92
 SystrayContainmentId=7
 
 [Containments][2][Applets][8]
@@ -183,7 +183,7 @@ DialogWidth=960
 
 [Containments][42][Applets][43][Configuration][General]
 iconSize=huge
-launchers=applications:firefox.desktop,applications:org.kde.konsole.desktop,applications:org.kde.kontact.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop,applications:com.visualstudio.code.desktop,applications:nvim-qt.desktop
+launchers=applications:firefox.desktop,applications:org.kde.konsole.desktop,applications:org.kde.kontact.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop,applications:com.visualstudio.code.desktop,applications:nvim-qt.desktop,applications:x2goclient.desktop
 maxStripes=1
 
 [Containments][42][Applets][44]
@@ -337,14 +337,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][14][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][7][Applets][15]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=84
+PreloadWeight=77
 
 [Containments][7][Applets][15][Configuration][ConfigDialog]
 DialogHeight=720
@@ -376,7 +376,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][19][Configuration]
-PreloadWeight=1
+PreloadWeight=0
 
 [Containments][7][Applets][19][Configuration][ConfigDialog]
 DialogHeight=720
@@ -390,7 +390,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][7][Applets][20][Configuration]
-PreloadWeight=89
+PreloadWeight=97
 
 [Containments][7][Applets][54]
 immutability=1
@@ -436,7 +436,7 @@ DialogWidth=800
 PreloadWeight=0
 
 [Containments][7][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.redshiftControl
+extraItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.redshiftControl,org.kde.plasma.battery
 knownItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.plasma.keyboardindicator
 shownItems=PRIME Indicator,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect,keepassxc,org.kde.plasma.clipboard,Nextcloud,org.kde.plasma.networkmanagement,x2goclient,transmission,Clementine
 

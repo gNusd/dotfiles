@@ -100,5 +100,6 @@ BorderSize=Normal
 ButtonsOnLeft=MS
 ButtonsOnRight=HIAX
 CloseOnDoubleClickOnMenu=false
+ShowToolTips=true
 library=org.kde.breeze
-theme=__aurorae__svg__Arc-Dark
+theme=Breeze

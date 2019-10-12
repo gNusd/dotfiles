@@ -1,5 +1,5 @@
 [Desktop Entry]
-DefaultProfile=Profile 1.profile
+DefaultProfile=Profil nr. 1.profile
 
 [DownloadDialog Settings]
 Height 1440=535
@@ -15,3 +15,4 @@ State=AAAA/wAAAAD9AAAAAAAACfwAAAVXAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 2133=1042
 Width 2560=1256
+Window-Maximized 1440x2560=true

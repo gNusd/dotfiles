@@ -22,6 +22,7 @@ map <ctrl>j <ctrl>w j
 map <ctrl>k <ctrl>w k
 
 set encoding=UTF-8
+set shell=bash\ -l
 
 set number relativenumber                       " Show line numbers and relativnumbers
 
@@ -59,6 +60,10 @@ nmap <leader>d zug
 
 " Reload init.vim
 map <leader>r :source ~/.config/nvim/init.vim<CR>
+
+" Permanent undo
+set undodir=~/.vimdid
+set undofile
 
 " npm install -g markdown-pdf
 " markdown to pdf and open file in zathura
@@ -116,18 +121,24 @@ if dein#load_state('/home/gnus/.cache/dein')
   call dein#add('sebastianmarkow/deoplete-rust')
   call dein#add('deoplete-plugins/deoplete-jedi')
   call dein#add('deoplete-plugins/deoplete-go')
+  call dein#add('dense-analysis/ale')
 
 " Languages
+  call dein#add('deoplete-plugins/deoplete-zsh')
+  call dein#add('roxma/nvim-yarp')
   call dein#add('plasticboy/vim-markdown')
   call dein#add('rust-lang/rust.vim')
+  call dein#add('racer-rust/racer')
   call dein#add('JamshedVesuna/vim-markdown-preview')
   call dein#add('nvie/vim-flake8')
   call dein#add('itspriddle/vim-shellcheck')
+  call dein#add('artur-shaik/vim-javacomplete2')
 
 " git plugins
   call dein#add('tpope/vim-fugitive')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('TaDaa/vimade')
 
 " snippets
   call dein#add('Shougo/neosnippet.vim')
@@ -168,6 +179,7 @@ syntax enable
 "End dein Scripts-------------------------
 " This is the default extra key bindings
 
+let g:deoplete#sources = {'rust': ['ale', 'racer']}
 
 " markdown preview
 let vim_markdown_preview_toggle=0
@@ -184,6 +196,10 @@ let g:deoplete#sources#rust#rust_source_path="/home/gnus/.rustup/toolchains/stab
 let g:deoplete#sources#rust#show_duplicates=1
 let g:deoplete#sources#rust#disable_keymap=1
 let g:deoplete#sources#rust#documentation_max_height=20
+
+" Java completion
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+autocmd FileType java JCEnable
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
@@ -229,9 +245,34 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
+" Shorten error/warning flags
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+" I have some custom icons for errors and warnings but feel free to change them.
+let g:ale_sign_error = '✘✘'
+let g:ale_sign_warning = '⚠⚠'
+
+" Disable or enable loclist at the bottom of vim
+" Comes down to personal preferance.
+let g:ale_open_list = 0
+let g:ale_loclist = 0
+let g:ale_rust_rls_executable = '/home/gnus/.cargo/bin'
+
+" Setup compilers for languages
+
+let g:ale_linters = {
+      \  'cs':['syntax', 'semantic', 'issues'],
+      \  'python': ['autopep8', 'pylint'],
+      \  'java': ['javac'],
+      \  'rust': ['rustfmt'],
+      \  'shell': ['sh']
+      \ }
+
 " Theme
 syntax enable
 colorscheme nord
+
+"source /home/gnus/.config/nvim/vimade.conf
 
 " deoplete required, last in file
 let g:deoplete#enable_at_startup = 1

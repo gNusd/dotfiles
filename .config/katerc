@@ -21,7 +21,7 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/projects/matsedel/mat.yaml,file:$HOME/nextcloud/backup/rss/antennapod-feeds.opml,file:$HOME/repositories/scripts/init.sh,file:$HOME/repositories/dotfiles/.bashrc,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
+Recent Files[$e]=file:$HOME/projects/matsedel/mat.yaml,file:$HOME/a,file:$HOME/nextcloud/backup/rss/antennapod-feeds.opml,file:$HOME/repositories/scripts/init.sh,file:$HOME/repositories/dotfiles/.bashrc,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
 Recent URLs[$e]=file:$HOME/nextcloud/backup/rss/
 detailViewIconSize=0
 listViewIconSize=0

@@ -63,6 +63,7 @@ set searchurls.kde https://store.kde.org/search/projectSearchText/
 set searchurls.imdb https://www.imdb.com/find?ref_=nv_sr_fn&q=
 set searchurls.github https://github.com/search?q=
 set searchurls.bc https://bandcamp.com/search?q=
+set searchurls.rutrack https://rutracker.org/forum/search_cse.php?q=
 
 " This will have to do until someone writes us a nice syntax file :)
 vim: set filetype=vim:

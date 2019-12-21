@@ -1,5 +1,5 @@
 [$Version]
-update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize
 
 [Compositing]
 OpenGLIsUnsafe=false
@@ -16,6 +16,10 @@ Name_4=Earth
 Number=4
 Rows=2
 
+[Effect-CoverSwitch]
+TabBox=true
+TabBoxAlternative=false
+
 [Effect-Cube]
 BorderActivate=9
 BorderActivateCylinder=9
@@ -27,6 +31,10 @@ TouchBorderActivateSphere=9
 [Effect-DesktopGrid]
 BorderActivate=9
 TouchBorderActivate=9
+
+[Effect-FlipSwitch]
+TabBox=false
+TabBoxAlternative=false
 
 [Effect-PresentWindows]
 BorderActivate=9
@@ -47,8 +55,11 @@ TopLeft=None
 TopRight=None
 
 [Plugins]
+coverswitchEnabled=true
 desktopchangeosdEnabled=false
 enforcedecoEnabled=true
+flipswitchEnabled=true
+highlightwindowEnabled=true
 kwin-script-tilingEnabled=false
 minimizeallEnabled=false
 synchronizeskipswitcherEnabled=false
@@ -71,13 +82,34 @@ windowsGapSizeHeight=4
 windowsGapSizeWidth=4
 
 [TabBox]
+ActivitiesMode=1
+ApplicationsMode=0
 BorderActivate=9
 BorderAlternativeActivate=9
 DesktopLayout=org.kde.breeze.desktop
 DesktopListLayout=org.kde.breeze.desktop
-LayoutName=org.kde.breeze.desktop
+DesktopMode=1
+HighlightWindows=true
+LayoutName=present_windows
+MinimizedMode=0
+MultiScreenMode=0
+ShowDesktopMode=0
+ShowTabBox=true
+SwitchingMode=0
 TouchBorderActivate=9
 TouchBorderAlternativeActivate=9
+
+[TabBoxAlternative]
+ActivitiesMode=1
+ApplicationsMode=0
+DesktopMode=1
+HighlightWindows=true
+LayoutName=org.kde.breeze.desktop
+MinimizedMode=0
+MultiScreenMode=0
+ShowDesktopMode=0
+ShowTabBox=true
+SwitchingMode=0
 
 [TouchEdges]
 Bottom=None
@@ -97,6 +129,7 @@ RollOverDesktops=true
 
 [org.kde.kdecoration2]
 BorderSize=Normal
+BorderSizeAuto=false
 ButtonsOnLeft=MS
 ButtonsOnRight=HIAX
 CloseOnDoubleClickOnMenu=false

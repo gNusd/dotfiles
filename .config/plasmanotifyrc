@@ -10,6 +10,9 @@ Seen=true
 [Applications][org.clementine_player.clementine]
 Seen=true
 
+[Applications][org.telegram.desktop]
+Seen=true
+
 [Notifications]
 CriticalAlwaysOnTop=false
 

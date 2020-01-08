@@ -42,12 +42,12 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-map <leader>j :bprevious<cr>
-map <leader>k :bnext<cr>
+map <leader>j :bprevious!<cr>
+map <leader>k :bnext!<cr>
 map <leader><delete> :bdelete<cr>
 
 " Spell checking
-set complete+=kspell
+set complete+=kspell,w,b,u,U
 map <leader>s :setlocal spell! spelllang=sv spellfile=~/.config/nvim/spell/sv.utf-8.add<CR>
 map <leader>e :setlocal spell! spelllang=en_us spellfile=~/.config/nvim/spell/en.utf-8.add<CR>
 
@@ -65,31 +65,19 @@ map <leader>r :source ~/.config/nvim/init.vim<CR>
 set undodir=~/.vimdid
 set undofile
 
-" npm install -g markdown-pdf
-" markdown to pdf and open file in zathura
-map <leader>m :!markdown-pdf % && zathura %:r.pdf &<CR><CR>
+" compile java
+map <leader>z :!javac %<CR><CR>
+map <leader>zq  :!javac %<CR><CR> :q<CR>
 
-" treminal window at the bottom, F4 to invoke
-let g:term_buf = 0
-function! Term_toggle()
-  1wincmd w
-  if g:term_buf == bufnr("")
-    setlocal bufhidden=hide
-    close
-  else
-    rightbelow new
-    12winc -
-    try
-      exec "buffer ".g:term_buf
-    catch
-      call termopen("bash", {"detach": 0})
-      let g:term_buf = bufnr("")
-    endtry
-    set laststatus=0
-    startinsert!
-  endif
-endfunction
-nnoremap <leader>t :call Term_toggle()<cr>
+" compile c & cpp
+map <leader>x :!gcc % -o %:r <CR><CR>
+
+" npm install -g mdpdf
+" markdown to pdf and open file in zathura
+map <leader>m :!mdpdf %<CR><CR>
+map <leader>mp :!mdpdf % && zathura %:r.pdf &<CR><CR>
+
+nnoremap <leader>§ :Nuake<CR>
 
 " Terminal go back to normal mode
 tnoremap <Esc> <C-\><C-n>
@@ -117,15 +105,19 @@ if dein#load_state('/home/gnus/.cache/dein')
   call dein#add('/home/gnus/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here like this:
+  " Plugin handeling
+  call dein#add('roxma/nvim-yarp')
+
+  " Deoplete
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('sebastianmarkow/deoplete-rust')
   call dein#add('deoplete-plugins/deoplete-jedi')
   call dein#add('deoplete-plugins/deoplete-go')
-  call dein#add('dense-analysis/ale')
-
-" Languages
   call dein#add('deoplete-plugins/deoplete-zsh')
-  call dein#add('roxma/nvim-yarp')
+  call dein#add('deoplete-plugins/deoplete-clang')
+
+" Other language plugins
+  call dein#add('dense-analysis/ale')
   call dein#add('plasticboy/vim-markdown')
   call dein#add('rust-lang/rust.vim')
   call dein#add('racer-rust/racer')
@@ -133,34 +125,49 @@ if dein#load_state('/home/gnus/.cache/dein')
   call dein#add('nvie/vim-flake8')
   call dein#add('itspriddle/vim-shellcheck')
   call dein#add('artur-shaik/vim-javacomplete2')
+  call dein#add('zchee/libclang-python3')
+  call dein#add('davidhalter/jedi-vim')
+  call dein#add('Shougo/neco-vim')
 
-" git plugins
+  " Terminal & filesystem
+  call dein#add('Lenovsky/nuake')
+  call dein#add('scrooloose/nerdtree')
+  call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
+  call dein#add('ryanoasis/vim-devicons')
+
+  " Tmux integration
+  call dein#add('christoomey/vim-tmux-navigator')
+  call dein#add('wellle/tmux-complete.vim')
+  " git plugins
   call dein#add('tpope/vim-fugitive')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
-  call dein#add('TaDaa/vimade')
 
-" snippets
+  " snippets
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
-  call dein#add('ctrlpvim/ctrlp.vim')
-  call dein#add('vim-airline/vim-airline')
+
+  " Input & text manipulation
   call dein#add('tpope/vim-surround')
   call dein#add('tpope/vim-commentary')
   call dein#add('tpope/vim-repeat')
   call dein#add('godlygeek/tabular')
   call dein#add('ervandew/supertab')
   call dein#add('dhruvasagar/vim-table-mode')
-  call dein#add('christoomey/vim-tmux-navigator')
-  call dein#add('scrooloose/nerdtree')
-  call dein#add('ryanoasis/vim-devicons')
+  call dein#add('jiangmiao/auto-pairs')
 
-  " schemes and themes
+  " Search
+  call dein#add('ctrlpvim/ctrlp.vim')
+
+   " schemes and themes
+  call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('arcticicestudio/nord-vim')
   call dein#add('edkolev/tmuxline.vim')
   " call dein#add('joshdick/onedark.vim')
   " call dein#add('mhartington/oceanic-next')
+  call dein#add('zefei/vim-wintabs')
+  call dein#add('zefei/vim-wintabs-powerline')
 
   " Required:
   call dein#end()
@@ -179,7 +186,15 @@ syntax enable
 "End dein Scripts-------------------------
 " This is the default extra key bindings
 
-let g:deoplete#sources = {'rust': ['ale', 'racer']}
+" deoplete
+let g:deoplete#enable_at_startup = 1
+set completeopt-=preview
+call deoplete#custom#option('smart_case', v:true)
+
+" clang
+let g:deoplete#auto_complete_start_length = 1
+let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-6.0/lib/libclang.so.1'
+"let g:deoplete#sources#clang#clang_header = '/usr/include/lib/clang'
 
 " markdown preview
 let vim_markdown_preview_toggle=0
@@ -190,7 +205,11 @@ let vim_markdown_preview_browser='Firefox'
 map <leader><tab> :TableModeEnable <cr>
 map <leader><ctrl><tab> :TableModeDsiable <cr>
 
-" racer
+" supertab
+let g:SuperTabDefaultCompletionType = "context"
+
+" rust & racer
+let g:deoplete#sources = {'rust': ['ale', 'racer']}
 let g:deoplete#sources#rust#racer_binary="/home/user/.cargo/bin/racer"
 let g:deoplete#sources#rust#rust_source_path="/home/gnus/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
 let g:deoplete#sources#rust#show_duplicates=1
@@ -208,13 +227,19 @@ let g:airline#extensions#tabline#enabled = 1
 " gitgutter
 let g:gitgutter_enabled = 1
 nmap <leader>g :GitGutterToggle<CR>
-" ctrlp
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
-    \ 'AcceptSelection("t")': ['<cr>'],
-    \ }
 
+" ctrlp
+nnoremap <leader>, :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+let g:ctrp_by_filename = 1
+let g:ctrlp_custom_ignore = 'target\|git'
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("e")': [],
+  \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
+  \ }
+
+" tabular
 let g:table_mode_corner="|"
 
 " NERDTree
@@ -245,6 +270,7 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
+"ale
 " Shorten error/warning flags
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
@@ -272,7 +298,10 @@ let g:ale_linters = {
 syntax enable
 colorscheme nord
 
-"source /home/gnus/.config/nvim/vimade.conf
+let g:AutoPairsFlyMode = 1
+
+" Alias files
+source $HOME/repositories/dotfiles/.config/nvim/alias.vim
 
 " deoplete required, last in file
 let g:deoplete#enable_at_startup = 1

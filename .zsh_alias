@@ -4,6 +4,8 @@ alias x='clear'
 alias xnvimswap='rm $HOME/.local/share/nvim/swap/*.swp'
 alias sysup='sudo pkcon refresh -p && sudo pkcon update -p && sudo apt autoremove && sudo flatpak update && sudo fwupdmgr update'
 
+
+# alias to directories
 alias dotfiles='cd $HOME/repositories/dotfiles && exa -la --git'
 alias scripts='cd $HOME/repositories/scripts && exa -la --git'
 alias config='cd $HOME/.config'
@@ -19,6 +21,8 @@ alias doc='cd $HOME/nextcloud/dokument'
 alias notes='cd $HOME/nextcloud/notes'
 alias dl='cd $HOME/hämtningar'
 
+
+# alias to files
 alias vimrc='$EDITOR $HOME/repositories/dotfiles/.config/nvim/init.vim'
 alias trirc='$EDITOR $HOME/repositories/dotfiles/.config/tridactyl/tridactylrc'
 alias tmuxrc='$EDITOR $HOME/repositories/dotfiles/.tmux.conf'
@@ -28,6 +32,8 @@ alias inputrc='$EDITOR $HOME/repositories/dotfiles/.inputrc'
 alias alacr='$EDITOR $HOME/repositories/dotfiles/.alacritty.yml'
 alias shop='$EDITOR $HOME/nextcloud/dokument/inköpslistor/Shopping+List.lst'
 
+
+# alias to add to applications
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'

@@ -12,8 +12,8 @@ Map Leader=\\
 Normal Mode Mapping Keys=
 Normal Mode Mappings=
 Normal Mode Mappings Recursion=
-ViRegisterContents=N, \nh,
-ViRegisterFlags=0,2,0
+ViRegisterContents=N," Or if you have Neovim >= 0.1.5\nif (has("termguicolors"))\n set termguicolors\nendif\n\n" Theme\nsyntax enable\ncolorscheme nord\n,
+ViRegisterFlags=0,1,0
 ViRegisterNames=-,0,^
 Visual Mode Mapping Keys=
 Visual Mode Mappings=

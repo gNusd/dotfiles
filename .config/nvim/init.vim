@@ -86,105 +86,18 @@ au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
 set wildignore+=*.a,*.o,*.gif,*.jpg,*.png,.git,*.swp,*.tmp
 
-map <leader>d :call dein#install()<cr>
-map <leader>u :call dein#update()<cr>
-"dein Scripts-----------------------------
-if &compatible
-  set nocompatible               " Be iMproved
-endif
+"vim-plug
+map <leader>i :PlugInstall<cr>
+map <leader>u :PlugUpdate<cr>
+map <leader>uu :PlugUpgrade<cr>
 
-" Required:
-set runtimepath+=/home/gnus/.cache/dein/repos/github.com/Shougo/dein.vim
 
-" Required:
-if dein#load_state('/home/gnus/.cache/dein')
-  call dein#begin('/home/gnus/.cache/dein')
-
-  " Let dein manage dein
-  " Required:
-  call dein#add('/home/gnus/.cache/dein/repos/github.com/Shougo/dein.vim')
-
-  " Add or remove your plugins here like this:
-  " Plugin handeling
-  call dein#add('roxma/nvim-yarp')
-
-  " Deoplete
-  call dein#add('Shougo/deoplete.nvim')
-  call dein#add('sebastianmarkow/deoplete-rust')
-  call dein#add('deoplete-plugins/deoplete-jedi')
-  call dein#add('deoplete-plugins/deoplete-go')
-  call dein#add('deoplete-plugins/deoplete-zsh')
-  call dein#add('deoplete-plugins/deoplete-clang')
-
-" Other language plugins
-  call dein#add('dense-analysis/ale')
-  call dein#add('plasticboy/vim-markdown')
-  call dein#add('rust-lang/rust.vim')
-  call dein#add('racer-rust/racer')
-  call dein#add('JamshedVesuna/vim-markdown-preview')
-  call dein#add('nvie/vim-flake8')
-  call dein#add('itspriddle/vim-shellcheck')
-  call dein#add('artur-shaik/vim-javacomplete2')
-  call dein#add('zchee/libclang-python3')
-  call dein#add('davidhalter/jedi-vim')
-  call dein#add('Shougo/neco-vim')
-
-  " Terminal & filesystem
-  call dein#add('Lenovsky/nuake')
-  call dein#add('scrooloose/nerdtree')
-  call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
-  call dein#add('ryanoasis/vim-devicons')
-
-  " Tmux integration
-  call dein#add('christoomey/vim-tmux-navigator')
-  call dein#add('wellle/tmux-complete.vim')
-  " git plugins
-  call dein#add('tpope/vim-fugitive')
-  call dein#add('airblade/vim-gitgutter')
-  call dein#add('Xuyuanp/nerdtree-git-plugin')
-
-  " snippets
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
-
-  " Input & text manipulation
-  call dein#add('tpope/vim-surround')
-  call dein#add('tpope/vim-commentary')
-  call dein#add('tpope/vim-repeat')
-  call dein#add('godlygeek/tabular')
-  call dein#add('ervandew/supertab')
-  call dein#add('dhruvasagar/vim-table-mode')
-  call dein#add('jiangmiao/auto-pairs')
-
-  " Search
-  call dein#add('ctrlpvim/ctrlp.vim')
-
-   " schemes and themes
-  call dein#add('vim-airline/vim-airline')
-  call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('arcticicestudio/nord-vim')
-  call dein#add('edkolev/tmuxline.vim')
-  " call dein#add('joshdick/onedark.vim')
-  " call dein#add('mhartington/oceanic-next')
-  call dein#add('zefei/vim-wintabs')
-  call dein#add('zefei/vim-wintabs-powerline')
-
-  " Required:
-  call dein#end()
-  call dein#save_state()
-endif
+source $HOME/repositories/dotfiles/.config/nvim/config/plug-plugin.vim
 
 " Required:
 filetype plugin indent on
 syntax enable
 
-" If you want to install not installed plugins on startup.
-"if dein#check_install()
-"  call dein#install()
-"endif
-
-"End dein Scripts-------------------------
-" This is the default extra key bindings
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -202,8 +115,7 @@ let vim_markdown_preview_hotkey='<leader>p'
 let vim_markdown_preview_browser='Firefox'
 
 " vim table mode
-map <leader><tab> :TableModeEnable <cr>
-map <leader><ctrl><tab> :TableModeDsiable <cr>
+map <leader><tab> :TableModeToggle <cr>
 
 " supertab
 let g:SuperTabDefaultCompletionType = "context"
@@ -301,7 +213,7 @@ colorscheme nord
 let g:AutoPairsFlyMode = 1
 
 " Alias files
-source $HOME/repositories/dotfiles/.config/nvim/alias.vim
+source $HOME/repositories/dotfiles/.config/nvim/config/alias.vim
 
 " deoplete required, last in file
 let g:deoplete#enable_at_startup = 1

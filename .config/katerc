@@ -1,5 +1,5 @@
 [Desktop Entry]
-DefaultProfile=default.profile
+DefaultProfile=Profil nr. 1.profile
 
 [Favorite Profiles]
 Favorites=
@@ -21,8 +21,8 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/projects/matsedel/mat.yaml,file:$HOME/a,file:$HOME/nextcloud/backup/rss/antennapod-feeds.opml,file:$HOME/repositories/scripts/init.sh,file:$HOME/repositories/dotfiles/.bashrc,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
-Recent URLs[$e]=file:$HOME/nextcloud/backup/rss/
+Recent Files[$e]=file:$HOME/projects/matsedel/mat.yaml,file:$HOME/repositories/dotfiles/.config/nvim/config/conf_deoplete.vim,file:$HOME/repositories/dotfiles/.config/nvim/init.vim,file:$HOME/projects/java/kursen/my_chapter_6/Rectangle.java,file:$HOME/projects/java/kursen/my_chapter_6/ConstructorDemo.java,file:$HOME/nextcloud/backup/rss/antennapod-feeds.opml,file:$HOME/repositories/scripts/init.sh,file:$HOME/repositories/dotfiles/.bashrc,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
+Recent URLs[$e]=file:$HOME/repositories/dotfiles/.config/nvim/config/
 detailViewIconSize=0
 listViewIconSize=0
 
@@ -135,6 +135,7 @@ Width 2560=1533
 Window-Maximized 1080x1920=true
 Window-Maximized 1108x1969=true
 Window-Maximized 1200x2133=true
+Window-Maximized 1440x2560=true
 
 [filetree]
 editShade=179,218,246

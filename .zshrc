@@ -1,7 +1,11 @@
-#!zsh
+
 # Enable colors and change prompt:
-autoload -U colors && colors
-PS1="%B%{$fg[green]%}%n%{$fg[blue]%}@%{$fg[green]%}%M %{$fg[blue]%}%~%{$reset_color%} $%b "
+# autoload -U colors && colors
+
+# PS1="%B%{$fg[green]%}%n%{$fg[blue]%}@%{$fg[green]%}%M %{$fg[blue]%}%~%{$reset_color%} $%b "
+
+source $HOME/repositories/dotfiles/zsh_promt.conf
+source $HOME/repositories/dotfiles/zsh_complete.conf
 
 # History in cache directory:
 HISTSIZE=10000
@@ -73,6 +77,4 @@ export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/l
 export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
 # Load zsh-syntax-highlighting; should be last.
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

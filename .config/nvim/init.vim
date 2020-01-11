@@ -28,6 +28,7 @@ set number relativenumber                       " Show line numbers and relativn
 
 set tabstop=4
 set mouse=                                     " Disable mouse. Enable the use of the mouse mouse=a.
+set splitbelow splitright 					   " adds new window split to the right annd below
 
 autocmd BufWritePre * %s/\s\+$//e               " Remove trailing whitespace
 call matchadd('ColorColumn', '\%81v', 100)      " checks if you write over the 80 character line
@@ -44,7 +45,7 @@ noremap <Right> <Nop>
 
 map <leader>j :bprevious!<cr>
 map <leader>k :bnext!<cr>
-map <leader><delete> :bdelete<cr>
+map <leader>w :ene<CR>:bw <CR>
 
 " Spell checking
 set complete+=kspell,w,b,u,U
@@ -62,7 +63,7 @@ nmap <leader>d zug
 map <leader>r :source ~/.config/nvim/init.vim<CR>
 
 " Permanent undo
-set undodir=~/.vimdid
+set undodir=~/.cache/nvim/undodir/
 set undofile
 
 " compile java

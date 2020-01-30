@@ -71,6 +71,10 @@ bindkey '^e' edit-command-line
 [ -f "$HOME/repositories/dotfiles/.zsh_alias" ] && source "$HOME/repositories/dotfiles/.zsh_alias"
 [ -f "$HOME/repositories/dotfiles/.ssh/ssh_alias" ] && source "$HOME/repositories/dotfiles/.ssh/ssh_alias"
 
+setopt LIST_PACKED             # make completion lists more densely packed
+setopt MENU_COMPLETE           # auto-insert first possible ambiguous completion
+setopt AUTO_PARAM_SLASH        # tab completing directory appends a slash
+
 export EDITOR=nvim
 export VISUAL=nvim
 export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"

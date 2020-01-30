@@ -45,7 +45,7 @@ noremap <Right> <Nop>
 
 map <leader>j :bprevious!<cr>
 map <leader>k :bnext!<cr>
-map <leader>w :ene<CR>:bw <CR>
+map <leader>w :ene<CR>:bw #<CR>
 
 " Spell checking
 set complete+=kspell,w,b,u,U
@@ -85,38 +85,42 @@ tnoremap <Esc> <C-\><C-n>
 " When switching to terminal windows it goes into insert mode automatically
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
-set wildignore+=*.a,*.o,*.gif,*.jpg,*.png,.git,*.swp,*.tmp
+set wildignore+=*.a,*.o,*.gif,*.jpg,*.png,.git,*.swp,*.tmp,*.class
 
+source $HOME/repositories/dotfiles/.config/nvim/config/plug-plugin.vim
 "vim-plug
 map <leader>i :PlugInstall<cr>
 map <leader>u :PlugUpdate<cr>
 map <leader>uu :PlugUpgrade<cr>
-
-
-source $HOME/repositories/dotfiles/.config/nvim/config/plug-plugin.vim
 
 " Required:
 filetype plugin indent on
 syntax enable
 
 
+" Or if you have Neovim >= 0.1.5
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+" Theme
+syntax enable
+colorscheme tender
+
 " deoplete
 let g:deoplete#enable_at_startup = 1
 set completeopt-=preview
 call deoplete#custom#option('smart_case', v:true)
+" call deoplete#custom#source('buffer', 'rank', 9999)
 
 " clang
 let g:deoplete#auto_complete_start_length = 1
 let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-6.0/lib/libclang.so.1'
 "let g:deoplete#sources#clang#clang_header = '/usr/include/lib/clang'
 
-" markdown preview
-let vim_markdown_preview_toggle=0
-let vim_markdown_preview_hotkey='<leader>p'
-let vim_markdown_preview_browser='Firefox'
-
 " vim table mode
 map <leader><tab> :TableModeToggle <cr>
+let g:table_mode_corner="|"
 
 " supertab
 let g:SuperTabDefaultCompletionType = "context"

@@ -16,19 +16,39 @@
 set nocompatible 		             	" be iMproved, required
 let mapleader = " "
 
-map <ctrl>h <ctrl>w h
-map <ctrl>l <ctrl>w l
-map <ctrl>j <ctrl>w j
-map <ctrl>k <ctrl>w k
+" block arrow keys
+ino <Up> <Nop>
+ino <Down> <Nop>
+ino <Left> <Nop>
+ino <Right> <Nop>
+
+" mapping Alt + hjkl to left, right, down, up in insert mode
+inoremap <buffer><a-h> <esc>hi
+inoremap <buffer><a-l> <esc>li
+inoremap <buffer><a-j> <esc>ji
+inoremap <buffer><a-k> <esc>ki
+
+" remapping window navigation
+noremap <c-h> <c-w>h
+noremap <c-l> <c-w>l
+noremap <c-j> <c-w>j
+noremap <c-k> <c-w>k
+
+" mapping window navigaton in insert mode
+inoremap <buffer> <c-h> <esc><c-w>hi
+inoremap <buffer> <c-l> <esc><c-w>li
+inoremap <buffer> <c-j> <esc><c-w>ji
+inoremap <buffer> <c-k> <esc><c-w>ki
 
 set encoding=UTF-8
-set shell=bash\ -l
+set shell=/usr/bin/zsh
 
 set number relativenumber                       " Show line numbers and relativnumbers
 
 set tabstop=4
 set mouse=                                     " Disable mouse. Enable the use of the mouse mouse=a.
 set splitbelow splitright 					   " adds new window split to the right annd below
+set confirm  									"confirm changes (Yes, No, Cancel) instead of error
 
 autocmd BufWritePre * %s/\s\+$//e               " Remove trailing whitespace
 call matchadd('ColorColumn', '\%81v', 100)      " checks if you write over the 80 character line
@@ -36,19 +56,25 @@ call matchadd('ColorColumn', '\%81v', 100)      " checks if you write over the 8
 " mode indicators
 autocmd InsertEnter * set cul                    " cursor in insertmode
 autocmd InsertLeave * set nocul                  " cursor in normalmode
+set path+=**							   		" Searches current directory recursively.
+set wildmenu 									" Display all matches when tab complete.
 
-" block arrow keys
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+" Closing all but current buffer
+function! CloseAllBufferButCurrent()
+		:%bd|e#
+endfunction
 
-map <leader>j :bprevious!<cr>
-map <leader>k :bnext!<cr>
-map <leader>w :ene<CR>:bw #<CR>
+" Buffer handeling
+map <leader>j :bprevious <CR>
+map <leader>J :bprevious! <CR>
+map <leader>k :bnext <CR>
+map <leader>K :bnext! <CR>
+map <leader>w :bd <CR>
+map <leader>W :bd! <CR>
+map <leader>q :call CloseAllBufferButCurrent() <CR>
 
 " Spell checking
-set complete+=kspell,w,b,u,U
+set complete+=kspell,w,b,u
 map <leader>s :setlocal spell! spelllang=sv spellfile=~/.config/nvim/spell/sv.utf-8.add<CR>
 map <leader>e :setlocal spell! spelllang=en_us spellfile=~/.config/nvim/spell/en.utf-8.add<CR>
 
@@ -62,12 +88,17 @@ nmap <leader>d zug
 " Reload init.vim
 map <leader>r :source ~/.config/nvim/init.vim<CR>
 
-" Permanent undo
+" Permanent undo & undotree
 set undodir=~/.cache/nvim/undodir/
 set undofile
+map <leader>å :UndotreeToggle<CR>
+
+let g:undotree_WindowLayout = 3
+let g:undotree_ShortIndicators = 1
+let g:undotree_TreeNodeShape = '*'
 
 " compile java
-map <leader>z :!javac %<CR><CR>
+map <leader>z :!javac % <CR><CR>
 map <leader>zq  :!javac %<CR><CR> :q<CR>
 
 " compile c & cpp
@@ -137,27 +168,37 @@ let g:deoplete#sources#rust#documentation_max_height=20
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 autocmd FileType java JCEnable
 
-" airline
-let g:airline#extensions#tabline#enabled = 1
-" let g:airline_theme='deus theme'
+"lightline
+let g:lightline = { 'colorscheme': 'tender' }
 
 " gitgutter
 let g:gitgutter_enabled = 1
-nmap <leader>g :GitGutterToggle<CR>
+
+"Vcsjump
+nmap <Leader>g <Plug>(VcsJump)
 
 " ctrlp
 nnoremap <leader>, :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 let g:ctrp_by_filename = 1
 let g:ctrlp_custom_ignore = 'target\|git'
+let g:ctrlp_show_hidden = 1
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_prompt_mappings = {
   \ 'AcceptSelection("e")': [],
   \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
   \ }
 
-" tabular
-let g:table_mode_corner="|"
+" taglist
+nnoremap <leader>t :TlistToggle<CR>
+let Tlist_Use_Right_Window = 1
+let Tlist_Auto_Highlight_Tag = 1
+let Tlist_Auto_Update = 1
+let Tlist_WinWith = 50
+let Tlist_Show_Menu = 1
+let Tlist_Enable_Fold_Column = 0
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Ctags_Cmd = '/usr/bin/ctags'
 
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1
@@ -168,7 +209,6 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 map <leader>f :NERDTreeToggle<CR>
 autocmd FileType nerdtree setlocal nolist
 let g:NERDTreeShowIgnoredStatus = 1
-" vimscript
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
@@ -182,10 +222,6 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
-" Or if you have Neovim >= 0.1.5
-if (has("termguicolors"))
- set termguicolors
-endif
 
 "ale
 " Shorten error/warning flags
@@ -208,14 +244,19 @@ let g:ale_linters = {
       \  'python': ['autopep8', 'pylint'],
       \  'java': ['javac'],
       \  'rust': ['rustfmt'],
-      \  'shell': ['sh']
+      \  'shell': ['sh'],
+      \  'c':['gcc']
       \ }
 
-" Theme
-syntax enable
-colorscheme nord
+" let g:AutoPairsFlyMode = 1
 
-let g:AutoPairsFlyMode = 1
+let g:pear_tree_smart_openers = 1
+let g:pear_tree_smart_closers = 1
+let g:pear_tree_smart_backspace = 1
+
+" Writing
+map <silent> <leader>- :Goyo \| set bg=dark \| set linebreak<CR>
+map <leader>_ <Plug>(Limelight)
 
 " Alias files
 source $HOME/repositories/dotfiles/.config/nvim/config/alias.vim

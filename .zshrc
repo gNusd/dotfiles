@@ -2,10 +2,11 @@
 # Enable colors and change prompt:
 # autoload -U colors && colors
 
-# PS1="%B%{$fg[green]%}%n%{$fg[blue]%}@%{$fg[green]%}%M %{$fg[blue]%}%~%{$reset_color%} $%b "
+# PS1="%B%{$fg[green]%}%n%{$fg[blue]%}@%{$fg[green]%}%M %{$fg[blue]%}%~%{$reset_color%} $%b
 
-source $HOME/repositories/dotfiles/zsh_promt.conf
-source $HOME/repositories/dotfiles/zsh_complete.conf
+[ -f "$HOME/repositories/dotfiles/zsh_promt.conf" ] && source "$HOME/repositories/dotfiles/zsh_promt.conf"
+[ -f "$HOME/repositories/dotfiles/zsh_complete.conf" ] && source "$HOME/repositories/dotfiles/zsh_complete.conf"
+# [ -f "$HOME/repositories/dotfiles/zsh_color.conf" ] && source "$HOME/repositories/dotfiles/zsh_color.conf"
 
 # History in cache directory:
 HISTSIZE=10000

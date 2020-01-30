@@ -27,10 +27,9 @@ unbind --mode=ex <S-y>
 bind gd tabdetach
 bind gD composite tabduplicate | tabdetach
 
-"
 " Misc settings
-"
 colourscheme dark
+
 " Hinting mode
 set hintfiltermode simple
 set hintnames uniform
@@ -46,11 +45,10 @@ quickmark s https://snapcraft.io/store
 quickmark f https://flathub.org/apps/
 quickmark b https://vault.bitwarden.com/#/
 quickmark u https://hub.upcloud.com/
-quickmark g https://github.com/
+quickmark g https://github.com/gNusd?tab=repositories
 quickmark r https://reddit.com
 quickmark l https://www.last.fm/user/gnusd
-
-" URL redirects
+quickmark a https://github.com/brson/rust-anthology/blob/master/master-list.md
 
 " searchurls
 set searchurls.yt https://www.youtube.com/results?search_query=

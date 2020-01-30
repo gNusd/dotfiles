@@ -12,7 +12,7 @@ call plug#begin('~/.config/nvim/plugged/')
 Plug 'roxma/nvim-yarp'
 
   " Deoplete
-Plug 'Shougo/deoplete.nvim',  {'do': ':UpdateRemotePlugins'}
+Plug 'Shougo/deoplete.nvim'
 Plug 'sebastianmarkow/deoplete-rust'
 Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'deoplete-plugins/deoplete-go'
@@ -24,7 +24,6 @@ Plug 'dense-analysis/ale'
 Plug 'plasticboy/vim-markdown'
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/racer'
-Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'nvie/vim-flake8'
 Plug 'itspriddle/vim-shellcheck'
 Plug 'artur-shaik/vim-javacomplete2'
@@ -33,10 +32,11 @@ Plug 'davidhalter/jedi-vim'
 Plug 'Shougo/neco-vim'
 
   " Terminal & filesystem
-Plug 'Lenovsky/nuake'
-Plug 'scrooloose/nerdtree'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Lenovsky/nuake', {'on': 'Nuake'}
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
+Plug 'vim-scripts/taglist.vim'
 
   " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'
@@ -45,7 +45,9 @@ Plug 'wellle/tmux-complete.vim'
   " git plugins
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle' }
+Plug 'jreybert/vimagit'
+Plug 'wincent/vcs-jump'
 
   " snippets
 
@@ -55,23 +57,27 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'godlygeek/tabular'
 Plug 'ervandew/supertab'
-Plug 'dhruvasagar/vim-table-mode'
-Plug 'jiangmiao/auto-pairs'
+Plug 'dhruvasagar/vim-table-mode', {'on': 'TableModeToggle '}
+" Plug 'jiangmiao/auto-pairs'
 Plug 'mbbill/undotree'
+Plug 'tmsvg/pear-tree'
+
+  " Writing
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+
 
   " Search
 Plug 'ctrlpvim/ctrlp.vim'
 
    " schemes and themes
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'arcticicestudio/nord-vim'
+Plug 'itchyny/lightline.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'zefei/vim-wintabs'
 Plug 'zefei/vim-wintabs-powerline'
 " Plug 'joshdick/onedark.vim'
 " Plug 'mhartington/oceanic-next'
-
+Plug 'jacoborus/tender'
 
 " Initialize plugin system
 call plug#end()

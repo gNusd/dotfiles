@@ -121,7 +121,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][8][Configuration]
-PreloadWeight=9
+PreloadWeight=0
 
 [Containments][2][Applets][8][Configuration][Appearance]
 enabledCalendarPlugins=/usr/lib/x86_64-linux-gnu/qt5/plugins/plasmacalendarplugins/pimevents.so
@@ -310,7 +310,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][63][Configuration]
-PreloadWeight=34
+PreloadWeight=10
 
 [Containments][63][Wallpaper][org.kde.image][General]
 Image=file:///usr/share/wallpapers/Next/contents/images/2560x1440.png
@@ -329,7 +329,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][10][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][7][Applets][11]
 immutability=1
@@ -357,14 +357,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][14][Configuration]
-PreloadWeight=46
+PreloadWeight=100
 
 [Containments][7][Applets][15]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=94
+PreloadWeight=89
 
 [Containments][7][Applets][15][Configuration][ConfigDialog]
 DialogHeight=720
@@ -382,7 +382,7 @@ immutability=1
 plugin=org.kde.plasma.vault
 
 [Containments][7][Applets][17][Configuration]
-PreloadWeight=49
+PreloadWeight=25
 
 [Containments][7][Applets][18]
 immutability=1
@@ -396,7 +396,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][19][Configuration]
-PreloadWeight=1
+PreloadWeight=15
 
 [Containments][7][Applets][19][Configuration][ConfigDialog]
 DialogHeight=720
@@ -417,7 +417,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][7][Applets][54][Configuration]
-PreloadWeight=14
+PreloadWeight=0
 
 [Containments][7][Applets][54][Configuration][ConfigDialog]
 DialogHeight=720
@@ -446,7 +446,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][9][Configuration]
-PreloadWeight=29
+PreloadWeight=10
 
 [Containments][7][ConfigDialog]
 DialogHeight=600

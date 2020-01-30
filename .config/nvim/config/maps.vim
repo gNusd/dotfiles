@@ -1,6 +1,8 @@
 |-----------|----------------------------|---------------------------------------------------------------|
 | maps      | area                       | function                                                      |
 |-----------|----------------------------|---------------------------------------------------------------|
+| map       | map file                   | open this file                                                |
+|-----------|----------------------------|---------------------------------------------------------------|
 | <ctrl>h   | navigation between splits  | shift to the left                                             |
 | <ctrl>l   | navigation between splits  | shift to the right                                            |
 | <ctrl>j   | navigation between splits  | shift down                                                    |
@@ -9,7 +11,9 @@
 | leader    | area                       | function                                                      |
 |-----------|----------------------------|---------------------------------------------------------------|
 | j         | buffer                     | previous buffer                                               |
+| J         | buffer                     | previous buffer exclude saving                                |
 | k         | buffer                     | next buffer                                                   |
+| K         | buffer                     | next buffer exclude saving                                    |
 | w         | buffer                     | close current buffer                                          |
 | W         | buffer                     | close all buffer except current buffer                        |
 | e         | spellcheck                 | english spellcheck                                            |
@@ -29,13 +33,12 @@
 | i         | vim-plug                   | install plugins with vim-plug                                 |
 | u         | vim-plug                   | update plugins with vim-plug                                  |
 | uu        | vim-plug                   | upgrade plugins with vim-plug                                 |
-| p         | markdown-preview           | preview markdown file in firefox                              |
 | <tab>     | tablemode                  | toggle tablemode                                              |
-| g         | gitgutter                  | toggle gitgutter                                              |
 | ,         | CtrlP                      | envoke CtrlP                                                  |
-| .         | CtrlP                      | envoke CtrlPBuffer                                            |
+| b         | CtrlP                      | envoke CtrlPBuffer                                            |
 | f         | NERDTree                   | toggle NERDTree                                               |
 | å         | Undo                       | toggle undotree                                               |
+| g         | VCSjump                    | invoke Vcsjump                                                |
 |-----------|----------------------------|---------------------------------------------------------------|
 | alias.vim | ************************** | ************************************************************* |
 |-----------|----------------------------|---------------------------------------------------------------|

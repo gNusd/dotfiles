@@ -139,3 +139,5 @@ source $HOME/.ssh/ssh_alias
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 export FZF_DEFAULT_OPS="--extended"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+source /home/gnus/.config/broot/launcher/bash/br

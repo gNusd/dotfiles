@@ -37,6 +37,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/taglist.vim'
+Plug 'vifm/vifm.vim'
 
   " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'
@@ -69,15 +70,13 @@ Plug 'junegunn/limelight.vim'
 
   " Search
 Plug 'ctrlpvim/ctrlp.vim'
-
+Plug 'junegunn/vim-peekaboo'
    " schemes and themes
 Plug 'itchyny/lightline.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'zefei/vim-wintabs'
 Plug 'zefei/vim-wintabs-powerline'
-" Plug 'joshdick/onedark.vim'
-" Plug 'mhartington/oceanic-next'
-Plug 'jacoborus/tender'
+Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
 
 " Initialize plugin system
 call plug#end()

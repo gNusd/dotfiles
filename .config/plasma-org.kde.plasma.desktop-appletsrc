@@ -95,7 +95,7 @@ immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][2][Applets][52][Configuration]
-PreloadWeight=0
+PreloadWeight=17
 
 [Containments][2][Applets][52][Configuration][ConfigDialog]
 DialogHeight=720
@@ -121,7 +121,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][8][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][2][Applets][8][Configuration][Appearance]
 enabledCalendarPlugins=/usr/lib/x86_64-linux-gnu/qt5/plugins/plasmacalendarplugins/pimevents.so
@@ -295,25 +295,11 @@ DialogWidth=960
 PreloadWeight=0
 
 [Containments][61][General]
+pressToMoveHelp=false
 showToolbox=false
 
 [Containments][61][Wallpaper][org.kde.image][General]
 Image=file:///home/gnus/nextcloud/bilder/backgrounds/david-lynch.jpg
-
-[Containments][63]
-activityId=00000000-0000-0000-0000-000000000000
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][63][Configuration]
-PreloadWeight=10
-
-[Containments][63][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/Next/contents/images/2560x1440.png
 
 [Containments][7]
 activityId=
@@ -329,7 +315,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][10][Configuration]
-PreloadWeight=5
+PreloadWeight=2
 
 [Containments][7][Applets][11]
 immutability=1
@@ -357,14 +343,14 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][14][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][7][Applets][15]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=89
+PreloadWeight=100
 
 [Containments][7][Applets][15][Configuration][ConfigDialog]
 DialogHeight=720
@@ -382,7 +368,7 @@ immutability=1
 plugin=org.kde.plasma.vault
 
 [Containments][7][Applets][17][Configuration]
-PreloadWeight=25
+PreloadWeight=17
 
 [Containments][7][Applets][18]
 immutability=1
@@ -396,7 +382,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][19][Configuration]
-PreloadWeight=15
+PreloadWeight=12
 
 [Containments][7][Applets][19][Configuration][ConfigDialog]
 DialogHeight=720
@@ -441,12 +427,16 @@ longitude=13.0007
 DialogHeight=720
 DialogWidth=960
 
+[Containments][7][Applets][64]
+immutability=1
+plugin=org.kde.plasma.nightcolorcontrol
+
 [Containments][7][Applets][9]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][9][Configuration]
-PreloadWeight=10
+PreloadWeight=17
 
 [Containments][7][ConfigDialog]
 DialogHeight=600
@@ -456,8 +446,9 @@ DialogWidth=800
 PreloadWeight=0
 
 [Containments][7][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.redshiftControl,org.kde.plasma.battery
-knownItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.plasma.keyboardindicator
+extraItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.redshiftControl,org.kde.plasma.battery,org.kde.plasma.nightcolorcontrol
+hiddenItems=proximity.py
+knownItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol
 shownItems=PRIME Indicator,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect,keepassxc,org.kde.plasma.clipboard,Nextcloud,org.kde.plasma.networkmanagement,x2goclient,transmission,Clementine,TelegramDesktop
 
 [Containments22Appletsts][45][Configuration][General]
@@ -489,7 +480,7 @@ favoritesPortedToKAstats=true
 formFactor=0
 
 [General]
-immutability=2
+immutability=1
 
 [ScreenMapping]
 itemsOnDisabledScreens=

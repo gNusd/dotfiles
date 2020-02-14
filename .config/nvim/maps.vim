@@ -26,6 +26,8 @@
 " | m         | mdpdf                      | convert current markdown file to pdf                          |
 " | mp        | mdpdf                      | convert current markdown file to pdf and open in zathura      |
 " | §         | Nuake                      | toggle terminal Nuake                                         |
+" | h         | SplitVifm                  | open vifm and open the file in a horizontal split             |
+" | l         | VsplitVifm                 | open vifm and open the file in a vertical split               |
 " | i         | vim-plug                   | install plugins with vim-plug                                 |
 " | u         | vim-plug                   | update plugins with vim-plug                                  |
 " | uu        | vim-plug                   | upgrade plugins with vim-plug                                 |

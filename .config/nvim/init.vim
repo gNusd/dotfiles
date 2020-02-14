@@ -1,32 +1,28 @@
-"/***************************************************/
-"/*                            _                    */
-"/*   __ _ _ __  _   _ ___  __| | __/\__     __/\__ */
-"/*  / _` | '_ \| | | / __|/ _` | \    /_____\    / */
-"/* | (_| | | | | |_| \__ \ (_| | /_  _\_____/_  _\ */
-"/*  \__, |_| |_|\__,_|___/\__,_|   \/         \/   */
-"/*  |___/                                          */
-"/*  _       _ _         _                          */
-"/* (_)_ __ (_) |___   _(_)_ __ ___                 */
-"/* | | '_ \| | __\ \ / / | '_ ` _ \                */
-"/* | | | | | | |_ \ V /| | | | | | |               */
-"/* |_|_| |_|_|\__(_)_/ |_|_| |_| |_|               */
-"/*                                                 */
-"/***************************************************/
+"***************************************************************************
+"*                            _          _       _ _         _             *
+"*   __ _ _ __  _   _ ___  __| | __/\__ (_)_ __ (_) |___   _(_)_ __ ___    *
+"*  / _` | '_ \| | | / __|/ _` | \    / | | '_ \| | __\ \ / / | '_ ` _ \   *
+"* | (_| | | | | |_| \__ \ (_| | /_  _\ | | | | | | |_ \ V /| | | | | | |  *
+"*  \__, |_| |_|\__,_|___/\__,_|   \/   |_|_| |_|_|\__(_)_/ |_|_| |_| |_|  *
+"*  |___/                                                                  *
+"*                                                                         *
+"*                                                                         *
+"***************************************************************************
 
 set nocompatible 		             	" be iMproved, required
 let mapleader = " "
 
 " block arrow keys
-ino <Up> <Nop>
-ino <Down> <Nop>
-ino <Left> <Nop>
-ino <Right> <Nop>
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
 
 " mapping Alt + hjkl to left, right, down, up in insert mode
-inoremap <buffer><a-h> <esc>hi
-inoremap <buffer><a-l> <esc>li
-inoremap <buffer><a-j> <esc>ji
-inoremap <buffer><a-k> <esc>ki
+inoremap <buffer><a-h> <esc>h i
+inoremap <buffer><a-l> <esc>l i
+inoremap <buffer><a-j> <esc>j i
+inoremap <buffer><a-k> <esc>k i
 
 " remapping window navigation
 noremap <c-h> <c-w>h
@@ -35,10 +31,10 @@ noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 
 " mapping window navigaton in insert mode
-inoremap <buffer> <c-h> <esc><c-w>hi
-inoremap <buffer> <c-l> <esc><c-w>li
-inoremap <buffer> <c-j> <esc><c-w>ji
-inoremap <buffer> <c-k> <esc><c-w>ki
+inoremap <buffer> <c-h> <esc><c-w>h i
+inoremap <buffer> <c-l> <esc><c-w>l i
+inoremap <buffer> <c-j> <esc><c-w>j i
+inoremap <buffer> <c-k> <esc><c-w>k i
 
 set encoding=UTF-8
 set shell=/usr/bin/zsh
@@ -99,7 +95,6 @@ let g:undotree_TreeNodeShape = '*'
 
 " compile java
 map <leader>z :!javac % <CR><CR>
-map <leader>zq  :!javac %<CR><CR> :q<CR>
 
 " compile c & cpp
 map <leader>x :!gcc % -o %:r <CR><CR>
@@ -109,11 +104,13 @@ map <leader>x :!gcc % -o %:r <CR><CR>
 map <leader>m :!mdpdf %<CR><CR>
 map <leader>mp :!mdpdf % && zathura %:r.pdf &<CR><CR>
 
+noremap <leader>l :VsplitVifm<CR>
+noremap <leader>h :SplitVifm<CR>
 nnoremap <leader>§ :Nuake<CR>
 
 " Terminal go back to normal mode
 tnoremap <Esc> <C-\><C-n>
-" When switching to terminal windows it goes into insert mode automatically
+
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
 set wildignore+=*.a,*.o,*.gif,*.jpg,*.png,.git,*.swp,*.tmp,*.class
@@ -128,26 +125,33 @@ map <leader>uu :PlugUpgrade<cr>
 filetype plugin indent on
 syntax enable
 
-
 " Or if you have Neovim >= 0.1.5
 if (has("termguicolors"))
  set termguicolors
 endif
 
+set background=dark
+
+" gruvbox-material
+let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_enable_bold = 1
+let g:gruvbox_material_disable_italic_comment = 1
+
 " Theme
 syntax enable
-colorscheme tender
+colorscheme gruvbox-material
+
+"lightline
+let g:lightline = { 'colorscheme': 'gruvbox_material' }
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
 set completeopt-=preview
 call deoplete#custom#option('smart_case', v:true)
-" call deoplete#custom#source('buffer', 'rank', 9999)
 
 " clang
 let g:deoplete#auto_complete_start_length = 1
 let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-6.0/lib/libclang.so.1'
-"let g:deoplete#sources#clang#clang_header = '/usr/include/lib/clang'
 
 " vim table mode
 map <leader><tab> :TableModeToggle <cr>
@@ -167,15 +171,13 @@ let g:deoplete#sources#rust#documentation_max_height=20
 " Java completion
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 autocmd FileType java JCEnable
-
-"lightline
-let g:lightline = { 'colorscheme': 'tender' }
+let g:java_highlight_functions = 1
 
 " gitgutter
 let g:gitgutter_enabled = 1
 
 "Vcsjump
-nmap <Leader>g <Plug>(VcsJump)
+nmap <leader>g <Plug>(VcsJump)
 
 " ctrlp
 nnoremap <leader>, :CtrlP<CR>
@@ -253,6 +255,8 @@ let g:ale_linters = {
 let g:pear_tree_smart_openers = 1
 let g:pear_tree_smart_closers = 1
 let g:pear_tree_smart_backspace = 1
+
+
 
 " Writing
 map <silent> <leader>- :Goyo \| set bg=dark \| set linebreak<CR>

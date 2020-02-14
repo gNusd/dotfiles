@@ -83,3 +83,5 @@ export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
 # Load zsh-syntax-highlighting; should be last.
 # source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+source /home/gnus/.config/broot/launcher/bash/br

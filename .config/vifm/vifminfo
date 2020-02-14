@@ -1,0 +1,179 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/gnus/
+	..
+1581710777
+'b
+	/home/gnus/bin/
+	..
+1581710777
+'h
+	/home/gnus/
+	..
+1581710777
+'z
+	/home/gnus/.config/vifm
+	..
+1581710777
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/gnus/nextcloud/notes/computers
+	t480.md
+17
+d/home/gnus
+	projects
+8
+d/home/gnus/projects
+	java
+8
+d/home/gnus/projects/java
+	kursen
+1
+d/home/gnus/projects/java/kursen
+	uppgifter
+8
+d/home/gnus/projects/java/kursen/uppgifter
+	inlämningsuppgifter
+1
+d/home/gnus/projects/java/kursen/uppgifter/inlämningsuppgifter
+	inlämningsuppgift_3
+3
+d/home/gnus/projects/java/kursen/uppgifter/inlämningsuppgifter/inlämningsuppgift_3
+	..
+0
+d/home/gnus/projects/java/kursen/uppgifter/inlämningsuppgifter
+	inlämningsuppgift_2
+2
+d/home/gnus/projects/java/kursen/uppgifter/inlämningsuppgifter/inlämningsuppgift_2
+	game.class
+4
+d/home/gnus
+	bin
+3
+d/home/gnus/bin
+	battyImport
+1
+d/home/gnus
+	projects
+8
+d/home/gnus/projects
+	java
+8
+d/home/gnus/projects/java
+	kursen
+1
+d/home/gnus/projects/java/kursen
+	uppgifter
+8
+d/home/gnus/projects/java/kursen/uppgifter
+	inlämningsuppgifter
+1
+d/home/gnus/projects/java/kursen/uppgifter/inlämningsuppgifter
+	inlämningsuppgift_2
+2
+d/home/gnus/projects/java/kursen/uppgifter/inlämningsuppgifter/inlämningsuppgift_2
+	..
+0
+d/home/gnus/projects/java/kursen/uppgifter/inlämningsuppgifter
+	..
+0
+d/home/gnus/projects/java/kursen/uppgifter
+	..
+0
+d/home/gnus/projects/java/kursen
+	..
+0
+d/home/gnus/projects/java
+	..
+0
+d/home/gnus/projects
+	..
+0
+d/home/gnus
+	tmp
+12
+d/home/gnus/tmp
+	test.java
+8
+d/home/gnus
+	tmp
+12
+d/home
+	gnus
+1
+d/
+	home
+5
+d/home
+	gnus
+1
+d/home/gnus
+	tmp
+12
+d/home/gnus/tmp
+	test.sh
+9
+d/home/gnus
+	repositories
+9
+d/home/gnus/repositories
+	dotfiles
+4
+d/home/gnus/repositories/dotfiles
+	README.md
+1
+d/home/gnus/repositories/dotfiles/.config/nvim
+	..
+0
+d/home/gnus/repositories/dotfiles/.config
+	plasma-nm
+12
+d
+
+# Right window history (oldest to newest):
+D/home/gnus/nextcloud/notes/computers
+	..
+0
+D
+
+# Command line history (oldest to newest):
+::q
+:vsplit
+:edit
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0

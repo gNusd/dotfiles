@@ -33,11 +33,10 @@ Plug 'Shougo/neco-vim'
 
   " Terminal & filesystem
 Plug 'Lenovsky/nuake', {'on': 'Nuake'}
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vifm/vifm.vim'
+Plug 'tpope/vim-vinegar'
 
   " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'
@@ -46,9 +45,6 @@ Plug 'wellle/tmux-complete.vim'
   " git plugins
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle' }
-Plug 'jreybert/vimagit'
-Plug 'wincent/vcs-jump'
 
   " snippets
 
@@ -59,7 +55,6 @@ Plug 'tpope/vim-repeat'
 Plug 'godlygeek/tabular'
 Plug 'ervandew/supertab'
 Plug 'dhruvasagar/vim-table-mode', {'on': 'TableModeToggle '}
-" Plug 'jiangmiao/auto-pairs'
 Plug 'mbbill/undotree'
 Plug 'tmsvg/pear-tree'
 
@@ -71,7 +66,8 @@ Plug 'junegunn/limelight.vim'
   " Search
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/vim-peekaboo'
-   " schemes and themes
+
+" schemes and themes
 Plug 'itchyny/lightline.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'zefei/vim-wintabs'

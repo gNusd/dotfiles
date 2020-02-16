@@ -54,6 +54,15 @@ Top=None
 TopLeft=None
 TopRight=None
 
+[ModifierOnlyShortcuts]
+Alt=com.github.zren.PlasmaHUD,/PlasmaHUD,com.github.zren.PlasmaHUD,toggleHUD
+
+[NightColor]
+Active=true
+LatitudeAuto=55.6078
+LongitudeAuto=12.9981
+NightTemperature=3700
+
 [Plugins]
 coverswitchEnabled=true
 desktopchangeosdEnabled=false

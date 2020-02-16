@@ -176,8 +176,12 @@ let g:java_highlight_functions = 1
 " gitgutter
 let g:gitgutter_enabled = 1
 
-"Vcsjump
-nmap <leader>g <Plug>(VcsJump)
+" vim fugitive
+nmap <leader>g :Git<CR>
+nmap <leader>gc :Gcommit<CR>
+nmap <leader>gd :Gdiffsplit<CR>
+nmap <leader>gb :Gblame<CR>
+nmap <leader>ga :Gw<CR>
 
 " ctrlp
 nnoremap <leader>, :CtrlP<CR>
@@ -202,28 +206,15 @@ let Tlist_Enable_Fold_Column = 0
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Ctags_Cmd = '/usr/bin/ctags'
 
-" NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-map <leader>f :NERDTreeToggle<CR>
-autocmd FileType nerdtree setlocal nolist
-let g:NERDTreeShowIgnoredStatus = 1
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }
-
+"netrw
+map <leader>f :Lexplore<CR>
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 20
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
+let g:netrw_preview = 0
 
 "ale
 " Shorten error/warning flags
@@ -240,7 +231,6 @@ let g:ale_loclist = 0
 let g:ale_rust_rls_executable = '/home/gnus/.cargo/bin'
 
 " Setup compilers for languages
-
 let g:ale_linters = {
       \  'cs':['syntax', 'semantic', 'issues'],
       \  'python': ['autopep8', 'pylint'],
@@ -250,13 +240,9 @@ let g:ale_linters = {
       \  'c':['gcc']
       \ }
 
-" let g:AutoPairsFlyMode = 1
-
 let g:pear_tree_smart_openers = 1
 let g:pear_tree_smart_closers = 1
 let g:pear_tree_smart_backspace = 1
-
-
 
 " Writing
 map <silent> <leader>- :Goyo \| set bg=dark \| set linebreak<CR>

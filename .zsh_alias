@@ -2,8 +2,9 @@ alias :q='exit'
 alias reload='source $HOME/.zshrc'
 alias x='clear'
 alias xnvimswap='rm $HOME/.local/share/nvim/swap/*.swp'
-alias sysup='sudo pkcon refresh -p && sudo pkcon update -p && sudo apt autoremove && sudo flatpak update && sudo fwupdmgr update'
-
+alias sysup='sudo pkcon refresh -p && sudo pkcon update -p && sudo apt autoremove & sudo flatpak update & sudo fwupdmgr update'
+alias vim='nvim'
+alias gvim='glrnvim'
 
 # alias to directories
 alias dotfiles='cd $HOME/repositories/dotfiles && exa -la --git'

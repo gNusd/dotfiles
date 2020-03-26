@@ -61,10 +61,10 @@ function! CloseAllBufferButCurrent()
 endfunction
 
 " Buffer handeling
-map <leader>j :bprevious <CR>
-map <leader>J :bprevious! <CR>
-map <leader>k :bnext <CR>
-map <leader>K :bnext! <CR>
+map <leader>J :bprevious <CR>
+map <leader>j :bprevious! <CR>
+map <leader>K :bnext <CR>
+map <leader>k :bnext! <CR>
 map <leader>w :bd <CR>
 map <leader>W :bd! <CR>
 map <leader>q :call CloseAllBufferButCurrent() <CR>
@@ -143,6 +143,15 @@ colorscheme gruvbox-material
 
 "lightline
 let g:lightline = { 'colorscheme': 'gruvbox_material' }
+let g:lightline = {
+	\ 'active': {
+	\   'left': [ [ 'mode', 'paste' ],
+	\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+	\ },
+	\ 'component_function': {
+	\   'gitbranch': 'FugitiveHead'
+	\ },
+	\ }
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -183,6 +192,9 @@ nmap <leader>gd :Gdiffsplit<CR>
 nmap <leader>gb :Gblame<CR>
 nmap <leader>ga :Gw<CR>
 
+" blame line
+nnoremap <silent> <leader>G :ToggleBlameLine<CR>
+
 " ctrlp
 nnoremap <leader>, :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
@@ -206,6 +218,27 @@ let Tlist_Enable_Fold_Column = 0
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Ctags_Cmd = '/usr/bin/ctags'
 
+nnoremap <silent> <leader>nn :NnnPicker<CR>
+
+" Floating window (neovim)
+function! s:layout()
+  let buf = nvim_create_buf(v:false, v:true)
+
+  let height = &lines - (float2nr(&lines / 3))
+  let width = float2nr(&columns - (&columns * 2 / 3))
+
+  let opts = {
+        \ 'relative': 'editor',
+        \ 'row': 2,
+        \ 'col': 8,
+        \ 'width': width,
+        \ 'height': height
+        \ }
+
+  call nvim_open_win(buf, v:true, opts)
+endfunction
+let g:nnn#layout = 'call ' . string(function('<SID>layout')) . '()'
+
 "netrw
 map <leader>f :Lexplore<CR>
 let g:netrw_banner = 0
@@ -216,6 +249,12 @@ let g:netrw_winsize = 20
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 let g:netrw_preview = 0
 
+" animate
+nnoremap <silent> <Up>    :call animate#window_delta_height(10)<CR>
+nnoremap <silent> <Down>  :call animate#window_delta_height(-10)<CR>
+nnoremap <silent> <Left>  :call animate#window_delta_width(10)<CR>
+nnoremap <silent> <Right> :call animate#window_delta_width(-10)<CR>
+
 "ale
 " Shorten error/warning flags
 let g:ale_echo_msg_error_str = 'E'
@@ -223,6 +262,7 @@ let g:ale_echo_msg_warning_str = 'W'
 " I have some custom icons for errors and warnings but feel free to change them.
 let g:ale_sign_error = '✘✘'
 let g:ale_sign_warning = '⚠⚠'
+let g:syntastic_ignore_files = ['.*\.lst', '~/nextcloud/dokument/inköpslistor/']
 
 " Disable or enable loclist at the bottom of vim
 " Comes down to personal preferance.

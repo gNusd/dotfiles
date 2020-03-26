@@ -21,9 +21,10 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/projects/matsedel/mat.yaml,file:$HOME/repositories/dotfiles/.config/nvim/config/conf_deoplete.vim,file:$HOME/repositories/dotfiles/.config/nvim/init.vim,file:$HOME/projects/java/kursen/my_chapter_6/Rectangle.java,file:$HOME/projects/java/kursen/my_chapter_6/ConstructorDemo.java,file:$HOME/nextcloud/backup/rss/antennapod-feeds.opml,file:$HOME/repositories/scripts/init.sh,file:$HOME/repositories/dotfiles/.bashrc,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
+Recent Files[$e]=file:$HOME/projects/matsedel/mat.yaml,file:$HOME/syncthing.stimagst.com,file:$HOME/repositories/dotfiles/.config/nvim/init.vim,file:$HOME/projects/java/kursen/my_chapter_6/Rectangle.java,file:$HOME/projects/java/kursen/my_chapter_6/ConstructorDemo.java,file:$HOME/nextcloud/backup/rss/antennapod-feeds.opml,file:$HOME/repositories/scripts/init.sh,file:$HOME/repositories/dotfiles/.bashrc,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
 Recent URLs[$e]=file:$HOME/repositories/dotfiles/.config/nvim/config/
 detailViewIconSize=0
+iconViewIconSize=43
 listViewIconSize=0
 
 [KTextEditor Document]
@@ -84,6 +85,7 @@ Dynamic Word Wrap=true
 Dynamic Word Wrap Align Indent=80
 Dynamic Word Wrap At Static Marker=true
 Dynamic Word Wrap Indicators=1
+Dynamic Wrap not at word boundaries=false
 Fold First Line=false
 Folding Bar=true
 Folding Preview=true
@@ -126,16 +128,15 @@ SetEditor=false
 
 [MainWindow]
 Height 1080=433
-Height 1440=1054
+Height 1440=1388
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAABN8AAAVwAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1400
-Width 2560=1533
+Width 2560=2508
 Window-Maximized 1080x1920=true
 Window-Maximized 1108x1969=true
 Window-Maximized 1200x2133=true
-Window-Maximized 1440x2560=true
 
 [filetree]
 editShade=179,218,246

@@ -37,6 +37,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vifm/vifm.vim'
 Plug 'tpope/vim-vinegar'
+Plug 'camspiers/animate.vim'
+Plug 'mcchrish/nnn.vim'
 
   " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'
@@ -45,6 +47,7 @@ Plug 'wellle/tmux-complete.vim'
   " git plugins
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'tveskag/nvim-blame-line'
 
   " snippets
 
@@ -61,7 +64,6 @@ Plug 'tmsvg/pear-tree'
   " Writing
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-
 
   " Search
 Plug 'ctrlpvim/ctrlp.vim'

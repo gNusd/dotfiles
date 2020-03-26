@@ -13,19 +13,50 @@
 	/home/gnus/
 	..
 1581710777
+'k
+	/home/gnus/nextcloud/bilder/icon
+	App-Terminal-icon.png
+1581876238
 
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
-v2
+v1
 ov
 m-1
 l2
 r2
 
 # Left window history (oldest to newest):
+d/home/gnus/nextcloud/bilder/icon
+	gnus.xcf
+14
+d/home/gnus/repositories/dotfiles/.config/vifm/scripts
+	..
+0
+d/home/gnus/projects/android
+	meditation
+1
+d/home/gnus/projects/android/meditation
+	..
+0
+d/home/gnus/projects/android
+	..
+0
+d/home/gnus/projects/java/kursen/chapter_2
+	..
+0
+d/home/gnus/nextcloud/bilder
+	icon
+6
+d/home/gnus/nextcloud/bilder/icon
+	Gnu-crypto-icon-orange100x100.png
+3
+d/home/gnus/nextcloud/bilder
+	icon
+6
 d/home/gnus/nextcloud/notes/computers
 	t480.md
 17
@@ -218,20 +249,168 @@ d/home/gnus/repositories/dotfiles/.config/nvim/config
 d/home/gnus/nextcloud/dokument/inköpslistor
 	..
 0
+d/home/gnus/nextcloud/dokument
+	..
+0
+d/home/gnus/nextcloud
+	..
+0
+d/home/gnus
+	projects
+9
+d/home/gnus/projects
+	java
+9
+d/home/gnus/projects/java
+	kursen
+1
+d/home/gnus/projects/java/kursen
+	my_chapter_6
+7
+d/home/gnus/projects/java/kursen/my_chapter_6
+	..
+0
+d/home/gnus/projects/java/kursen
+	uppgifter
+8
+d/home/gnus/projects/java/kursen/uppgifter
+	employee
+1
+d/home/gnus/projects/java/kursen/uppgifter/employee
+	Employee.java
+1
+d/home/gnus/repositories/dotfiles/.config/nvim
+	maps.vim
+6
+d/home/gnus/projects/java/kursen/uppgifter/employee
+	dbEmployee.class
+3
 d
 
 # Right window history (oldest to newest):
 D/home/gnus/nextcloud/notes/computers
-	nextcloud-client_snap.txt
-15
+	mirrorlist
+13
+D/home/gnus/nextcloud/notes
+	..
+0
+D/home/gnus/nextcloud
+	..
+0
+D/home/gnus
+	repositories
+10
+D/home/gnus/repositories
+	dotfiles
+4
+D/home/gnus/repositories/dotfiles
+	..
+0
+D/home/gnus/repositories
+	dotfiles
+4
+D/home/gnus/repositories/dotfiles
+	..
+0
+D/home/gnus/repositories
+	dotfiles
+4
+D/home/gnus
+	repositories
+10
+D/home/gnus/repositories
+	dotfiles
+4
+D/home/gnus/repositories/dotfiles
+	..
+0
+D/home/gnus/repositories
+	..
+0
+D/home/gnus
+	projects
+9
+D/home/gnus/projects
+	java
+9
+D/home/gnus/projects/java
+	kursen
+1
+D/home/gnus/projects/java/kursen
+	Gaddis Java 6th Edition.pdf
+9
+D/home/gnus/projects/java
+	..
+0
+D/home/gnus/projects
+	..
+0
+D/home/gnus
+	projects
+9
+D/home
+	gnus
+1
+D/home/gnus
+	repositories
+10
+D/home/gnus/repositories
+	dotfiles
+4
+D/home/gnus/repositories/dotfiles
+	.config
+1
+D/home/gnus/repositories/dotfiles/.config
+	vifm
+4
+D/home/gnus/repositories/dotfiles/.config/vifm
+	scripts
+2
+D/home/gnus/repositories/dotfiles/.config/vifm/scripts
+	..
+0
+D/home/gnus/repositories/dotfiles/.config/vifm
+	..
+0
+D/home/gnus/repositories/dotfiles/.config
+	..
+0
+D/home/gnus/repositories/dotfiles
+	..
+0
+D/home/gnus/repositories
+	..
+0
+D/home/gnus
+	repositories
+10
+D/home/gnus/repositories
+	dotfiles
+4
+D/home/gnus/repositories/dotfiles
+	.config
+1
+D/home/gnus/repositories/dotfiles/.config
+	vifm
+4
+D/home/gnus/repositories/dotfiles/.config/vifm
+	..
+0
 D
 
 # Command line history (oldest to newest):
+:source /home/gnus/repositories/dotfiles/.config/vifm/vifmrc
+:reload
 ::q
-:vsplit
 :edit
 :vmap
 :nmap
+:delete
+:vsplit
+:only
+:mkdir employee
+:vim Employee.java
+:touch Employee.java
 :q
 
 # Search history (oldest to newest):
@@ -242,10 +421,13 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
+""/home/gnus/.local/share/vifm/Trash/000_analytics.php
 
 # Directory stack (oldest to newest):
 
 # Trash content:
+t/home/gnus/.local/share/vifm/Trash/000_analytics.php
+	/home/gnus/projects/java/kursen/my_chapter_6/analytics.php
 
 # State:
 f
@@ -254,6 +436,6 @@ i1
 [F
 F
 I1
-].1
+].0
 ]F
 s0

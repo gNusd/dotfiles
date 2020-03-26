@@ -18,6 +18,7 @@ _wallpaper=true
 add widgets=true
 configure=true
 configure shortcuts=false
+edit mode=true
 lock widgets=true
 manage activities=true
 remove=true
@@ -95,7 +96,7 @@ immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][2][Applets][52][Configuration]
-PreloadWeight=16
+PreloadWeight=0
 
 [Containments][2][Applets][52][Configuration][ConfigDialog]
 DialogHeight=720
@@ -116,12 +117,29 @@ plugin=org.kde.plasma.systemtray
 PreloadWeight=100
 SystrayContainmentId=7
 
+[Containments][2][Applets][68]
+immutability=1
+plugin=org.kde.paneltransparencybutton
+
+[Containments][2][Applets][68][Configuration]
+PreloadWeight=39
+
+[Containments][2][Applets][68][Configuration][Appearance]
+transparencyEnabled=true
+
+[Containments][2][Applets][68][Configuration][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
+
+[Containments][2][Applets][68][Shortcuts]
+global=Meta+Alt+T
+
 [Containments][2][Applets][8]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][8][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][2][Applets][8][Configuration][Appearance]
 enabledCalendarPlugins=/usr/lib/x86_64-linux-gnu/qt5/plugins/plasmacalendarplugins/pimevents.so
@@ -139,7 +157,7 @@ DialogWidth=2560
 PreloadWeight=0
 
 [Containments][2][General]
-AppletOrder=47;48;46;6;8;52
+AppletOrder=47;48;46;6;8;52;68
 
 [Containments][42]
 activityId=
@@ -183,7 +201,7 @@ DialogWidth=960
 
 [Containments][42][Applets][43][Configuration][General]
 iconSize=huge
-launchers=applications:firefox.desktop,applications:org.kde.kontact.desktop,applications:org.kde.konsole.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop
+launchers=applications:firefox.desktop,applications:org.kde.kontact.desktop,applications:org.kde.konsole.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop,applications:alacritty.desktop,applications:com.valvesoftware.Steam.desktop
 maxStripes=1
 
 [Containments][42][Applets][44]
@@ -267,17 +285,35 @@ containmentType=Plasma
 iconFillThickness=false
 style=NoText
 
+[Containments][42][Applets][69]
+immutability=1
+plugin=org.kde.paneltransparencybutton
+
+[Containments][42][Applets][69][Configuration]
+PreloadWeight=34
+
+[Containments][42][Applets][69][Configuration][Appearance]
+transparencyEnabled=true
+
+[Containments][42][Applets][69][Configuration][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
+
+[Containments][42][Applets][69][Shortcuts]
+global=Meta+Alt+T
+
 [Containments][42][ConfigDialog]
 DialogHeight=1440
-DialogWidth=313
+DialogWidth=323
 
 [Containments][42][Configuration]
 PreloadWeight=0
 
 [Containments][42][General]
-AppletOrder=62;21;43;44;49;50;51
+AppletOrder=62;21;43;44;49;50;51;69
 
 [Containments][63]
+ItemGeometriesHorizontal=
 activityId=913871cd-0b40-496b-b414-7d56e9f562b8
 formfactor=0
 immutability=1
@@ -286,12 +322,51 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][63][Applets][70]
+immutability=1
+plugin=org.kde.plasma.notes
+
+[Containments][63][Applets][70][Configuration][General]
+noteId=020af5d0-19e2-41a2-b572-8e7700f699
+
 [Containments][63][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
 
+[Containments][63][Configuration]
+PreloadWeight=0
+
+[Containments][63][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=950
+ToolBoxButtonY=44
+
 [Containments][63][Wallpaper][org.kde.image][General]
-Image=file:///home/gnus/nextcloud/bilder/backgrounds/david-lynch.jpg
+Image=file:///home/gnus/nextcloud/bilder/backgrounds/bird.jpg
+
+[Containments][66]
+activityId=e2992a65-ba9d-4e82-b2a0-ec1054833c33
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][66][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
+
+[Containments][66][Configuration]
+PreloadWeight=0
+
+[Containments][66][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=944
+ToolBoxButtonY=44
+
+[Containments][66][Wallpaper][org.kde.image][General]
+Image=file:///home/gnus/.local/share/wallpapers/Plasma Desktop Wallpaper 1555 4K With Logo.png
 
 [Containments][7]
 activityId=
@@ -314,7 +389,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][7][Applets][11][Configuration]
-PreloadWeight=15
+PreloadWeight=79
 
 [Containments][7][Applets][11][Configuration][ConfigDialog]
 DialogHeight=720
@@ -338,18 +413,10 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][14][Configuration]
-PreloadWeight=76
-
-[Containments][7][Applets][15]
-immutability=1
-plugin=org.kde.plasma.notifications
+PreloadWeight=0
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=84
-
-[Containments][7][Applets][15][Configuration][ConfigDialog]
-DialogHeight=720
-DialogWidth=960
+PreloadWeight=42
 
 [Containments][7][Applets][16]
 immutability=1
@@ -363,7 +430,7 @@ immutability=1
 plugin=org.kde.plasma.vault
 
 [Containments][7][Applets][17][Configuration]
-PreloadWeight=1
+PreloadWeight=0
 
 [Containments][7][Applets][18]
 immutability=1
@@ -377,7 +444,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][19][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][7][Applets][19][Configuration][ConfigDialog]
 DialogHeight=720
@@ -430,14 +497,25 @@ immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
 
 [Containments][7][Applets][64][Configuration]
-PreloadWeight=34
+PreloadWeight=0
+
+[Containments][7][Applets][67]
+immutability=1
+plugin=org.kde.ktp-contactlist
+
+[Containments][7][Applets][67][Configuration]
+PreloadWeight=0
+
+[Containments][7][Applets][67][Configuration][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
 
 [Containments][7][Applets][9]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][9][Configuration]
-PreloadWeight=1
+PreloadWeight=0
 
 [Containments][7][ConfigDialog]
 DialogHeight=600
@@ -447,10 +525,10 @@ DialogWidth=800
 PreloadWeight=0
 
 [Containments][7][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.redshiftControl,org.kde.plasma.battery,org.kde.plasma.nightcolorcontrol,syncthing-gtk
-hiddenItems=proximity.py,syncthing-gtk
-knownItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol
-shownItems=PRIME Indicator,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect,keepassxc,org.kde.plasma.clipboard,Nextcloud,org.kde.plasma.networkmanagement,x2goclient,transmission,Clementine,TelegramDesktop
+extraItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.redshiftControl,org.kde.plasma.battery,org.kde.plasma.nightcolorcontrol,syncthing-gtk,Bitwarden1,PRIME Indicator,org.kde.ktp-contactlist
+hiddenItems=proximity.py,org.kde.plasma.notifications,org.kde.redshiftControl
+knownItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.ktp-contactlist
+shownItems=org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect,keepassxc,org.kde.plasma.clipboard,Nextcloud,org.kde.plasma.networkmanagement,x2goclient,transmission,Clementine,TelegramDesktop,org.kde.plasma.nightcolorcontrol,Bitwarden1
 
 [Containments22Appletsts][45][Configuration][General]
 length=243
@@ -485,4 +563,4 @@ immutability=1
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/projects,0,desktop:/snap,0,desktop:/tmp,0,desktop:/install.log,0,desktop:/raw,0,desktop:/repositories,0,desktop:/hämtningar,0,desktop:/Sync,0,desktop:/bin,0,desktop:/Skrivbord,0,desktop:/virtualbox,0,desktop:/nextcloud,0
+screenMapping=desktop:/hämtningar,0,desktop:/projects,0,desktop:/virtualbox,0,desktop:/repositories,0,desktop:/raw,0,desktop:/Sync,0,desktop:/nextcloud,0,desktop:/tmp,0,desktop:/Skrivbord,0,desktop:/bin,0,desktop:/install.log,0,desktop:/snap,0

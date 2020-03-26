@@ -6,7 +6,6 @@
 " If you would like to use emacs or emacsclient, you can use them.
 " Since emacs is a GUI app and not a terminal app like vim, append the command
 " with an ampersand (&).
-
 set vicmd=vim
 " set vicmd=vim
 
@@ -30,6 +29,8 @@ set trash
 
 set history=100
 
+" set to only view one pane
+only
 " Automatically resolve symbolic links on l or Enter.
 
 set nofollowlinks
@@ -505,3 +506,8 @@ nnoremap <f8> :delete<cr>
 "     vifm --server-name "$VIFM_SERVER_NAME" --remote +"cd '$PWD'"
 "
 " let $VIFM_SERVER_NAME = v:servername
+
+source ~/repositories/dotfiles/.config/vifm/scripts/dev_icons.vim
+source ~/repositories/dotfiles/.config/vifm/scripts/uberzug.vim
+map > :!vifmimg inc<CR>
+map < :!vifmimg dec<CR>

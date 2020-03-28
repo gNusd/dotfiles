@@ -12,7 +12,7 @@ call plug#begin('~/.config/nvim/plugged/')
 Plug 'roxma/nvim-yarp'
 
   " Deoplete
-Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim', { 'do' : ':UpdateRemotePlugins' }
 Plug 'sebastianmarkow/deoplete-rust'
 Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'deoplete-plugins/deoplete-go'

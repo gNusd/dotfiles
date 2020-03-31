@@ -69,9 +69,8 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Load aliases and shortcuts if existent.
-[ -f "$HOME/repositories/dotfiles/.zsh_alias" ] && source "$HOME/repositories/dotfiles/.zsh_alias"
+[ -f "$HOME/repositories/dotfiles/zsh_alias" ] && source "$HOME/repositories/dotfiles/zsh_alias"
 [ -f "$HOME/repositories/dotfiles/.ssh/ssh_alias" ] && source "$HOME/repositories/dotfiles/.ssh/ssh_alias"
-
 [ -f "$HOME/.config/broot/launcher/bash/br" ] && source "$HOME/.config/broot/launcher/bash/br"
 
 setopt LIST_PACKED             # make completion lists more densely packed
@@ -84,5 +83,5 @@ export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/l
 export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
 # Load zsh-syntax-highlighting; should be last.
-[ -f "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+[ -f "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null"
 

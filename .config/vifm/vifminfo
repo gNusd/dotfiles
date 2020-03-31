@@ -21,7 +21,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v1
 ov
@@ -285,6 +285,9 @@ d/home/gnus/repositories/dotfiles/.config/nvim
 d/home/gnus/projects/java/kursen/uppgifter/employee
 	dbEmployee.class
 3
+d/home/gnus/repositories/scripts
+	..
+0
 d
 
 # Right window history (oldest to newest):
@@ -394,8 +397,8 @@ D/home/gnus/repositories/dotfiles/.config
 	vifm
 4
 D/home/gnus/repositories/dotfiles/.config/vifm
-	..
-0
+	colors
+1
 D
 
 # Command line history (oldest to newest):

@@ -122,7 +122,7 @@ immutability=1
 plugin=org.kde.paneltransparencybutton
 
 [Containments][2][Applets][68][Configuration]
-PreloadWeight=39
+PreloadWeight=0
 
 [Containments][2][Applets][68][Configuration][Appearance]
 transparencyEnabled=true
@@ -139,7 +139,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][8][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][2][Applets][8][Configuration][Appearance]
 enabledCalendarPlugins=/usr/lib/x86_64-linux-gnu/qt5/plugins/plasmacalendarplugins/pimevents.so
@@ -290,7 +290,7 @@ immutability=1
 plugin=org.kde.paneltransparencybutton
 
 [Containments][42][Applets][69][Configuration]
-PreloadWeight=34
+PreloadWeight=0
 
 [Containments][42][Applets][69][Configuration][Appearance]
 transparencyEnabled=true
@@ -321,13 +321,6 @@ lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
-
-[Containments][63][Applets][70]
-immutability=1
-plugin=org.kde.plasma.notes
-
-[Containments][63][Applets][70][Configuration][General]
-noteId=020af5d0-19e2-41a2-b572-8e7700f699
 
 [Containments][63][ConfigDialog]
 DialogHeight=720
@@ -389,7 +382,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][7][Applets][11][Configuration]
-PreloadWeight=79
+PreloadWeight=42
 
 [Containments][7][Applets][11][Configuration][ConfigDialog]
 DialogHeight=720
@@ -444,7 +437,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][19][Configuration]
-PreloadWeight=0
+PreloadWeight=10
 
 [Containments][7][Applets][19][Configuration][ConfigDialog]
 DialogHeight=720
@@ -458,7 +451,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][7][Applets][20][Configuration]
-PreloadWeight=100
+PreloadWeight=83
 
 [Containments][7][Applets][54]
 immutability=1
@@ -515,7 +508,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][9][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][7][ConfigDialog]
 DialogHeight=600
@@ -563,4 +556,4 @@ immutability=1
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/hämtningar,0,desktop:/projects,0,desktop:/virtualbox,0,desktop:/repositories,0,desktop:/raw,0,desktop:/Sync,0,desktop:/nextcloud,0,desktop:/tmp,0,desktop:/Skrivbord,0,desktop:/bin,0,desktop:/install.log,0,desktop:/snap,0
+screenMapping=desktop:/install.log,0,desktop:/snap,0,desktop:/hämtningar,0,desktop:/bin,0,desktop:/raw,0,desktop:/virtualbox,0,desktop:/Sync,0,desktop:/Skrivbord,0,desktop:/repositories,0,desktop:/tmp,0,desktop:/projects,0,desktop:/nextcloud,0

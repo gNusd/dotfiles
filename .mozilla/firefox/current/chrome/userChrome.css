@@ -251,5 +251,18 @@ toolbarspring {
 .tabbrowser-tab[fadein]:not([pinned]) {
     max-width: 300px !important;
 }
-
-
+/* autohide addressbar */
+/* will show address bar when focused with alt-d,ctrl-l,ctrl-k, or f6 */
+/* I don't like the mouse hover activation, but follow comments below */
+/* if that's something you'd like. */
+/* Also,can change nav-bar to navigation-toolbox to autohide all toolbars */
+#nav-bar {
+    height: 0px !important;
+    min-height: 0px !important;
+    overflow: hidden !important;
+    /* for mouse hover activation would need some height */
+    /* disable above height: 0px line and add: */
+    /* height: 3px !important; */
+}
+/* for mouse hover activation need to add: */
+/* #nav-bar:hover, */

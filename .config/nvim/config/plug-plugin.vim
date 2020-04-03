@@ -89,6 +89,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'zefei/vim-wintabs'
 Plug 'zefei/vim-wintabs-powerline'
 Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
+Plug 'chrisbra/Colorizer'
 
 " Initialize plugin system
 call plug#end()

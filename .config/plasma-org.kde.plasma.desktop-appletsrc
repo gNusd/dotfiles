@@ -114,7 +114,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][6][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 SystrayContainmentId=7
 
 [Containments][2][Applets][68]
@@ -382,7 +382,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][7][Applets][11][Configuration]
-PreloadWeight=42
+PreloadWeight=20
 
 [Containments][7][Applets][11][Configuration][ConfigDialog]
 DialogHeight=720
@@ -437,7 +437,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][19][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][7][Applets][19][Configuration][ConfigDialog]
 DialogHeight=720
@@ -451,7 +451,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][7][Applets][20][Configuration]
-PreloadWeight=83
+PreloadWeight=70
 
 [Containments][7][Applets][54]
 immutability=1
@@ -508,7 +508,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][9][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][7][ConfigDialog]
 DialogHeight=600
@@ -556,4 +556,4 @@ immutability=1
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/install.log,0,desktop:/snap,0,desktop:/hämtningar,0,desktop:/bin,0,desktop:/raw,0,desktop:/virtualbox,0,desktop:/Sync,0,desktop:/Skrivbord,0,desktop:/repositories,0,desktop:/tmp,0,desktop:/projects,0,desktop:/nextcloud,0
+screenMapping=desktop:/bin,0,desktop:/snap,0,desktop:/nextcloud,0,desktop:/raw,0,desktop:/Sync,0,desktop:/repositories,0,desktop:/install.log,0,desktop:/tmp,0,desktop:/projects,0,desktop:/virtualbox,0,desktop:/hämtningar,0,desktop:/Skrivbord,0

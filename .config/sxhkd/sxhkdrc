@@ -3,7 +3,7 @@
 #
 
 # terminal emulator
-super + Return
+super + t
 	alacritty
 
 # program launcher
@@ -31,7 +31,7 @@ super + m
 	bspc desktop -l next
 
 # send the newest marked node to the newest preselected node
-super + y
+
 	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest node
@@ -123,6 +123,6 @@ super + {Left,Down,Up,Right}
 # xbacklight
 
 XF86MonBrightnessDown
- xbacklight -dec 10 
+ xbacklight -dec 10
 XF86MonBrightnessUp
- xbacklight -inc 10 
+ xbacklight -inc 10

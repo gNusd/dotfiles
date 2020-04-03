@@ -28,11 +28,11 @@ alias vimrc='$EDITOR $HOME/repositories/dotfiles/.config/nvim/init.vim'
 alias trirc='$EDITOR $HOME/repositories/dotfiles/.config/tridactyl/tridactylrc'
 alias tmuxrc='$EDITOR $HOME/repositories/dotfiles/.tmux.conf'
 alias zshrc='$EDITOR $HOME/repositories/dotfiles/.zshrc'
-alias zshalias='$EDITOR $HOME/repositories/dotfiles/.zsh_alias'
+alias zshalias='$EDITOR $HOME/repositories/dotfiles/zsh_alias'
 alias inputrc='$EDITOR $HOME/repositories/dotfiles/.inputrc'
 alias alacr='$EDITOR $HOME/repositories/dotfiles/.alacritty.yml'
 alias shop='$EDITOR $HOME/nextcloud/dokument/inköpslistor/Shopping+List.lst'
-
+alias SSH='cat $HOME/.ssh/ssh_alias'
 
 # alias to add to applications
 alias grep='grep --color=auto'

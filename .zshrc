@@ -83,5 +83,5 @@ export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/l
 export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
 # Load zsh-syntax-highlighting; should be last.
-[ -f "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null"
+[ -f "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" 2>/dev/null
 

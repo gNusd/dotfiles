@@ -1,3 +1,21 @@
+/*##########################################*/
+/*   ▒███▒██  ██░████   ██    ██   ▒█████░ 	*/
+/*  ░███████  ███████▓  ██    ██  ████████ 	*/
+/*  ███  ███  ███  ▒██  ██    ██  ██▒  ░▒█ 	*/
+/*  ██░  ░██  ██    ██  ██    ██  █████▓░ 	*/
+/*  ██    ██  ██    ██  ██    ██  ░██████▒ 	*/
+/*  ██░  ░██  ██    ██  ██    ██     ░▒▓██ 	*/
+/*  ███  ███  ██    ██  ██▒  ███  █▒░  ▒██ 	*/
+/*  ░███████  ██    ██  ▓███████  ████████ 	*/
+/*   ▒███▒██  ██    ██   ▓███░██  ░▓████▓ 	*/
+/*   █░  ▒██ 								*/
+/*   ██████▓ 								*/
+/*   ▒████▒ 								*/
+/*##########################################*/
+/*
+/* this script is configured to make the tabs smaller and to hide the urlbar. */
+/* I use tridactyl (https://github.com/tridactyl/tridactyl) to search and navigate */
+
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -44,16 +62,16 @@ height: 35px !important;
 }
 */
 
-/* url bar text shrinks when in "stealth mode" */
-#nav-bar #urlbar {
-font-size: 0.85em !important;
-    transition: all 100ms var(--animation-easing-function) !important;
-}
+/* /1* url bar text shrinks when in "stealth mode" *1/ */
+/* #nav-bar #urlbar { */
+/* font-size: 0.85em !important; */
+/*     transition: all 100ms var(--animation-easing-function) !important; */
+/* } */
 
-:root:not([customizing]) :hover > #nav-bar #urlbar,
-:root:not([customizing]) #navigator-toolbox:focus-within #nav-bar #urlbar {
-font-size: 1.2em !important;
-}
+/* :root:not([customizing]) :hover > #nav-bar #urlbar, */
+/* :root:not([customizing]) #navigator-toolbox:focus-within #nav-bar #urlbar { */
+/* font-size: 1.2em !important; */
+/* } */
 
 
 /* some experimentation with expanding tab on hover to see the title better, it's kinda stupid but I was just messing around, could be something useful in the future */
@@ -76,10 +94,10 @@ Remove borders everywhere, some code copied from edge style for firefox
    border-left: none !important;
 }
 
-#urlbar, .searchbar-textbox {
-  border: none !important;
-  box-shadow: none !important;
-}
+/* #urlbar, .searchbar-textbox { */
+/*   border: none !important; */
+/*   box-shadow: none !important; */
+/* } */
 
 #nav-bar {
 	margin-top: 0px !important;
@@ -97,24 +115,24 @@ transition: opacity 0.3s;
 opacity:1 !important;
 }
 
-#urlbar {
-opacity:1 !important;
-}
+/* #urlbar { */
+/* opacity:1 !important; */
+/* } */
 
-#urlbar .urlbar-input-box {
-opacity:1 !important;
-}
+/* #urlbar .urlbar-input-box { */
+/* opacity:1 !important; */
+/* } */
 
 
-#urlbar, .searchbar-textbox {
-	border: 0px !important;
-	height: 20px !important;
-}
+/* #urlbar, .searchbar-textbox { */
+/* 	border: 0px !important; */
+/* 	height: 20px !important; */
+/* } */
 
-#urlbar {
-	margin-left: 1px !important;
-	margin-right: 1px !important;
-}
+/* #urlbar { */
+/* 	margin-left: 1px !important; */
+/* 	margin-right: 1px !important; */
+/* } */
 
 .tab-background {
 	border-top: none !important;
@@ -172,9 +190,9 @@ toolbarbutton.bookmark-item:hover {
 .tabs-newtab-button .toolbarbutton-icon {
 	background: transparent ;
 }
-#urlbar, .searchbar-textbox {
-	box-shadow: none !important;
-}
+/* #urlbar, .searchbar-textbox { */
+	/* box-shadow: none !important; */
+/* } */
 .close-icon > .toolbarbutton-icon {
 	border-radius: 0px !important;
 }

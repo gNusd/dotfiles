@@ -1,8 +1,8 @@
 # Firefox heavily customized
-
-[screenshot](https://github.com/gNusd/dotfiles/tree/master/.mozilla/firefox/current/chrome/00firefox.png)
+Screenshot 00:
+[screenshot](https://github.com/gNusd/dotfiles/tree/master/.mozilla/firefox/current/chrome/00firefox.png "Firefox")
 
 I use [tridactyl](https://github.com/tridactyl/tridactyl) to interact with Firefox. Tridactyl is a plugin that gives you the ability to use vim key bindings to navigate. So I disabled the search and address bar and I'm also using KDE plasma with global menus and therefore I don't have to use the application menu.
 
-
-![screenshot](https://github.com/gNusd/dotfiles/tree/master/.mozilla/firefox/current/chrome/01firefox.png)
+Screenshot 01:
+![screenshot](https://github.com/gNusd/dotfiles/tree/master/.mozilla/firefox/current/chrome/01firefox.png "Tridactyl menu")

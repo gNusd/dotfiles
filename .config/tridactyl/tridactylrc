@@ -33,6 +33,12 @@ colourscheme dark
 " Hinting mode
 set hintfiltermode simple
 set hintnames uniform
+" Editor
+set editorcmd terminator -u -e "nvim %f '+normal!%lGzv%c|'"
+
+alias editor_rm composite editor | jsb -p tri.native.run(`rm -f '${JS_ARG[0]}'`)
+bind --mode=insert <C-i> editor_rm
+bind --mode=input <C-i> editor_rm
 
 " Make Tridactyl work on more sites at the expense of some security
 set csp clobber

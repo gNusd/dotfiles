@@ -10,6 +10,7 @@
 "***************************************************************************
 
 set nocompatible 		             	" be iMproved, required
+"##<leader>:Space
 let mapleader = " "
 
 " block arrow keys
@@ -19,18 +20,21 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 
 " mapping Alt + hjkl to left, right, down, up in insert mode
+"##<alt>hjkl:left, right, up and down in insert mode
 inoremap <buffer><a-h> <esc>h i
 inoremap <buffer><a-l> <esc>l i
 inoremap <buffer><a-j> <esc>j i
 inoremap <buffer><a-k> <esc>k i
 
 " remapping window navigation
+"##<ctrl>hjkl:window navigation left, right, up and down in normal mode
 noremap <c-h> <c-w>h
 noremap <c-l> <c-w>l
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 
 " mapping window navigaton in insert mode
+"##<ctrl>hjkl:window navigation left, right, up and down in insert mode
 inoremap <buffer> <c-h> <esc><c-w>h i
 inoremap <buffer> <c-l> <esc><c-w>l i
 inoremap <buffer> <c-j> <esc><c-w>j i
@@ -61,32 +65,49 @@ function! CloseAllBufferButCurrent()
 endfunction
 
 " Buffer handeling
+"##<leader><shift>j:previous buffer/document
 map <leader>J :bprevious <CR>
+"##<leader>j:previous buffer/document without saving
 map <leader>j :bprevious! <CR>
+"##<leader><shift>k:next buffer/document
 map <leader>K :bnext <CR>
+"##<leader>k:next buffer/document without saving
 map <leader>k :bnext! <CR>
+"##<leader>w:close buffer/document
 map <leader>w :bd <CR>
+"##<leader><shift>w:close buffer/document without saving
 map <leader>W :bd! <CR>
+"##<leader>q:close all buffers/documents but the active one
 map <leader>q :call CloseAllBufferButCurrent() <CR>
 
 " Spell checking
 set complete+=kspell,w,b,u
+
+"##<leader>s:swedish spelling check
 map <leader>s :setlocal spell! spelllang=sv spellfile=~/.config/nvim/spell/sv.utf-8.add<CR>
+"##<leader>e:english spelling check
 map <leader>e :setlocal spell! spelllang=en_us spellfile=~/.config/nvim/spell/en.utf-8.add<CR>
 
 " remap key connected to spell checks
+"##<leader>c:bring up suggestions
 nmap <leader>c z=
+"##<leader><shift>n:previous word
 nmap <leader>N [s
+"##<leader>n:next word
 nmap <leader>n ]s
+"##<leader>a:add word to dictionary
 nmap <leader>a zg
+"##<leader>a:delete word from dictionary
 nmap <leader>d zug
 
 " Reload init.vim
+"##<leader>r:reload init.vim
 map <leader>r :source ~/.config/nvim/init.vim<CR>
 
 " Permanent undo & undotree
 set undodir=~/.cache/nvim/undodir/
 set undofile
+"##<leader>å:toggle undotree
 map <leader>å :UndotreeToggle<CR>
 
 let g:undotree_WindowLayout = 3
@@ -94,18 +115,25 @@ let g:undotree_ShortIndicators = 1
 let g:undotree_TreeNodeShape = '*'
 
 " compile java
+"##<leader>z:compile java
 map <leader>z :!javac % <CR><CR>
 
 " compile c & cpp
+"##<leader>x:compile with gcc
 map <leader>x :!gcc % -o %:r <CR><CR>
 
 " npm install -g mdpdf
 " markdown to pdf and open file in zathura
+"##<leader>m:export markdown file to pdf
 map <leader>m :!mdpdf %<CR><CR>
-map <leader>mp :!mdpdf % && zathura %:r.pdf &<CR><CR>
+"##<leader><shift>m:export markdown file to pdf and open in zathura
+map <leader>M :!mdpdf % && zathura %:r.pdf &<CR><CR>
 
+"##<leader>l:open file from vifm in vertical split
 noremap <leader>l :VsplitVifm<CR>
+"##<leader>h:open file from vifm in horizontal split
 noremap <leader>h :SplitVifm<CR>
+"##<leader>§:toggle terminal
 nnoremap <leader>§ :Nuake<CR>
 
 " Terminal go back to normal mode
@@ -117,8 +145,11 @@ set wildignore+=*.a,*.o,*.gif,*.jpg,*.png,.git,*.swp,*.tmp,*.class
 
 source $HOME/repositories/dotfiles/.config/nvim/config/plug-plugin.vim
 "vim-plug
+"##<leader>i:install plugins with vim-plug
 map <leader>i :PlugInstall<cr>
+"##<leader>u:update plugins with vim-plug
 map <leader>u :PlugUpdate<cr>
+"##<leader>uu:upgrade plugins with vim-plug
 map <leader>uu :PlugUpgrade<cr>
 
 " Required:
@@ -163,6 +194,7 @@ let g:deoplete#auto_complete_start_length = 1
 let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-6.0/lib/libclang.so.1'
 
 " vim table mode
+"##<leader><tab>:toggle table mode
 map <leader><tab> :TableModeToggle <cr>
 let g:table_mode_corner="|"
 
@@ -186,17 +218,22 @@ let g:java_highlight_functions = 1
 let g:gitgutter_enabled = 1
 
 " vim fugitive
+"##<leader>g:git browser
 nmap <leader>g :Git<CR>
+"##<leader>gc:git commit menu
 nmap <leader>gc :Gcommit<CR>
+"##<leader>gd:git diff menu
 nmap <leader>gd :Gdiffsplit<CR>
+"##<leader>gb:git blame menu
 nmap <leader>gb :Gblame<CR>
-nmap <leader>ga :Gw<CR>
 
 " blame line
 nnoremap <silent> <leader>G :ToggleBlameLine<CR>
 
 " ctrlp
+"##<leader>,:bring up CtrlP for search
 nnoremap <leader>, :CtrlP<CR>
+"##<leader>b:bring up CtrlP for searching in the buffers
 nnoremap <leader>b :CtrlPBuffer<CR>
 let g:ctrp_by_filename = 1
 let g:ctrlp_custom_ignore = 'target\|git'
@@ -208,6 +245,7 @@ let g:ctrlp_prompt_mappings = {
   \ }
 
 " taglist
+"##<leader>t:toggle tag list menu
 nnoremap <leader>t :TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
 let Tlist_Auto_Highlight_Tag = 1
@@ -218,7 +256,6 @@ let Tlist_Enable_Fold_Column = 0
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Ctags_Cmd = '/usr/bin/ctags'
 
-nnoremap <silent> <leader>nn :NnnPicker<CR>
 
 " Floating window (neovim)
 function! s:layout()
@@ -240,6 +277,7 @@ endfunction
 let g:nnn#layout = 'call ' . string(function('<SID>layout')) . '()'
 
 "netrw
+"##<leader>f:toggle side file browser
 map <leader>f :Lexplore<CR>
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
@@ -285,8 +323,8 @@ let g:pear_tree_smart_closers = 1
 let g:pear_tree_smart_backspace = 1
 
 " Writing
+"##<leader>-:distraction-free writing in vim
 map <silent> <leader>- :Goyo \| set bg=dark \| set linebreak<CR>
-map <leader>_ <Plug>(Limelight)
 
 " Alias files
 source $HOME/repositories/dotfiles/.config/nvim/config/alias.vim

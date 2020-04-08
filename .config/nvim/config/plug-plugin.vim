@@ -52,7 +52,6 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'vifm/vifm.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'camspiers/animate.vim'
-Plug 'mcchrish/nnn.vim'
 
   " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'

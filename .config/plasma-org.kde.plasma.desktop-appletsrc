@@ -134,10 +134,6 @@ DialogWidth=960
 [Containments][2][Applets][68][Shortcuts]
 global=Meta+Alt+T
 
-[Containments][2][Applets][70]
-immutability=1
-plugin=org.kde.plasma.virtualdesktopbar
-
 [Containments][2][Applets][8]
 immutability=1
 plugin=org.kde.plasma.digitalclock
@@ -161,7 +157,7 @@ DialogWidth=2560
 PreloadWeight=0
 
 [Containments][2][General]
-AppletOrder=47;70;48;46;6;8;52;68
+AppletOrder=47;48;46;6;8;52;68
 
 [Containments][42]
 activityId=
@@ -205,19 +201,8 @@ DialogWidth=960
 
 [Containments][42][Applets][43][Configuration][General]
 iconSize=huge
-launchers=applications:firefox.desktop,applications:org.kde.kontact.desktop,applications:org.kde.konsole.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.kate.desktop,applications:alacritty.desktop,applications:com.valvesoftware.Steam.desktop
+launchers=applications:firefox.desktop,applications:org.kde.kontact.desktop,applications:org.kde.kate.desktop,applications:com.valvesoftware.Steam.desktop
 maxStripes=1
-
-[Containments][42][Applets][44]
-immutability=1
-plugin=org.kde.plasma.pager
-
-[Containments][42][Applets][44][Configuration]
-PreloadWeight=0
-
-[Containments][42][Applets][44][Configuration][ConfigDialog]
-DialogHeight=720
-DialogWidth=960
 
 [Containments][42][Applets][49]
 immutability=1
@@ -310,6 +295,9 @@ global=Meta+Alt+T
 immutability=1
 plugin=org.kde.plasma.virtualdesktopbar
 
+[Containments][42][Applets][72][Configuration]
+PreloadWeight=42
+
 [Containments][42][Applets][72][Configuration][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
@@ -317,14 +305,37 @@ DialogWidth=960
 [Containments][42][Applets][72][Configuration][General]
 buttonSpacing2=0
 buttonVerticalMargin=0
+dimLabelForIdle=false
 distinctIndicatorOccupied=false
 enableKWinScriptsAPI=true
 indicatorColor=#ffaa00
-indicatorStyle=2
-labelFont=Hack
+indicatorStyle=1
+labelFont=Hack Nerd Font Mono
 labelSize=20
 labelStyle=0
 showPlusButton=false
+
+[Containments][42][Applets][73]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][42][Applets][73][Configuration]
+PreloadWeight=42
+
+[Containments][42][Applets][73][Configuration][General]
+length=26
+
+[Containments][42][Applets][74]
+immutability=1
+plugin=org.kde.plasma.weather
+
+[Containments][42][Applets][75]
+immutability=1
+plugin=org.kde.latte.separator
+
+[Containments][42][Applets][75][Configuration][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
 
 [Containments][42][ConfigDialog]
 DialogHeight=1440
@@ -334,7 +345,7 @@ DialogWidth=291
 PreloadWeight=0
 
 [Containments][42][General]
-AppletOrder=62;21;43;72;44;49;50;51;69
+AppletOrder=62;21;43;72;73;75;49;50;51;69
 
 [Containments][63]
 ItemGeometriesHorizontal=
@@ -346,16 +357,27 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][63][Applets][71]
+[Containments][63][Applets][76]
 immutability=1
 plugin=org.kde.plasma.notes
 
-[Containments][63][Applets][71][Configuration][ConfigDialog]
+[Containments][63][Applets][76][Configuration][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
 
-[Containments][63][Applets][71][Configuration][General]
-noteId=d4669619-bf07-40ae-856e-971a067301
+[Containments][63][Applets][76][Configuration][General]
+noteId=afa7547b-c640-4e3e-a67c-66e276b207
+
+[Containments][63][Applets][77]
+immutability=1
+plugin=org.kde.plasma.notes
+
+[Containments][63][Applets][77][Configuration][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
+
+[Containments][63][Applets][77][Configuration][General]
+noteId=94691552-11ec-47aa-8980-5dfbc39181
 
 [Containments][63][ConfigDialog]
 DialogHeight=720
@@ -417,7 +439,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][7][Applets][11][Configuration]
-PreloadWeight=30
+PreloadWeight=100
 
 [Containments][7][Applets][11][Configuration][ConfigDialog]
 DialogHeight=720
@@ -472,7 +494,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][19][Configuration]
-PreloadWeight=0
+PreloadWeight=22
 
 [Containments][7][Applets][19][Configuration][ConfigDialog]
 DialogHeight=720
@@ -486,7 +508,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][7][Applets][20][Configuration]
-PreloadWeight=77
+PreloadWeight=100
 
 [Containments][7][Applets][54]
 immutability=1
@@ -543,7 +565,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][9][Configuration]
-PreloadWeight=0
+PreloadWeight=15
 
 [Containments][7][ConfigDialog]
 DialogHeight=600
@@ -591,4 +613,4 @@ immutability=1
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/bin,0,desktop:/snap,0,desktop:/nextcloud,0,desktop:/raw,0,desktop:/Sync,0,desktop:/repositories,0,desktop:/install.log,0,desktop:/tmp,0,desktop:/projects,0,desktop:/virtualbox,0,desktop:/hämtningar,0,desktop:/Skrivbord,0
+screenMapping=desktop:/projects,0,desktop:/nextcloud,0,desktop:/tmp,0,desktop:/virtualbox,0,desktop:/install.log,0,desktop:/Sync,0,desktop:/Skrivbord,0,desktop:/repositories,0,desktop:/raw,0,desktop:/snap,0,desktop:/hämtningar,0,desktop:/bin,0

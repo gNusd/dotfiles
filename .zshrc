@@ -6,6 +6,7 @@
 
 [ -f "$HOME/repositories/dotfiles/zsh_promt.conf" ] && source "$HOME/repositories/dotfiles/zsh_promt.conf"
 [ -f "$HOME/repositories/dotfiles/zsh_complete.conf" ] && source "$HOME/repositories/dotfiles/zsh_complete.conf"
+[ -f "$HOME/repositories/dotfiles/zsh_vi-mode.conf" ] && source "$HOME/repositories/dotfiles/zsh_vi-mode.conf"
 # [ -f "$HOME/repositories/dotfiles/zsh_color.conf" ] && source "$HOME/repositories/dotfiles/zsh_color.conf"
 
 # History in cache directory:

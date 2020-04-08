@@ -55,6 +55,7 @@ quickmark g https://github.com/gNusd?tab=repositories
 quickmark r https://reddit.com
 quickmark l https://www.last.fm/user/gnusd
 quickmark a https://github.com/brson/rust-anthology/blob/master/master-list.md
+quickmark y moz-extension://abc78a67-d424-4451-95ca-85c6b0a7df47/reader.html
 
 " searchurls
 set searchurls.yt https://www.youtube.com/results?search_query=

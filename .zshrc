@@ -4,11 +4,13 @@
 
 # PS1="%B%{$fg[green]%}%n%{$fg[blue]%}@%{$fg[green]%}%M %{$fg[blue]%}%~%{$reset_color%} $%b
 
-[ -f "$HOME/repositories/dotfiles/zsh_promt.conf" ] && source "$HOME/repositories/dotfiles/zsh_promt.conf"
-[ -f "$HOME/repositories/dotfiles/zsh_complete.conf" ] && source "$HOME/repositories/dotfiles/zsh_complete.conf"
-[ -f "$HOME/repositories/dotfiles/zsh_vi-mode.conf" ] && source "$HOME/repositories/dotfiles/zsh_vi-mode.conf"
-[ -f "$HOME/repositories/dotfiles/zsh_key-bindings.conf" ] && source "$HOME/repositories/dotfiles/zsh_key-bindings.conf"
-# [ -f "$HOME/repositories/dotfiles/zsh_color.conf" ] && source "$HOME/repositories/dotfiles/zsh_color.conf"
+# Load aliases and shortcuts if existent.
+[ -f "$HOME/repositories/dotfiles/.config/zsh/promt.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/promt.zsh"
+[ -f "$HOME/repositories/dotfiles/.config/zsh/complete.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/complete.zsh"
+[ -f "$HOME/repositories/dotfiles/.config/zsh/vi-mode.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/vi-mode.zsh"
+[ -f "$HOME/repositories/dotfiles/.config/zsh/key-bindings.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/key-bindings.zsh"
+[ -f "$HOME/repositories/dotfiles/.config/zsh/alias.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/alias.zsh"
+[ -f "$HOME/repositories/dotfiles/.ssh/ssh_alias" ] && source "$HOME/repositories/dotfiles/.ssh/ssh_alias"
 
 # History in cache directory:
 HISTSIZE=10000
@@ -70,11 +72,6 @@ bindkey -s '^o' 'lfcd\n'
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-# Load aliases and shortcuts if existent.
-[ -f "$HOME/repositories/dotfiles/zsh_alias" ] && source "$HOME/repositories/dotfiles/zsh_alias"
-[ -f "$HOME/repositories/dotfiles/.ssh/ssh_alias" ] && source "$HOME/repositories/dotfiles/.ssh/ssh_alias"
-[ -f "$HOME/.config/broot/launcher/bash/br" ] && source "$HOME/.config/broot/launcher/bash/br"
-
 setopt LIST_PACKED             # make completion lists more densely packed
 setopt MENU_COMPLETE           # auto-insert first possible ambiguous completion
 setopt AUTO_PARAM_SLASH        # tab completing directory appends a slash
@@ -86,4 +83,3 @@ export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
 # Load zsh-syntax-highlighting; should be last.
 [ -f "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" 2>/dev/null
-

@@ -5,7 +5,7 @@ Enabled=true
 Delay=0.7
 
 [Theme]
-name=Nordic
+name=breeze-dark
 
 [Theme-plasmashell_org.kde.plasma.mediacenter]
 name=breeze-dark

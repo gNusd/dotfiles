@@ -14,7 +14,7 @@ Name_2=2049
 Name_3=off-world
 Name_4=earth
 Number=4
-Rows=2
+Rows=1
 
 [DrmOutputs][b92bbcb42b][b92bbcb42b]
 Scale=1
@@ -142,7 +142,9 @@ RollOverDesktops=true
 [org.kde.kdecoration2]
 BorderSize=Normal
 BorderSizeAuto=false
-ButtonsOnLeft=MS
+ButtonsOnLeft=MNS
 ButtonsOnRight=HIAX
 CloseOnDoubleClickOnMenu=false
 ShowToolTips=true
+library=org.kde.breeze
+theme=Breeze

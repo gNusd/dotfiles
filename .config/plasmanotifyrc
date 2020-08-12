@@ -14,7 +14,7 @@ Seen=true
 Seen=true
 
 [Notifications]
-PopupPosition=BottomRight
+PopupPosition=TopRight
 
 [Services][kdeconnect]
 ShowInHistory=false

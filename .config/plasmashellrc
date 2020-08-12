@@ -20,46 +20,47 @@ Width 2560=700
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=Gnu-crypto-icon-orange100x100.png,file:$HOME/nextcloud/bilder/backgrounds/bird.jpg,file:$HOME/nextcloud/bilder/backgrounds/sylvia-ritter-discodingo-sylviaritter.jpg,file:$HOME/nextcloud/bilder/backgrounds/Disco-Dingo_WP_4096x2304.jpg,file:$HOME/nextcloud/bilder/backgrounds/david-lynch.jpg,file:$HOME/nextcloud/bilder/icon/Gnu-crypto-icon-orange100x100.png
-Recent URLs[$e]=file:$HOME/nextcloud/bilder/backgrounds/
+Recent Files[$e]=Gnu-crypto-icon-orange100x100.png,file:$HOME/nextcloud/bilder/icon/Gnu-crypto-icon-orange100x100.png,file:$HOME/nextcloud/bilder/backgrounds/bird.jpg,file:$HOME/nextcloud/bilder/backgrounds/sylvia-ritter-discodingo-sylviaritter.jpg,file:$HOME/nextcloud/bilder/backgrounds/Disco-Dingo_WP_4096x2304.jpg,file:$HOME/nextcloud/bilder/backgrounds/david-lynch.jpg
+Recent URLs[$e]=file:$HOME/nextcloud/bilder/icon/
 detailViewIconSize=0
 iconViewIconSize=43
 
 [KPropertiesDialog]
-Height 1440=514
+Height 1440=513
 Width 2560=468
 
 [PIMEventsPlugin]
-calendars=35,36,37,38,39,40
+calendars=35,36,37,38,39,40,70,72,74,75,76,77
 
 [PlasmaRunnerManager]
-LaunchCounts=1 services_org.kde.konversation.desktop,1 services_com.spotify.Client.desktop,1 services_gufw.desktop,1 services_buka_buka.desktop,1 services_zathura.desktop,1 services_brave_brave.desktop,1 services_nl.hjdskes.gcolor3.desktop,1 bookmarks_http://192.168.1.182:8080/,1 services_com.github.artemanufrij.playmymusic.desktop,1 services_gonvim.desktop,1 services_io.itch.itch.desktop,2 services_org.telegram.desktop.desktop,2 services_glrnvim.desktop,1 services_com.github.babluboy.bookworm.desktop,1 services_rofi run.desktop,1 services_eu.tiliado.NuvolaAppSpotify.desktop,7 services_org.kde.yakuake.desktop,3 services_blueproximity.desktop,2 services_org.kde.kate.desktop,1 services_com.github.geigi.cozy.desktop,1 shell_freecad,1 services_strawberry_strawberry.desktop,1 services_emoticons.desktop,2 services_com.bitwarden.desktop.desktop,1 services_org.kde.ksysguard.desktop,1 services_Zoom.desktop,1 services_rxvt-unicode.desktop,1 services_albert.desktop,2 services_com.valvesoftware.Steam.desktop,2 services_nvim-gtk_nvim-gtk.desktop,1 services_kcm_pulseaudio.desktop,1 services_chromium-browser.desktop,2 services_libreoffice-writer.desktop,2 services_transmission-remote-gtk.desktop,3 services_org.daa.NeovimGtk.desktop,2 services_org.clementine_player.Clementine.desktop,1 shell_rofi,3 services_quasselclient.desktop,1 services_oni.desktop,1 services_org.kde.kompare.desktop,1 baloosearch_/home/gnus/hämtningar/Gaddis Java 6th Edition.pdf,1 services_lbry.desktop,1 baloosearch_/home/gnus/nextcloud/dokument/matte_4-6.pdf,1 services_org.musicbrainz.Picard.desktop,1 services_com.google.AndroidStudio.desktop,1 services_kcm_phonon.desktop,1 services_org.gnome.Lollypop.desktop,1 services_screenlocker.desktop,1 services_meld.desktop,2 services_nvidia-settings.desktop,1 services_kde-gtk-config.desktop,1 services_pavucontrol-qt.desktop
+LaunchCounts=4 services_org.daa.NeovimGtk.desktop,2 services_transmission-remote-gtk.desktop,2 services_com.valvesoftware.Steam.desktop,3 services_blueproximity.desktop,1 services_io.itch.itch.desktop,1 services_com.github.babluboy.bookworm.desktop,1 services_org.musicbrainz.Picard.desktop,1 services_buka_buka.desktop,1 services_kcm_pulseaudio.desktop,1 services_org.gnome.Lollypop.desktop,2 services_libreoffice-writer.desktop,2 services_com.bitwarden.desktop.desktop,1 services_lbry.desktop,1 shell_rofi,1 services_brave_brave.desktop,1 shell_freecad,1 services_gufw.desktop,1 services_org.kde.konversation.desktop,1 services_rofi run.desktop,1 services_gonvim.desktop,2 services_org.clementine_player.Clementine.desktop,1 services_com.google.AndroidStudio.desktop,1 baloosearch_/home/gnus/nextcloud/dokument/matte_4-6.pdf,9 services_org.kde.yakuake.desktop,3 services_quasselclient.desktop,2 services_nvidia-settings.desktop,1 bookmarks_http://192.168.1.182:8080/,1 services_org.kde.kompare.desktop,2 services_org.kde.kate.desktop,1 services_oni.desktop,1 services_meld.desktop,1 services_chromium-browser.desktop,1 services_com.github.artemanufrij.playmymusic.desktop,1 services_emoticons.desktop,1 services_eu.tiliado.NuvolaAppSpotify.desktop,1 services_org.kde.ksysguard.desktop,1 services_nl.hjdskes.gcolor3.desktop,1 services_screenlocker.desktop,1 services_zathura.desktop,1 services_com.github.geigi.cozy.desktop,1 baloosearch_/home/gnus/hämtningar/Gaddis Java 6th Edition.pdf,1 services_kde-gtk-config.desktop,1 services_Haroopad.desktop,1 services_albert.desktop,1 services_nvim-qt.desktop,1 services_Zoom.desktop,2 services_nvim-gtk_nvim-gtk.desktop,2 services_glrnvim.desktop,1 services_pavucontrol-qt.desktop,1 services_com.spotify.Client.desktop,1 services_strawberry_strawberry.desktop,2 services_org.telegram.desktop.desktop,1 services_kcm_phonon.desktop,1 services_rxvt-unicode.desktop
 pluginWhiteList=services,desktopsessions,PowerDevil,calculator,unitconverter,shell,bookmarks,baloosearch,locations
 
 [PlasmaViews][Panel 2]
 alignment=2
 
 [PlasmaViews][Panel 2][Defaults]
-maxLength=2511
-minLength=2511
-thickness=44
+maxLength=2560
+minLength=2560
+thickness=28
 
 [PlasmaViews][Panel 2][Horizontal1280]
 thickness=44
 
 [PlasmaViews][Panel 2][Horizontal2560]
-maxLength=2511
-minLength=2511
-thickness=44
+maxLength=2560
+minLength=2560
+thickness=28
 
 [PlasmaViews][Panel 23][Horizontal2560]
 thickness=40
 
 [PlasmaViews][Panel 42]
-alignment=1
+alignment=2
+panelVisibility=1
 
 [PlasmaViews][Panel 42][Defaults]
-thickness=48
+thickness=46
 
 [PlasmaViews][Panel 42][Horizontal2560]
 thickness=40
@@ -67,7 +68,7 @@ thickness=40
 [PlasmaViews][Panel 42][Vertical1440]
 maxLength=1440
 minLength=1440
-thickness=48
+thickness=46
 
 [PlasmaViews][Panel 42][Vertical720]
 thickness=48

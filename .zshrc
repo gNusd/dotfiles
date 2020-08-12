@@ -8,9 +8,9 @@
 [ -f "$HOME/repositories/dotfiles/.config/zsh/promt.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/promt.zsh"
 [ -f "$HOME/repositories/dotfiles/.config/zsh/complete.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/complete.zsh"
 [ -f "$HOME/repositories/dotfiles/.config/zsh/vi-mode.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/vi-mode.zsh"
-[ -f "$HOME/repositories/dotfiles/.config/zsh/key-bindings.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/key-bindings.zsh"
+[ -f "$HOME/repositories/dotfiles/.config/zsh/keybindings.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/keybindings.zsh"
 [ -f "$HOME/repositories/dotfiles/.config/zsh/alias.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/alias.zsh"
-[ -f "$HOME/repositories/dotfiles/.ssh/ssh_alias" ] && source "$HOME/repositories/dotfiles/.ssh/ssh_alias"
+[ -f "$HOME/repositories/dotfiles/.ssh/alias.ssh" ] && source "$HOME/repositories/dotfiles/.ssh/alias.ssh"
 
 # History in cache directory:
 HISTSIZE=10000
@@ -57,19 +57,19 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Use lf to switch directories and bind it to ctrl-o
-lfcd () {
-    tmp="$(mktemp)"
-    lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp"
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
-}
-bindkey -s '^o' 'lfcd\n'
+# lfcd () { tmp="$(mktemp)"
+#     lf -last-dir-path="$tmp" "$@"
+#     if [ -f "$tmp" ]; then
+#         dir="$(cat "$tmp")"
+#         rm -f "$tmp"
+#         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+#     fi
+# }
+# bindkey -s '^o' 'lfcd\n'
 
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
+# bind: "<ctrl>e" desc: "edit line from terminal in vim buffer"
 bindkey '^e' edit-command-line
 
 setopt LIST_PACKED             # make completion lists more densely packed
@@ -80,6 +80,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
 export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
+export LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0"
 
 # Load zsh-syntax-highlighting; should be last.
 [ -f "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" 2>/dev/null

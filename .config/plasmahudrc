@@ -1,0 +1,24 @@
+[General]
+Matching=fuzzy
+Sort=true
+WaitForAllMenuItems=true
+Lines=20
+
+[Icons]
+Enabled=true
+Theme=breeze
+
+[Shortcuts]
+Enabled=true
+
+[Style]
+Font=Monospace 12
+Title=HUD:
+
+[Colors]
+Background=#111111
+Foreground=#eeeff0
+SelectedBackground=#062d25
+SelectedForeground=#1abc9c
+Borders=#000000
+ShortcutForeground=#888888

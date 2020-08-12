@@ -1,121 +1,40 @@
-/*##########################################*/
-/*   ▒███▒██  ██░████   ██    ██   ▒█████░ 	*/
-/*  ░███████  ███████▓  ██    ██  ████████ 	*/
-/*  ███  ███  ███  ▒██  ██    ██  ██▒  ░▒█ 	*/
-/*  ██░  ░██  ██    ██  ██    ██  █████▓░ 	*/
-/*  ██    ██  ██    ██  ██    ██  ░██████▒ 	*/
-/*  ██░  ░██  ██    ██  ██    ██     ░▒▓██ 	*/
-/*  ███  ███  ██    ██  ██▒  ███  █▒░  ▒██ 	*/
-/*  ░███████  ██    ██  ▓███████  ████████ 	*/
-/*   ▒███▒██  ██    ██   ▓███░██  ░▓████▓ 	*/
-/*   █░  ▒██ 								*/
-/*   ██████▓ 								*/
-/*   ▒████▒ 								*/
-/*##########################################*/
+
+/*  ####  #    # #    #  ####  Year: 2020
+/* #    # ##   # #    # #
+/* #      # #  # #    #  ####
+/* #  ### #  # # #    #      # https://github.com/gnusd
+/* #    # #   ## #    # #    # http://gnusd.xyz
+/*  ####  #    #  ####   ####
 /*
 /* this script is configured to make the tabs smaller and to hide the urlbar. */
 /* I use tridactyl (https://github.com/tridactyl/tridactyl) to search and navigate */
 
+/* changing the colors for the tab bar */
+#tabbrowser-tabs { --tab-line-color: #feb744 !important; }
+#tabbrowser-tabs:-moz-window-inactive { --tab-line-color: #A9B665 !important; }
 
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-
-
-toolbarbutton#alltabs-button {
-  -moz-binding: url("./userChrome/userChrome.xml#execute_javascript_code");
-}
-
-
-
-:root:not([customizing]) #nav-bar toolbarbutton
- {
-    margin-left: -28px !important;
-    opacity: 0 !important;
-    transform: scale(.85, .85) !important;
-    pointer-events: none !important;
-    transition: all 100ms var(--animation-easing-function) !important;
-}
-
-:root:not([customizing]) :hover > #nav-bar toolbarbutton,
-:root:not([customizing]) #navigator-toolbox:focus-within #nav-bar toolbarbutton,
-:root:not([customizing]) :hover > #titlebar toolbarbutton {
-    transform: scale(1, 1) !important;
-opacity:1 !important;
-margin-left:0 !important;
-pointer-events: auto !important;
-}
-
-
-#tabbrowser-tabs {
-	--tab-line-color: -moz-win-accentcolor !important;
-	--tab-loading-fill: -moz-win-accentcolor !important;
-box-shadow: none !important;
-}
-#tabbrowser-tabs:-moz-window-inactive {
-	--tab-line-color: #262727 !important;
-}
-
-.webextension-browser-action {
-filter: saturate(0%);
-}
-
-
-:root[lwtheme-image]:-moz-lwtheme-brighttext {
-    text-shadow: none !important;
-}
-
-
-/*
- * Only show close buttons on background tabs when hovering with the mouse
- *
- * Contributor(s): Timvde
- */
-
-.tabbrowser-tab:not([selected]):not([pinned]) .tab-close-button {
-  display: none !important;
-}
-
-.tabbrowser-tab:not([selected]):not([pinned]):hover .tab-close-button {
-  display: none !important;
-}
-#tabbrowser-tabs .tabbrowser-tab .tab-close-button { display:none!important; }
-#tabbrowser-tabs .tabs-newtab-button { visibility: collapse; }
-/*
- * Underlines and dims unloaded tabs
- *
- * Contributor(s): josemam
- */
-
-.tabbrowser-tab[pending] {
- font-style: italic;
-}
-
-toolbarspring {
-    min-width: 8px;
-    max-width: 8px;
-}
-
-.scroller {
-  width: 300px;
-  height: 100px;
-  overflow-y: scroll;
-  scrollbar-color: #1D2021 #262727;
-  scrollbar-width: thin;
-}
+/* changing font wight and size for tab bar */
+#tabbrowser-tabs .tab-text{ font-size:10pt !important; font-weight: bold !important; font-family: hack !important;}
+.tabbrowser-tab[pending] { font-style: italic; }
 
 /* Change tab max width */
-.tabbrowser-tab[fadein]:not([pinned]) {
-    max-width: 100px !important;
-	max-height: 20px !important;
-}
-.tabbrowser-tab[fadein]:[pinned] {
-    max-width: 30px !important;
-}
+.tabbrowser-tab[fadein]:not([pinned]) { max-width: 200px !important; }
 
-#TabsToolbar { height: 30px !important; }
+/* Change tab max hight */
+:root {  --tab-toolbar-navbar-overlap: 0px !important;  --tab-min-height: 20px !important; }
+#TabsToolbar { height:var(--tab-min-height)!important; margin-top:-1px!important; margin-bottom:1px!important }
+
+/* disable the new tab button in tab bar */
+#tabs-newtab-button { display:none !important; }
+
+/* remove the close button on the tabs */
+#tabbrowser-tabs .tab-close-button { display:none !important; }
 
 /* autohide addressbar */
-#nav-bar {
-    height: 0px !important;
-    min-height: 0px !important;
-    overflow: hidden !important;
-}
+#nav-bar { height: 0px !important; min-height: 0px !important; overflow: hidden !important; }
+
+/* Hide the scroll bar */
+:-moz-any(#content,#appcontent) browser{margin-right:-12px!important;margin-bottom:0px!important;overflow-y:scroll;overflow-x:hidden;}
+
+/* Hide the statusbar */
+#statuspanel { display:none!important; }

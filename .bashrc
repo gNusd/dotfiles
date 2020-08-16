@@ -110,9 +110,16 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
+repo_path="$HOME/repositories/dotfiles"
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f $repo_path/.bash_aliases ]; then
+    . $repo_path/.bash_aliases 
+fi
+if [ -f $repo_path/.exports ]; then
+    . $repo_path/.exports 
+fi
+if [ -f $repo_path/.ssh/alias.ssh ]; then
+    . $repo_path/.ssh/alias.ssh 
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -126,18 +133,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export EDITOR=nvim
-export VISUAL=nvim
-export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
-export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
-
-eval "$(ntfy shell-integration)"
-export AUTO_NTFY_DONE_IGNORE="vim screen meld"
-
-source $HOME/.ssh/ssh_alias
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export FZF_DEFAULT_OPS="--extended"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-source /home/gnus/.config/broot/launcher/bash/br

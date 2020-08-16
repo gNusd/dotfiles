@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+export EDITOR="nvim"
+export VISUAL="nvim"
+export PATH="$HOME/bin:/snap/bin:$PATH"

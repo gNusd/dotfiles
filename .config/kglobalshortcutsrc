@@ -319,6 +319,7 @@ activate widget 104=Ctrl+Alt+Z,none,Aktivera komponenten Uptime Widget
 activate widget 108=Alt+F1,none,Aktivera komponenten Instrumentpanel för program
 activate widget 11=Alt+V,none,Aktivera komponenten Ljudvolym
 activate widget 3=,none,Aktivera komponenten Starta program
+activate widget 54=Print,none,Aktivera komponenten Mediaspelare
 activate widget 68=Meta+Alt+T,none,Aktivera komponenten Panel Transparency Button
 clear-history=none,none,Töm klippbordshistorik
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Aktivera klippbordsåtgärder

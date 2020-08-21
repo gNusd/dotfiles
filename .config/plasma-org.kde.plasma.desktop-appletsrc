@@ -27,7 +27,7 @@ run associated application=true
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][128]
+[Containments][135]
 activityId=
 formfactor=0
 immutability=1
@@ -36,17 +36,26 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][128][ConfigDialog]
+[Containments][135][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
 
-[Containments][128][General]
+[Containments][135][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=950
 ToolBoxButtonY=30
 
-[Containments][128][Wallpaper][org.kde.image][General]
-Image=file:///home/gnus/nextcloud/bilder/backgrounds/bird.jpg
+[Containments][135][Wallpaper][org.kde.image][General]
+Image=/home/gnus/nextcloud/bilder/backgrounds/bird.jpg
+
+[Containments][136]
+activityId=
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
 
 [Containments][2]
 activityId=
@@ -130,6 +139,13 @@ plugin=org.kde.plasma.battery
 [Containments][2][Applets][109][Configuration]
 PreloadWeight=65
 
+[Containments][2][Applets][131]
+immutability=1
+plugin=org.kde.kscreen
+
+[Containments][2][Applets][131][Configuration]
+PreloadWeight=85
+
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
 
@@ -148,7 +164,7 @@ immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][2][Applets][52][Configuration]
-PreloadWeight=37
+PreloadWeight=42
 
 [Containments][2][Applets][52][Configuration][ConfigDialog]
 DialogHeight=720
@@ -191,7 +207,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][8][Configuration]
-PreloadWeight=40
+PreloadWeight=45
 
 [Containments][2][Applets][8][Configuration][Appearance]
 enabledCalendarPlugins=/usr/lib/x86_64-linux-gnu/qt5/plugins/plasmacalendarplugins/pimevents.so
@@ -248,7 +264,7 @@ DialogWidth=2560
 PreloadWeight=0
 
 [Containments][2][General]
-AppletOrder=99;98;46;108;104;105;6;109;8;52;68
+AppletOrder=99;98;46;108;104;105;6;8;52;68;109
 
 [Containments][66]
 ItemGeometriesHorizontal=
@@ -350,7 +366,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][14][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][7][Applets][15][Configuration]
 PreloadWeight=42
@@ -402,7 +418,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][7][Applets][54][Configuration]
-PreloadWeight=0
+PreloadWeight=20
 
 [Containments][7][Applets][54][Configuration][ConfigDialog]
 DialogHeight=720
@@ -500,4 +516,4 @@ immutability=1
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/nextcloud,0,desktop:/tmp,0,desktop:/hämtningar,0,desktop:/Sync,0,desktop:/snap,0,desktop:/projects,0,desktop:/install.log,0,desktop:/repositories,0,desktop:/raw,0,desktop:/Skrivbord,0,desktop:/bin,0,desktop:/virtualbox,0
+screenMapping=desktop:/Skrivbord,0,desktop:/repositories,0,desktop:/virtualbox,0,desktop:/projects,0,desktop:/raw,0,desktop:/hämtningar,0,desktop:/install.log,0,desktop:/bin,0,desktop:/Sync,0,desktop:/tmp,0,desktop:/nextcloud,0,desktop:/snap,0

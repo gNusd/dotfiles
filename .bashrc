@@ -10,13 +10,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# pyjoke -c all | cowsay
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
-
-tmux source-file $HOME/.tmux.conf
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -120,6 +113,9 @@ if [ -f $repo_path/.exports ]; then
 fi
 if [ -f $repo_path/.ssh/alias.ssh ]; then
     . $repo_path/.ssh/alias.ssh 
+fi
+if [ -f $repo_path/.bash_functions ]; then
+    . $repo_path/.bash_functions 
 fi
 
 # enable programmable completion features (you don't need to enable

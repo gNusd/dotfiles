@@ -4,7 +4,7 @@ alias :q='exit'
 alias reload='source $HOME/.bashrc'
 alias x='clear'
 alias xnvimswap='rm $HOME/.local/share/nvim/swap/*.swp'
-alias pkupdate='sudo apt refresh -p && sudo apt update -p && sudo apt autoremove'
+alias sysup='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 alias vim="nvim"
 alias vi="nvim"
 
@@ -20,10 +20,19 @@ alias bashrc='$EDITOR $HOME/repositories/dotfiles/.bashrc'
 alias bashalias='$EDITOR $HOME/repositories/dotfiles/.bash_aliases'
 alias inputrc='$EDITOR $HOME/repositories/dotfiles/.inputrc'
 
+# navigation
+alias ..='cd ..' 
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../..'
+alias .5='cd ../../../..'
+alias .6='cd ../../../../..'
 
 # BEETS & TORRENTS
-alias imbeet="beet import $HOME/hämtningar/torrent/complete/imports"
-alias imclear="rm -rf $HOME/hämtningar/torrent/complete/imports/*"
+alias imbeet="beet import $HOME/hämtningar/torrent/imports"
+alias imclear="rm -rf $HOME/hämtningar/torrent/imports/*"
 alias comp="cd  $HOME/hämtningar/torrent/complete && ll"
 alias incomp="cd  $HOME/hämtningar/torrent/incomplete && ll"
-
+alias ytflac="youtube-dl --extract-audio --audio-format flac --audio-quality 0"
+alias mvim="mv * $HOME/hämtningar/torrent/imports"
+alias import="cd $HOME/hämtningar/torrent/imports"

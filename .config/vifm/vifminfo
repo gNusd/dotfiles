@@ -30,9 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/gnus/projects
-	java
-9
 d/home/gnus/projects/java
 	kursen
 1
@@ -329,6 +326,9 @@ d/home/gnus/projects/python
 36
 d/home/gnus/tmp/nvim
 	..
+0
+d/home/gnus/tmp
+	
 0
 d
 

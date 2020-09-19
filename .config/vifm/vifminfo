@@ -21,7 +21,7 @@
 # Bookmarks:
 
 # TUI:
-ar
+al
 q1
 v2
 ov
@@ -30,9 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/gnus/projects/java
-	kursen
-1
 d/home/gnus/projects/java/kursen
 	my_chapter_6
 7
@@ -330,6 +327,9 @@ d/home/gnus/tmp/nvim
 d/home/gnus/tmp
 	
 0
+d/home/gnus/repositories/dotfiles/.config/nvim
+	maps.vim
+6
 d
 
 # Right window history (oldest to newest):
@@ -559,8 +559,29 @@ D/home/gnus
 	bin
 54
 D/home/gnus/bin
-	.gitignore
-2
+	..
+0
+D/home/gnus
+	repositories
+48
+D/home/gnus/repositories
+	dotfiles
+4
+D/home/gnus/repositories/dotfiles
+	.config
+1
+D/home/gnus/repositories/dotfiles/.config
+	zsh
+11
+D/home/gnus/repositories/dotfiles/.config/zsh
+	..
+0
+D/home/gnus/repositories/dotfiles/.config
+	nvim
+3
+D/home/gnus/repositories/dotfiles/.config/nvim
+	init.vim
+6
 D
 
 # Command line history (oldest to newest):

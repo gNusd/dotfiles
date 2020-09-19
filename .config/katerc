@@ -21,8 +21,8 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/projects/matsedel/mat.yaml,file:$HOME/repositories/dotfiles/zsh_alias,file:$HOME/repositories/dotfiles/.zshrc,file:$HOME/repositories/scripts/init.sh,file:$HOME/syncthing.stimagst.com,file:$HOME/repositories/dotfiles/.config/nvim/init.vim,file:$HOME/projects/java/kursen/my_chapter_6/Rectangle.java,file:$HOME/projects/java/kursen/my_chapter_6/ConstructorDemo.java,file:$HOME/nextcloud/backup/rss/antennapod-feeds.opml,file:$HOME/repositories/dotfiles/.bashrc,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
-Recent URLs[$e]=file:$HOME/repositories/dotfiles/
+Recent Files[$e]=file:$HOME/projects/matsedel/mat.yaml,file:$HOME/repositories/dotfiles/.config/nvim/init.vim,file:$HOME/repositories/dotfiles/.zshrc,file:$HOME/repositories/scripts/init.sh,file:$HOME/syncthing.stimagst.com,file:$HOME/projects/java/kursen/my_chapter_6/Rectangle.java,file:$HOME/projects/java/kursen/my_chapter_6/ConstructorDemo.java,file:$HOME/nextcloud/backup/rss/antennapod-feeds.opml,file:$HOME/repositories/dotfiles/.bashrc,file:$HOME/projects/python/gotr/database.py,file:$HOME/projects/python/fanatic_bak/db.py
+Recent URLs[$e]=file:$HOME/repositories/dotfiles/.config/nvim/
 detailViewIconSize=0
 iconViewIconSize=43
 listViewIconSize=0

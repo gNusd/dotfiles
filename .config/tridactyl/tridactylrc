@@ -115,6 +115,7 @@ set searchurls.pbay https://thepiratebay.org/search.php?q=
 set searchurls.non https://www.netonnet.se/Search?query=
 " bind: "pj" desc: "search prisjakt.nu"
 set searchurls.pj https://classic.prisjakt.nu/#rparams=ss=
-
+" bind: "disc" desc: "search discogs.com"
+set searchurls.disc https://www.discogs.com/search/?type=all&q=
 " This will have to do until someone writes us a nice syntax file :)
 vim: set filetype=vim:

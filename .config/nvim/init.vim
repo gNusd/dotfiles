@@ -1,4 +1,3 @@
-
 """"  "    " "    "  """"  Year: 2020
 "    " ""   " "    " "
 "      " "  " "    "  """"
@@ -191,6 +190,7 @@ au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 set wildignore+=*.a,*.o,*.gif,*.jpg,*.png,.git,*.swp,*.tmp,*.class
 
 source $HOME/repositories/dotfiles/.config/nvim/config/plug-plugin.vim
+
 "vim-plug
 " bind: "<leader>i" desc: "install plugins with vim-plug"
 map <leader>i :PlugInstall<cr>

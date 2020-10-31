@@ -37,20 +37,20 @@ bindkey -v '^?' backward-delete-char
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
-  if [[ ${KEYMAP} == vicmd ]] ||
-     [[ $1 = 'block' ]]; then
-    echo -ne '\e[1 q'
-  elif [[ ${KEYMAP} == main ]] ||
-       [[ ${KEYMAP} == viins ]] ||
-       [[ ${KEYMAP} = '' ]] ||
-       [[ $1 = 'beam' ]]; then
-    echo -ne '\e[5 q'
-  fi
+		if [[ ${KEYMAP} == vicmd ]] ||
+				[[ $1 = 'block' ]]; then
+						echo -ne '\e[1 q'
+				elif [[ ${KEYMAP} == main ]] ||
+						[[ ${KEYMAP} == viins ]] ||
+						[[ ${KEYMAP} = '' ]] ||
+						[[ $1 = 'beam' ]]; then
+										echo -ne '\e[5 q'
+		fi
 }
 zle -N zle-keymap-select
 zle-line-init() {
-    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
-    echo -ne "\e[5 q"
+zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+echo -ne "\e[5 q"
 }
 zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
@@ -79,8 +79,7 @@ setopt AUTO_PARAM_SLASH        # tab completing directory appends a slash
 export EDITOR=nvim
 export VISUAL=nvim
 export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
-export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
-export LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0"
+export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:/$HOME/.local/bin:$PATH"
 
 # Load zsh-syntax-highlighting; should be last.
 [ -f "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" 2>/dev/null

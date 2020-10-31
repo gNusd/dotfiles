@@ -18,6 +18,11 @@ alias vim='nvim'
 alias gvim='glrnvim'
 # bind: "simple python server" desc: "create a simple python server"
 alias pyserv="python3 -m http.server 8000 --bind 192.168.2.120"
+alias nb="newsboat -r"
+
+# alias for navigation
+alias ..="cd .."
+alias ...="cd ../.."
 
 # alias to directories
 # bind: "dotfiles" desc: "cd to dotfiles folder"

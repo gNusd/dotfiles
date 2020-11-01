@@ -4,6 +4,8 @@ alias :q='exit'
 alias reload='source $HOME/.zshrc'
 # bind: "x" desc: "alternativ to <ctrl>l when running tmux"
 alias x='clear'
+# bind: "fd" desc: "fd find"
+alias fd="fdfind"
 # bind: "xnvimswap" desc: "remove the swapfile in neovim"
 alias xnvimswap='rm $HOME/.local/share/nvim/swap/*.swp'
 # bind: "sysup" desc: "update the system"

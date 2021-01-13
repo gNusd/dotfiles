@@ -11,16 +11,16 @@
 " *|_|_| |_|_|\__(_)_/ |_|_| |_| |_|
 
 " Config files
-map <leader>Va 	:e $HOME/repositories/dotfiles/.config/nvim/config/alias.vim <CR>
-map <leader>Vp 	:e $HOME/repositories/dotfiles/.config/nvim/config/plug-plugin.vim <CR>
-map <leader>V 	:e $HOME/repositories/dotfiles/.config/nvim/init.vim <CR>
-map <leader>Tri :e $HOME/repositories/dotfiles/.config/tridactyl/tridactylrc <CR>
-map <leader>Tx  :e $HOME/repositories/dotfiles/.tmux.conf <CR>
-map <leader>Zs  :e $HOME/repositories/dotfiles/.zshrc <CR>
-map <leader>Za 	:e $HOME/repositories/dotfiles/.zsh_alias <CR>
-map <leader>In 	:e $HOME/repositories/dotfiles/.inputrc <CR>
-map <leader>AC 	:e $HOME/repositories/dotfiles/.alacritty.yml <CR>
-map <leader>map	:e $HOME/repositories/dotfiles/.config/nvim/config/maps.vim <CR>
+map <leader>Va 	:e $HOME/.local/git/dotfiles/.config/nvim/config/alias.vim <CR>
+map <leader>Vp 	:e $HOME/.local/git/dotfiles/.config/nvim/config/plug-plugin.vim <CR>
+map <leader>V 	:e $HOME/.local/git/dotfiles/.config/nvim/init.vim <CR>
+map <leader>Tri :e $HOME/.local/git/dotfiles/.config/tridactyl/tridactylrc <CR>
+map <leader>Tx  :e $HOME/.local/git/dotfiles/.tmux.conf <CR>
+map <leader>Zs  :e $HOME/.local/git/dotfiles/.zshrc <CR>
+map <leader>Za 	:e $HOME/.local/git/dotfiles/.zsh_alias <CR>
+map <leader>In 	:e $HOME/.local/git/dotfiles/.inputrc <CR>
+map <leader>AC 	:e $HOME/.local/git/dotfiles/.alacritty.yml <CR>
+map <leader>map	:e $HOME/.local/git/dotfiles/.config/nvim/config/maps.vim <CR>
 
 " Files
 map <leader>shop :e $HOME/nextcloud/dokument/inköpslistor/Shopping+List.lst <CR>
@@ -28,6 +28,3 @@ map <leader>list :e /home/gnus/nextcloud/dokument/inköpslistor/shoppinglist.txt
 
 " Directories
 map <leader>N :cd $HOME/nextcloud/notes/ <CR>
-
-" projects
-map <leader>Pj :cd $HOME/projects/java/kursen/ <CR>

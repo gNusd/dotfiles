@@ -4,13 +4,16 @@
 
 # PS1="%B%{$fg[green]%}%n%{$fg[blue]%}@%{$fg[green]%}%M %{$fg[blue]%}%~%{$reset_color%} $%b
 
-# Load aliases and shortcuts if existent.
-[ -f "$HOME/repositories/dotfiles/.config/zsh/promt.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/promt.zsh"
-[ -f "$HOME/repositories/dotfiles/.config/zsh/complete.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/complete.zsh"
-[ -f "$HOME/repositories/dotfiles/.config/zsh/vi-mode.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/vi-mode.zsh"
-[ -f "$HOME/repositories/dotfiles/.config/zsh/keybindings.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/keybindings.zsh"
-[ -f "$HOME/repositories/dotfiles/.config/zsh/alias.zsh" ] && source "$HOME/repositories/dotfiles/.config/zsh/alias.zsh"
-[ -f "$HOME/repositories/dotfiles/.ssh/alias.ssh" ] && source "$HOME/repositories/dotfiles/.ssh/alias.ssh"
+# Load scripts, aliases and shortcuts if existent.
+DOTFILES="$HOME/.local/git/dotfiles"
+[ -f "$DOTFILES/.config/zsh/promt.zsh" ] && source "$DOTFILES/.config/zsh/promt.zsh"
+[ -f "$DOTFILES/.config/zsh/complete.zsh" ] && source "$DOTFILES/.config/zsh/complete.zsh"
+[ -f "$DOTFILES/.config/zsh/vi-mode.zsh" ] && source "$DOTFILES/.config/zsh/vi-mode.zsh"
+[ -f "$DOTFILES/.config/zsh/keybindings.zsh" ] && source "$DOTFILES/.config/zsh/keybindings.zsh"
+[ -f "$DOTFILES/.config/zsh/alias.zsh" ] && source "$DOTFILES/.config/zsh/alias.zsh"
+[ -f "$DOTFILES/.config/zsh/exports.zsh" ] && source "$DOTFILES/.config/zsh/exports.zsh"
+[ -f "$DOTFILES/.config/zsh/fzf.zsh" ] && source "$DOTFILES/.config/zsh/fzf.zsh"
+[ -f "$DOTFILES/.ssh/alias.ssh" ] && source "$DOTFILES/.ssh/alias.ssh"
 
 # History in cache directory:
 HISTSIZE=10000
@@ -26,7 +29,6 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # vi mode
 bindkey -v
-export KEYTIMEOUT=1
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -76,10 +78,6 @@ setopt LIST_PACKED             # make completion lists more densely packed
 setopt MENU_COMPLETE           # auto-insert first possible ambiguous completion
 setopt AUTO_PARAM_SLASH        # tab completing directory appends a slash
 
-export EDITOR=nvim
-export VISUAL=nvim
-export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
-export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:/$HOME/.local/bin:$PATH"
 
 # Load zsh-syntax-highlighting; should be last.
 [ -f "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" 2>/dev/null

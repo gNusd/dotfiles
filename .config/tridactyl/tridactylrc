@@ -13,7 +13,7 @@ sanitise tridactyllocal tridactylsync
 "
 
 " open in mpv
-bind ,v hint -W exclaim_quiet mpv
+bind ,v hint -W exclaim_quiet mpv --ontop --no-border --autofit=540x324 --geometry=99%:2%
 " Make gu take you back to subreddit from comments
 " bindurl reddit.com gu urlparent 4
 
@@ -31,8 +31,9 @@ bind gD composite tabduplicate | tabdetach
 colourscheme dark
 
 " Hinting mode
-set hintfiltermode simple
+set hintfiltermode vimperator
 set hintnames uniform
+set hintuppercase true
 
 " Set terminal
 set editorcmd alacritty -e nvim %f
@@ -52,7 +53,7 @@ bind P clipboard open
 bind yg composite js "git clone " + document.location.href.replace(/https?:\/\//,"git@").replace("/",":").replace(/$/,".git") | clipboard yank
 
 " bind: ",g" desc: "As above but execute it and open terminal in folder"
-bind ,g js let uri = document.location.href.replace(/https?:\/\//,"git@").replace("/",":").replace(/$/,".git"); tri.native.run("cd ~/repositories ; git clone " + uri + "; cd \"$(basename \"" + uri + "\" .git)\"; alacritty")
+bind ,g js let uri = document.location.href.replace(/https?:\/\//,"git@").replace("/",":").replace(/$/,".git"); tri.native.run("cd ~/repositories ; git clone " + uri + "; cd \"$(basename \"" + uri + "\" .git)\"; konsol")
 
 " Make Tridactyl work on more sites at the expense of some security
 " set csp clobber
@@ -85,37 +86,78 @@ quickmark y moz-extension://abc78a67-d424-4451-95ca-85c6b0a7df47/reader.html
 quickmark d https://www.downdogapp.com/web
 
 " searchurls
+
+""""""""""""""
+" Streaming
+""""""""""""""
+
 " bind: "yt" desc: "search youtube"
 set searchurls.yt https://www.youtube.com/results?search_query=
 " bind: "svt" desc: "search svtplay"
 set searchurls.svt https://www.svtplay.se/sok?q=
+
+"""""""""""""
+" Dictionaries
+" """""""""""
+
 " bind: "en" desc: "search english dictionary"
 set searchurls.en https://sv.bab.la/lexikon/engelsk-svensk/
 " bind: "sv" desc: "search swedish dictionary"
 set searchurls.sv https://sv.bab.la/lexikon/svensk-engelsk/
+
+"""""""""""""""
+" Linux software
+"""""""""""""""
+
 " bind: "snap" desc: "search the snap store"
 set searchurls.snap https://snapcraft.io/search?q=
 " bind: "flat" desc: "search the flathub"
 set searchurls.flat https://flathub.org/apps/search/
 " bind: "kde" desc: "search kde store"
 set searchurls.kde https://store.kde.org/search/projectSearchText/
-" bind: "imdb" desc: "search imdb"
-set searchurls.imdb https://www.imdb.com/find?ref_=nv_sr_fn&q=
+"""""""""""""""
+" Repos
+"""""""""""""""
+
 " bind: "github" desc: "search github"
 set searchurls.github https://github.com/search?q=
+
+""""""""""""""
+" Music & Movies
+""""""""""""""
+
+" bind: "imdb" desc: "search imdb"
+set searchurls.imdb https://www.imdb.com/find?ref_=nv_sr_fn&q=
 " bind: "bc" desc: "search bandcamp"
 set searchurls.bc https://bandcamp.com/search?q=
-" bind: "rut" desc: "search rutracker"
-set searchurls.rut https://rutracker.org/forum/search_cse.php?q=
 " bind: "mb" desc: "search musicbrainz"
 set searchurls.mb https://musicbrainz.org/search?type=artist&method=indexed&query=
-" bind: "pbay" desc: "search the pirate bay"
-set searchurls.pbay https://thepiratebay.org/search.php?q=
 " bind: "non" desc: "search netonnet.se"
 set searchurls.non https://www.netonnet.se/Search?query=
-" bind: "pj" desc: "search prisjakt.nu"
-set searchurls.pj https://classic.prisjakt.nu/#rparams=ss=
 " bind: "disc" desc: "search discogs.com"
 set searchurls.disc https://www.discogs.com/search/?type=all&q=
+
+""""""""""""""
+" Shopping
+""""""""""""""
+
+" bind: "pj" desc: "search prisjakt.nu"
+set searchurls.pj https://classic.prisjakt.nu/#rparams=ss=
+
+"""""""""""""""
+" Torrents
+"""""""""""""""
+" bind: "rut" desc: "search rutracker"
+set searchurls.rut https://rutracker.org/forum/search_cse.php?q=
+" bind: "pbay" desc: "search the pirate bay"
+set searchurls.pbay https://thepiratebay.org/search.php?q=
+" bind: "sky" desc: "search skytorrent.lol"
+set searchurls.sky https://www.skytorrents.lol/?query=
+" bind: "td" desc: "search torrentdownloads.me"
+set searchurls.td https://www.torrentdownloads.me/search/?search=
+" bind: "lt" desc: "search limetorrents.info"
+set searchurls.lt  https://www.limetorrents.info/search/all/
+
+
 " This will have to do until someone writes us a nice syntax file :)
 vim: set filetype=vim:

@@ -1,13 +1,48 @@
-##### README.md
+# DOTFILES
 
-# gnus' .files
-
-These are some of my dotfiles. I have gotten a lot of inspiration from other peoples dotfiles and it also contain snippets from some of these files.
-
-There are some legacy files that is not being used currently.
-
-Files not currently in use:
-
-* .vimrc - are using neovim now, '.neovimrc' -> .config/nvim/init.vim
-* .ncmpcpp
-* .config/qutebrowser
+    CONTENT
+		.
+		├── .bash_aliases
+		├── .bashrc
+		├── .config
+		│  ├── .nvimlog
+		│  ├── alacritty
+		│  │  └── alacritty.yml
+		│  ├── nvim
+		│  │  ├── config
+		│  │  │  ├── alias.vim
+		│  │  │  ├── lsp.vim
+		│  │  │  └── plug-plugin.vim
+		│  │  └── init.vim
+		│  └── spell
+		│     ├── en.utf-8.add
+		│     ├── en.utf-8.add.spl
+		│     ├── en.utf-8.spl
+		│     ├── en.utf-8.sug
+		│     ├── sv.utf-8.add
+		│     ├── sv.utf-8.add.spl
+		│     ├── sv.utf-8.spl
+		│     └── sv.utf-8.sug
+		├── .inputrc
+		├── .mozilla
+		│  └── firefox
+		│     └── current
+		│        └── chrome
+		│           ├── 00firefox.png
+		│           ├── README.md
+		│           ├── userChrome
+		│           │  ├── custom_scrollbars.uc.js
+		│           │  └── userChrome.xml
+		│           └── userChrome.css
+		├── .newsboat
+		│  ├── config
+		│  ├── history.cmdline
+		│  ├── history.search
+		│  ├── nohup.out
+		│  └── urls
+		├── .profile
+		├── .ssh
+		│  └── alias.ssh
+		├── .tmux.conf
+		├── .zshrc
+		└── README.md

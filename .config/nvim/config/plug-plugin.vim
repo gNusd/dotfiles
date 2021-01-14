@@ -17,6 +17,7 @@ call plug#begin('~/.config/nvim/plugged/')
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 " Terminal & filesystem
 Plug 'ryanoasis/vim-devicons'

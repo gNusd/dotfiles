@@ -1,9 +1,9 @@
-""""  "    " "    "  """"  Year: 2020
+ """"  "    " "    "  """"  Year: 2020
 "    " ""   " "    " "
 "      " "  " "    "  """"
 "  """ "  " " "    "      " https://github.com/gnusd
 "    " "   "" "    " "    " http://gnusd.xyz
-""""  "    "  """"   """"
+ """"  "    "  """"   """"
 
 set nocompatible						" be iMproved, required
 " bind: "<leader> Space" desc: "leader mod key"
@@ -83,6 +83,7 @@ autocmd InsertEnter * set cul                    " cursor in insertmode
 autocmd InsertLeave * set nocul                  " cursor in normalmode
 set path+=**									" Searches current directory recursively.
 set wildmenu									" Display all matches when tab complete.
+
 
 " Closing all but current buffer
 function! CloseAllBufferButCurrent()
@@ -281,6 +282,12 @@ map <leader>tk <C-w>t<C-w>K
 
 " Removes pipes | that act as seperators on splits
 set fillchars+=vert:\
+
+" markdown preview
+
+nmap <leader>mp <Plug>MarkdownPreview
+nmap <leader>ms <Plug>MarkdownPreviewStop
+nmap <leader>mt <Plug>MarkdownPreviewToggle
 
 " auto close
 let g:pear_tree_smart_openers = 1

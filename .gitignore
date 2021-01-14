@@ -1,2 +1,5 @@
 .config/nvim/plugged/
 .nvimlog
+cache.db
+cache.db.lock
+.netrwhist

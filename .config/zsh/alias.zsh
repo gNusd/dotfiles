@@ -7,13 +7,15 @@ alias x='clear'
 # bind: "xnvimswap" desc: "remove the swapfile in neovim"
 alias xnvimswap='rm $HOME/.local/share/nvim/swap/*.swp'
 # bind: "sysup" desc: "update the system"
-alias sysup='sudo dnf upgrade && sudo dnf autoremove && sudo flatpak update && sudo fwupd.fwupdmgr update'
+alias sysup='sudo dnf upgrade && sudo dnf autoremove && sudo flatpak update && sudo fwupdmgr update'
 # bind: "fwup" desc: "update only the firmware"
-alias fwup='sudo fwupd.fwupdmgr update'
+alias fwup='sudo fwupdmgr update'
 # bind: "flatup" desc: "update only flatpak packages"
 alias flatup='sudo flatpak update'
 # bind: "vim" desc: "starts nvim"
 alias vim='nvim'
+# bind: "" desc: ""
+alias sudo='sudo '
 # bind: "pyserv" desc: "create a simple python server"
 alias pyserv="python3 -m http.server 8000 --bind 192.168.2.120"
 # bind: "nb" desc: "start newsboat & reload feeds"
@@ -93,6 +95,3 @@ alias la='exa -la --icons --git'
 alias l='exa -F --git'
 # bind: "tree" desc: "tree view in exa"
 alias tree='exa -T --icons --git'
-
-
-alias sumneko_lua=/usr/local/bin/lua-language-server -E ./main.lua

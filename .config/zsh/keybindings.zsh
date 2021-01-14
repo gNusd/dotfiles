@@ -10,7 +10,7 @@ function git_prepare() {
 				BUFFER="git add -A && git commit -v && git push"
 		fi
 
-		zle accept-line:
+		zle accept-line
 }
 zle -N git_prepare
 bindkey "^g" git_prepare
@@ -26,16 +26,16 @@ bindkey "^h" home
 
 # bind: "<ctrl>d" desc: "change directory to downloads directory"
 function download() {
-		BUFFER="cd $HOME/hämtningar"
+		BUFFER="cd $HOME/downloads"
 		zle accept-line
 }
 zle -N download
 bindkey "^d" download
 
-# bind: "<ctrl>:" desc: "change directory to dotfile directory"
+# bind: "<ctrl>§" desc: "change directory to dotfile directory"
 function dotfiles() {
-		BUFFER="cd $HOME/repositories/dotfile"
+		BUFFER="cd $HOME/.local/git/dotfile"
 		zle accept-line
 }
 zle -N dotfiles
-bindkey "^:" dotfiles
+bindkey "^§" dotfiles

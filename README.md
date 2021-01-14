@@ -5,7 +5,6 @@
 		├── .bash_aliases
 		├── .bashrc
 		├── .config
-		│  ├── .nvimlog
 		│  ├── alacritty
 		│  │  └── alacritty.yml
 		│  ├── nvim

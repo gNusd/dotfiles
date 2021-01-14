@@ -22,20 +22,3 @@ function home() {
 }
 zle -N home
 bindkey "^h" home
-
-
-# bind: "<ctrl>d" desc: "change directory to downloads directory"
-function download() {
-		BUFFER="cd $HOME/downloads"
-		zle accept-line
-}
-zle -N download
-bindkey "^d" download
-
-# bind: "<ctrl>§" desc: "change directory to dotfile directory"
-function dotfiles() {
-		BUFFER="cd $HOME/.local/git/dotfile"
-		zle accept-line
-}
-zle -N dotfiles
-bindkey "^§" dotfiles

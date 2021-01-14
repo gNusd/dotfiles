@@ -26,17 +26,20 @@ alias inputrc='$EDITOR $HOME/repositories/dotfiles/.inputrc'
 alias edbin="vifm $HOME/bin/"
 alias vifm.="vifm $(pwd)"
 
+# ls
+alias ltree="tree | less"
+
 # navigation
 alias ..='cd ..'
 alias ...='cd ../..'
 
 # BEETS & TORRENTS
-alias imbeet="beet import $HOME/hämtningar/torrent/imports"
-alias imclear="rm -rf $HOME/hämtningar/torrent/imports/*"
-alias koski="cd  $HOME/hämtningar/torrent/kowalski && ll"
-alias incomp="cd  $HOME/hämtningar/torrent/incomplete && ll"
+alias imbeet="beet import /home/media/import"
+alias imclear="rm -rf /home/media/import/*"
+alias recive="cd  /home/media/recive && ll"
 alias ytflac="youtube-dl --extract-audio --audio-format flac --audio-quality 0"
-alias mvim="mv * $HOME/hämtningar/torrent/imports"
-alias import="cd $HOME/hämtningar/torrent/imports"
-alias mvim="mv $HOME/hämtningar/torrent/kowalski/* $HOME/hämtningar/torrent/imports && cd $HOME/hämtningar/torrent/imports && tree"
+alias import="cd /home/media/import"
+alias mvim="mv /home/media/recive/*  /home/media/import && cd /home/media/import"
 alias beim="beet import ."
+alias video="cd /home/media/video && ll"
+alias mvvi="mv /home/media/recive/*  /home/media/video && cd /home/media/video"

@@ -1,8 +1,0 @@
-XDG_DESKTOP_DIR="$HOME/skrivbord/"
-XDG_DOCUMENTS_DIR="$HOME/nextcloud/dokument/"
-XDG_DOWNLOAD_DIR="$HOME/hämtningar/"
-XDG_MUSIC_DIR="$HOME/"
-XDG_PICTURES_DIR="$HOME/nextcloud/bilder/"
-XDG_PUBLICSHARE_DIR="$HOME/"
-XDG_TEMPLATES_DIR="$HOME/"
-XDG_VIDEOS_DIR="$HOME/nextcloud/video/"

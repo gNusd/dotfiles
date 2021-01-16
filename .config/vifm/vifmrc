@@ -14,7 +14,7 @@
 " If you would like to use emacs or emacsclient, you can use them.
 " Since emacs is a GUI app and not a terminal app like vim, append the command
 " with an ampersand (&).
-set vicmd=/snap/bin/nvim
+set vicmd=/usr/bin/nvim
 " set vicmd=vim
 
 " This makes vifm perform file operations on its own instead of relying on

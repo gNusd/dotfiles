@@ -34,7 +34,7 @@ colourscheme dark
 set hintfiltermode vimperator
 set hintnames uniform
 set hintuppercase true
-
+set hintchars hnjuikm,lopö.äå-
 " Set terminal
 set editorcmd alacritty -e nvim %f
 
@@ -53,7 +53,7 @@ bind P clipboard open
 bind yg composite js "git clone " + document.location.href.replace(/https?:\/\//,"git@").replace("/",":").replace(/$/,".git") | clipboard yank
 
 " bind: ",g" desc: "As above but execute it and open terminal in folder"
-bind ,g js let uri = document.location.href.replace(/https?:\/\//,"git@").replace("/",":").replace(/$/,".git"); tri.native.run("cd ~/repositories ; git clone " + uri + "; cd \"$(basename \"" + uri + "\" .git)\"; konsol")
+bind ,g js let uri = document.location.href.replace(/https?:\/\//,"git@").replace("/",":").replace(/$/,".git"); tri.native.run("cd ~/.local/git/repositories/   ; git clone " + uri + "; cd \"$(basename \"" + uri + "\" .git)\"; alacritty")
 
 " Make Tridactyl work on more sites at the expense of some security
 " set csp clobber
@@ -157,7 +157,6 @@ set searchurls.sky https://www.skytorrents.lol/?query=
 set searchurls.td https://www.torrentdownloads.me/search/?search=
 " bind: "lt" desc: "search limetorrents.info"
 set searchurls.lt  https://www.limetorrents.info/search/all/
-
 
 " This will have to do until someone writes us a nice syntax file :)
 vim: set filetype=vim:

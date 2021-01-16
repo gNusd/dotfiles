@@ -1,10 +1,10 @@
 
-""""  "    " "    "  """"  Year: 2019
+ """"  "    " "    "  """"  Year: 2019
 "    " ""   " "    " "
 "      " "  " "    "  """"
 "  """ "  " " "    "      " https://github.com/gnusd
 "    " "   "" "    " "    " http://gnusd.xyz
-""""  "    "  """"   """"  FILE: plug-plugins.vim
+ """"  "    "  """"   """"  FILE: plug-plugins.vim
 
 """"""""""""""""""
 " INSTALLING VIM-PLUG
@@ -13,10 +13,20 @@
 "
 """"""""""""""""""
 
+"vim-plug
+" bind: "<leader>i" desc: "install plugins with vim-plug"
+map <leader>i :PlugInstall<cr>
+" bind: "<leader>u" desc: "update plugins with vim-plug"
+map <leader>u :PlugUpdate<cr>
+" bind: "<leader>uu" desc: "upgrade plugins with vim-plug"
+map <leader>uu :PlugUpgrade<cr>
+
 call plug#begin('~/.config/nvim/plugged/')
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
+Plug 'steelsojka/completion-buffers'
+Plug 'aca/completion-tabnine', { 'do': './install.sh' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 " Terminal & filesystem
@@ -27,7 +37,7 @@ Plug 'camspiers/animate.vim'
 
 " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'wellle/tmux-complete.vim'
+Plug 'albertoCaroM/completion-tmux'
 
 " git plugins
 Plug 'tpope/vim-fugitive'
@@ -39,10 +49,10 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'godlygeek/tabular'
-Plug 'ervandew/supertab'
 Plug 'dhruvasagar/vim-table-mode', {'on': 'TableModeToggle '}
 Plug 'mbbill/undotree'
 Plug 'tmsvg/pear-tree'
+Plug 'junegunn/vim-peekaboo'
 
 " schemes and themes
 Plug 'itchyny/lightline.vim'
@@ -51,6 +61,7 @@ Plug 'zefei/vim-wintabs'
 Plug 'zefei/vim-wintabs-powerline'
 Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
 Plug 'chrisbra/Colorizer'
+Plug 'mhinz/vim-startify'
 
 Plug 'ThePrimeagen/vim-be-good'
 " Initialize plugin system

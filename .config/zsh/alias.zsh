@@ -28,6 +28,8 @@ alias ...="cd ../.."
 # alias to directories
 # bind: "dotfiles" desc: "cd to dotfiles folder"
 alias dotfiles='cd $HOME/.local/git/dotfiles && exa -la --git'
+# bind: "nvimrc" desc: "cd to nvim's config folder"
+alias nvimrc='cd $HOME/.local/git/dotfiles/.config/nvim/config && exa -la --git'
 # bind: "scripts" desc: "cd to scripts files folder"
 alias scripts='cd $HOME/.local/git/scripts && exa -la --git'
 # bind: "config" desc: "cd to .config folder"

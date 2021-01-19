@@ -6,10 +6,8 @@
 "    " "   "" "    " "    " http://gnusd.xyz
  """"  "    "  """"   """"  FILE: term.vim
 
-" bind: "<leader>l" desc: "open file from vifm in vertical split"
-noremap <leader>l :VsplitVifm<CR>
-" bind: "<leader>h" desc: "open file from vifm in horizontal split"
-noremap <leader>h :SplitVifm<CR>
+" bind: "<leader>v" desc: "open file from vifm in vertical split"
+noremap <leader>v :VsplitVifm<CR>
 " bind: "<leader>h" desc: "open file from vifm"
 noremap <leader>, :Edit Vifm .<CR>
 

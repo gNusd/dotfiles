@@ -11,6 +11,9 @@ set completeopt=menuone,noinsert,noselect    " Set completeopt to have a better 
 set shortmess+=c                             " Avoid showing message extra message when using completion
 set complete+=kspell,w,b,u                 	 " Spell checking
 
+" setting up complition in every buffer
+autocmd BufEnter * lua require'completion'.on_attach()
+
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"

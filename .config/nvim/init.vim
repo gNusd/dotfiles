@@ -5,8 +5,9 @@
 "    " "   "" "    " "    " http://gnusd.xyz
  """"  "    "  """"   """"
 
+
 set nocompatible						        " be iMproved, required
-" bind: "<leader> Space" desc: "leader mod key"
+" bind: "<leader> Space" desc: "leader modification key"
 let mapleader = " "
 set encoding=UTF-8
 set shell=/usr/bin/zsh
@@ -20,7 +21,7 @@ set path+=**									" Searches current directory recursively.
 set undodir=~/.cache/nvim/undodir/ 				" Setting undodir
 set undofile 									" setting undofile for permanent undo
 set wildignore+=*.a,*.o,*.gif,*.jpg,*.png,.git,*.swp,*.tmp,*.class 	" file to ignore
-set listchars=eol:⏎,tab:>-,trail:·,extends:>,precedes:<,space:· 	" show tabs and spaces
+set listchars=tab:>-,trail:·,extends:>,precedes:<,space:· 	" show tabs and spaces, not using end of line (eol:⏎,)
 set list
 
 autocmd BufWritePre * %s/\s\+$//e 				" Remove trailing whitespace
@@ -32,7 +33,11 @@ noremap <silent><leader>y :w !xsel -i -b<CR><CR>
 " bind: "<leader>p" desc: "Paste from clipboard"
 noremap <silent><leader>p :r !xsel -o -b<CR>
 
-autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank('Substitute', 750)
+let g:highlightedyank_highlight_duration = 1000
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
+augroup END
 
 " mode indicators
 autocmd InsertEnter * set cul                    " cursor in insertmode

@@ -23,17 +23,20 @@ map <leader>uu :PlugUpgrade<cr>
 
 call plug#begin('~/.config/nvim/plugged/')
 
+" LSP & completion
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'steelsojka/completion-buffers'
 Plug 'aca/completion-tabnine', { 'do': './install.sh' }
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'RishabhRD/popfix'
+Plug 'RishabhRD/nvim-lsputils'
 
 " Terminal & filesystem
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vifm/vifm.vim'
 Plug 'camspiers/animate.vim'
+Plug 'jremmen/vim-ripgrep'
 
 " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'
@@ -53,6 +56,8 @@ Plug 'dhruvasagar/vim-table-mode', {'on': 'TableModeToggle '}
 Plug 'mbbill/undotree'
 Plug 'tmsvg/pear-tree'
 Plug 'junegunn/vim-peekaboo'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'vimwiki/vimwiki'
 
 " schemes and themes
 Plug 'itchyny/lightline.vim'

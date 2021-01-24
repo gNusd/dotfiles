@@ -1,5 +1,4 @@
- """"  "    " "    "  """"  Year: 2019
-"    " ""   " "    " "
+ """"  "    " "    "  """"  Year: 2019 "    " ""   " "    " "
 "      " "  " "    "  """"
 "  """ "  " " "    "      " https://github.com/gnusd
 "    " "   "" "    " "    " http://gnusd.xyz
@@ -67,6 +66,7 @@ map <silent> <leader>z :call Compile()<CR><CR>
 source $HOME/.local/git/dotfiles/.config/nvim/config/plug-plugin.vim
 source $HOME/.local/git/dotfiles/.config/nvim/config/lsp.vim
 source $HOME/.local/git/dotfiles/.config/nvim/config/alias.vim
+source $HOME/.local/git/dotfiles/.config/nvim/config/ab.vim
 source $HOME/.local/git/dotfiles/.config/nvim/config/completion.vim
 source $HOME/.local/git/dotfiles/.config/nvim/config/nav.vim
 source $HOME/.local/git/dotfiles/.config/nvim/config/git.vim
@@ -100,7 +100,22 @@ nmap <leader>mp <Plug>MarkdownPreview
 nmap <leader>ms <Plug>MarkdownPreviewStop
 nmap <leader>mt <Plug>MarkdownPreviewToggle
 
+" markdown to pdf
+nmap <leader>2 :! pandoc -o %:r.pdf % <CR>
+nmap <leader>22 :! pandoc -o %:r.pdf % <CR> :!zathura '%<'.pdf&;disown<cr>:redraw!<CR>
+
 " auto close
 let g:pear_tree_smart_openers = 1
 let g:pear_tree_smart_closers = 1
 let g:pear_tree_smart_backspace = 1
+
+
+let g:vimwiki_list = [{'path': '~/nextcloud/notes', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_use_calendar = 1
+
+command! Diary VimwikiDiaryIndex
+augroup vimwikigroup
+    autocmd!
+    " automatically update links on read diary
+    autocmd BufRead,BufNewFile diary.wiki VimwikiDiaryGenerateLinks
+augroup end

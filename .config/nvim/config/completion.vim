@@ -4,7 +4,7 @@
 "      " "  " "    "  """"
 "  """ "  " " "    "      " https://github.com/gnusd
 "    " "   "" "    " "    " http://gnusd.xyz
- """"  "    "  """"   """"  FILE: comp_spell.vim
+ """"  "    "  """"   """"  FILE: completion.vim
 
 set wildmenu				                 " Display all matches when tab complete.
 set completeopt=menuone,noinsert,noselect    " Set completeopt to have a better completion experience
@@ -46,3 +46,14 @@ nmap <leader>n ]s
 nmap <leader>a zg
 " bind: "<leader>a" desc: "delete word from dictionary"
 nmap <leader>d zug
+
+:lua <<EOF
+vim.lsp.handlers['textDocument/codeAction'] = require'lsputil.codeAction'.code_action_handler
+vim.lsp.handlers['textDocument/references'] = require'lsputil.locations'.references_handler
+vim.lsp.handlers['textDocument/definition'] = require'lsputil.locations'.definition_handler
+vim.lsp.handlers['textDocument/declaration'] = require'lsputil.locations'.declaration_handler
+vim.lsp.handlers['textDocument/typeDefinition'] = require'lsputil.locations'.typeDefinition_handler
+vim.lsp.handlers['textDocument/implementation'] = require'lsputil.locations'.implementation_handler
+vim.lsp.handlers['textDocument/documentSymbol'] = require'lsputil.symbols'.document_handler
+vim.lsp.handlers['workspace/symbol'] = require'lsputil.symbols'.workspace_handler
+EOF

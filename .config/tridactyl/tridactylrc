@@ -34,7 +34,7 @@ colourscheme dark
 set hintfiltermode vimperator
 set hintnames uniform
 set hintuppercase true
-set hintchars hnjuikm,lopö.äå
+set hintchars hjukm,lopöå
 " Set terminal
 set editorcmd alacritty -e nvim %f
 

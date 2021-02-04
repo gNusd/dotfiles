@@ -1,0 +1,20 @@
+[Kate Vi Input Mode Settings]
+Command Mode Mapping Keys=
+Command Mode Mappings=
+Command Mode Mappings Recursion=
+Insert Mode Mapping Keys=
+Insert Mode Mappings=
+Insert Mode Mappings Recursion=
+Macro Completions=
+Macro Contents=
+Macro Registers=
+Map Leader=\\
+Normal Mode Mapping Keys=<leader>\\,,<leader>h,<leader>A,<leader>9,<c-h>,<leader>l,?<leader>p,<c-k>,<c-j>,<left>,<leader>t,<leader>§,<leader>b,<leader>T,<c-l>,?<leader>y,<up>,<down>,<leader><f3>,?,<right>
+Normal Mode Mappings=:CtrlP<cr>,:SplitVifm<cr>,:call,:!cargo,<c-w>h,:VsplitVifm<cr>,:r,<c-w>k,<c-w>j,<nop>,:TlistToggle<cr>,:Nuake<cr>,:CtrlPBuffer<cr>,:vnew,<c-w>l,:w,<nop>,<nop>,:Autoformat,;td,<nop>
+Normal Mode Mappings Recursion=false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false
+ViRegisterContents=lua,        print("False: "\\, multi_items)\n,
+ViRegisterFlags=0,1,0
+ViRegisterNames=-,0,^
+Visual Mode Mapping Keys=
+Visual Mode Mappings=
+Visual Mode Mappings Recursion=

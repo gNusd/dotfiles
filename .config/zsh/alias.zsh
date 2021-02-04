@@ -7,7 +7,7 @@ alias x='clear'
 # bind: "xnvimswap" desc: "remove the swapfile in neovim"
 alias xnvimswap='rm $HOME/.local/share/nvim/swap/*.swp'
 # bind: "sysup" desc: "update the system"
-alias sysup='sudo dnf upgrade && sudo dnf autoremove && sudo flatpak update && sudo fwupdmgr update'
+alias sysup='sudo dnf upgrade && sudo dnf autoremove && sudo flatpak update && sudo fwupdmgr update && rustup update'
 # bind: "fwup" desc: "update only the firmware"
 alias fwup='sudo fwupdmgr update'
 # bind: "flatup" desc: "update only flatpak packages"
@@ -70,8 +70,10 @@ alias trirc='$EDITOR $HOME/.local/git/dotfiles/.config/tridactyl/tridactylrc'
 alias tmuxrc='$EDITOR $HOME/.local/git/dotfiles/.tmux.conf'
 # bind: "zshrc" desc: "open and edit zsh's config file .zshrc"
 alias zshrc='$EDITOR $HOME/.local/git/dotfiles/.zshrc'
-# bind: "zshalias" desc: "open and edit zsh_alias"
+# bind: "zshalias" desc: "open and edit alias.zsh"
 alias zshalias='$EDITOR $HOME/.local/git/dotfiles/.config/zsh/alias.zsh'
+# bind: "zshkey" desc: "open and edit keybindings.zsh"
+alias zshkey='$EDITOR $HOME/.local/git/dotfiles/.config/zsh/keybindings.zsh'
 # bind: "inputrc" desc: "open and edit .inputrc"
 alias inputrc='$EDITOR $HOME/.local/git/dotfiles/.inputrc'
 # bind: "alacr" desc: "open and edit alacritty's config file alacritty.yml"

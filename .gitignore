@@ -3,3 +3,4 @@
 cache.db
 cache.db.lock
 .netrwhist
+.config/mpv/watch_later

@@ -1,0 +1,231 @@
+[file:///home/gnus/.config/katerc]
+Bookmarks=
+Checksum=31360634688fa0fdc302960cc7cd4364cf00c7e5
+Encoding=UTF-8
+Highlighting=.desktop
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=.desktop
+Mode Set By User=false
+Time=2021,1,9,7,51,30
+URL=file:///home/gnus/.config/katerc
+
+[file:///home/gnus/.config/kateschemarc]
+Bookmarks=
+Checksum=dd0fd53b5bb2c963a38c8af5058e759db3ea9474
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2021,1,9,7,46,58
+URL=file:///home/gnus/.config/kateschemarc
+
+[file:///home/gnus/.config/katevirc]
+Bookmarks=
+Checksum=9a20ce2fe8cf8c461a3d7617ef1d83b591985d68
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2021,1,9,7,47,9
+URL=file:///home/gnus/.config/katevirc
+
+[file:///home/gnus/.local/git/code/applications/lsbind/lsbind.py]
+Bookmarks=
+Checksum=59b3b81c43bd6ca628b3ad5e79a6e50929f5b4f5
+Encoding=UTF-8
+Highlighting=Python
+Highlighting Set By User=false
+Indentation Mode=python
+Mode=Python
+Mode Set By User=false
+Time=2021,1,17,19,53,31
+URL=file:///home/gnus/.local/git/code/applications/lsbind/lsbind.py
+
+[file:///home/gnus/.local/git/code/applications/matsedel/mat.yaml]
+Bookmarks=
+Checksum=67b73be7e77df7fab1d4ca6633c9d8bc7fcdbc46
+Encoding=UTF-8
+Highlighting=YAML
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=YAML
+Mode Set By User=false
+Time=2021,1,7,21,25,4
+URL=file:///home/gnus/.local/git/code/applications/matsedel/mat.yaml
+
+[file:///home/gnus/.local/git/code/applications/matsedel/select.py]
+Bookmarks=
+Checksum=c35ae9d07f5975e08a893576ae2a4772fc48d0b1
+Encoding=UTF-8
+Highlighting=Python
+Highlighting Set By User=false
+Indentation Mode=python
+Mode=Python
+Mode Set By User=false
+Time=2021,1,7,21,25,4
+URL=file:///home/gnus/.local/git/code/applications/matsedel/select.py
+
+[file:///home/gnus/.local/git/code/applications/matsedel/tmp.py]
+Bookmarks=
+Checksum=f08153167bbc491ac4b185c6f62707e32e5ebd55
+Encoding=UTF-8
+Highlighting=Python
+Highlighting Set By User=false
+Indentation Mode=python
+Mode=Python
+Mode Set By User=false
+Time=2021,1,7,21,25,4
+URL=file:///home/gnus/.local/git/code/applications/matsedel/tmp.py
+
+[file:///home/gnus/.local/git/code/dev/lsba.py]
+Bookmarks=
+Checksum=f4b547fc493fa6fbed8e3e1a17a85893cf8be933
+Encoding=UTF-8
+Highlighting=Python
+Highlighting Set By User=false
+Indentation Mode=python
+Mode=Python
+Mode Set By User=false
+Time=2021,1,10,21,11,19
+URL=file:///home/gnus/.local/git/code/dev/lsba.py
+
+[file:///home/gnus/.local/git/code/python/anagram.py]
+Bookmarks=
+Checksum=e0cf1c14490754e04b9b166da33fb14e384d15cf
+Encoding=UTF-8
+Highlighting=Python
+Highlighting Set By User=false
+Indentation Mode=python
+Mode=Python
+Mode Set By User=false
+Time=2021,1,6,21,43,6
+URL=file:///home/gnus/.local/git/code/python/anagram.py
+
+[file:///home/gnus/.local/git/dotfiles/.config/nvim/init.vim]
+Bookmarks=
+Checksum=6131d39147755a0f15336eaf6a3400de4f9fe96c
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2021,1,16,13,39,52
+URL=file:///home/gnus/.local/git/dotfiles/.config/nvim/init.vim
+
+[file:///home/gnus/nextcloud/.owncloudsync.log]
+Bookmarks=
+Checksum=e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2021,1,30,18,12,17
+URL=file:///home/gnus/nextcloud/.owncloudsync.log
+
+[file:///home/gnus/nextcloud/backup/bc/bitcoin-wallet-backup-2021-01-24-15-24]
+Bookmarks=
+Checksum=163ebcc28fc34ff7eb5a29ef5f596ccc2d357371
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2021,1,24,14,26,23
+URL=file:///home/gnus/nextcloud/backup/bc/bitcoin-wallet-backup-2021-01-24-15-24
+
+[file:///home/gnus/package-lock.json]
+Bookmarks=
+Checksum=48e341a0954d5f8c2accf3a6731be28e5bb9c0de
+Encoding=UTF-8
+Highlighting=JSON
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=JSON
+Mode Set By User=false
+Time=2021,1,13,5,34,9
+URL=file:///home/gnus/package-lock.json
+
+[file:///home/gnus/tmp/test.py]
+Bookmarks=
+Checksum=3fddbfde677e8fbd290359f1daa5b61c94133e90
+Encoding=UTF-8
+Highlighting=Python
+Highlighting Set By User=false
+Indentation Mode=python
+Mode=Python
+Mode Set By User=true
+Time=2021,1,9,7,57,35
+URL=file:///home/gnus/tmp/test.py
+
+[file:///home/gnus/tmp/usb/backup tokens/Nextcloud-backup-codes.txt]
+Bookmarks=
+Checksum=64547c362c06f7ceb1c7548c788b7cc59f096018
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2021,1,24,13,55,47
+URL=file:///home/gnus/tmp/usb/backup tokens/Nextcloud-backup-codes.txt
+
+[file:///media/veracrypt1/backup tokens/nextcloud-backup-codes-2021-01-24.txt]
+Bookmarks=
+Checksum=514787cd45c64ac05dd4a9eaf6a04e68b1a92ab5
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2021,1,30,17,35,20
+URL=file:///media/veracrypt1/backup tokens/nextcloud-backup-codes-2021-01-24.txt
+
+[file:///run/media/gnus/3B69-1AFD/backup tokens/github.keys]
+Bookmarks=
+Checksum=d5b1d42c9949733ac9ec88dceeb4f9c1443b940b
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2021,1,24,14,12,0
+URL=file:///run/media/gnus/3B69-1AFD/backup tokens/github.keys
+
+[file:///tmp/mozilla_gnus0/smhi-opendata_14_2212808_20210124_090745.csv]
+Checksum=1feb616cb60fce870d41fcb58cadc7a8dbb5369c
+Time=2021,1,24,9,8,0
+
+[file:///tmp/mozilla_gnus0/smhi-opendata_14_52350_20210124_090816.csv]
+Checksum=0aac0d406cb4176482cd4b74d948ab8b3d8436f3
+Time=2021,1,24,9,9,0
+
+[file:///tmp/mozilla_gnus0/smhi-opendata_1_52350_20210123_175620.csv]
+Checksum=78e72e542bff84756d773da6b431b1805a129711
+Time=2021,1,23,17,57,54
+
+[file:///tmp/mozilla_gnus0/smhi-opendata_1_52350_20210123_175714.csv]
+Checksum=7a56127272f32fc69165b8bc53ffe3d9323f5f26
+Time=2021,1,23,17,57,54
+
+[file:///tmp/mozilla_gnus0/smhi-opendata_1_52350_20210124_085001.csv]
+Checksum=fb89a5c5998d7b2d450ffb678e4c8f7b6afc3583
+Time=2021,1,24,8,52,14
+
+[file:///tmp/mozilla_gnus0/smhi-opendata_1_52350_20210124_090916.csv]
+Checksum=3dac9df62f5d95d807a9130720425e5dff0d38e4
+Time=2021,1,24,9,9,41
+
+[file:///tmp/mozilla_gnus0/smhi-opendata_5_52350_20210124_085135.csv]
+Checksum=06fd938679c004414c430daf96e1075d5c5fe5b2
+Time=2021,1,24,8,52,2

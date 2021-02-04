@@ -1,0 +1,10 @@
+{
+    "servers": {
+        "python": {
+            "command": ["/var/lib/snapd/snap/bin/pyls", 
+"--check-parent-process"],
+            "url": "https://github.com/palantir/python-language-server",
+            "highlightingModeRegex": "^Python$"
+        }
+    }
+}

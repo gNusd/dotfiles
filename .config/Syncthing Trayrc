@@ -1,0 +1,4 @@
+[KFileDialog Settings]
+Recent Files[$e]=config.xml,file:$HOME/.config/syncthing/config.xml
+Recent URLs[$e]=file:$HOME/.config/syncthing/
+detailViewIconSize=0

@@ -67,6 +67,7 @@ Plug 'zefei/vim-wintabs-powerline'
 Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
 Plug 'chrisbra/Colorizer'
 Plug 'mhinz/vim-startify'
+Plug 'cespare/vim-toml'
 
 Plug 'ThePrimeagen/vim-be-good'
 " Initialize plugin system

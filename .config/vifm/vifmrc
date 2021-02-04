@@ -374,6 +374,7 @@ filextype */
 " 256-color terminal
 " fileviewer *.[ch],*.[ch]pp highlight -O xterm256 -s dante --syntax c %c
 " fileviewer Makefile,Makefile.* highlight -O xterm256 -s dante --syntax make %c
+fileviewer highlight group cterm=attribute ctermfg=color ctermbg=color
 "
 " 16-color terminal
 " fileviewer *.c,*.h highlight -O ansi -s dante %c

@@ -11,6 +11,8 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+noremap <PageUp> <Nop>
+noremap <PageDown> <Nop>
 
 " mapping Alt + hjkl to left, right, down, up in insert mode
 " bind: "<alt>hjkl" desc: "left, right, up and down in insert mode"

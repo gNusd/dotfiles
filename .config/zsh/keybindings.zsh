@@ -1,6 +1,6 @@
 # bind: "<ctrl>g" desc: "git add, commit, create buffer for commit message and push to github"
 function git_prepare() {
-		if [ -n "$BUFFER" ];
+if [ -n "$BUFFER" ];
 		then
 				BUFFER="git add . && git commit -m \"$BUFFER\" && git push"
 		fi

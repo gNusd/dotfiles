@@ -35,9 +35,6 @@
 		│           └── userChrome.css
 		├── .newsboat
 		│  ├── config
-		│  ├── history.cmdline
-		│  ├── history.search
-		│  ├── nohup.out
 		│  └── urls
 		├── .profile
 		├── .ssh

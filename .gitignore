@@ -6,3 +6,4 @@ cache.db.lock
 .config/mpv/watch_later
 .newsbot/history.cmdline
 .newsbot/history.search
+.newsboat/nohup.out

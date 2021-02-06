@@ -5,3 +5,4 @@ cache.db.lock
 .netrwhist
 .config/mpv/watch_later
 .newsbot/history.cmdline
+.newsbot/history.search

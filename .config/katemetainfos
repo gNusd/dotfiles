@@ -94,18 +94,6 @@ Mode Set By User=false
 Time=2021,1,10,21,11,19
 URL=file:///home/gnus/.local/git/code/dev/lsba.py
 
-[file:///home/gnus/.local/git/code/python/anagram.py]
-Bookmarks=
-Checksum=e0cf1c14490754e04b9b166da33fb14e384d15cf
-Encoding=UTF-8
-Highlighting=Python
-Highlighting Set By User=false
-Indentation Mode=python
-Mode=Python
-Mode Set By User=false
-Time=2021,1,6,21,43,6
-URL=file:///home/gnus/.local/git/code/python/anagram.py
-
 [file:///home/gnus/.local/git/dotfiles/.config/nvim/init.vim]
 Bookmarks=
 Checksum=6131d39147755a0f15336eaf6a3400de4f9fe96c

@@ -29,6 +29,10 @@ let g:term_win = 0
 
 " bind: "<leader>§" desc: "Open terminal in horizontal split"
 nnoremap <silent><leader>§ :call TermToggle(12) <CR>
+" bind: "§§" desc: "Quit terminal in insert mode"
+tnoremap <silent>§§ <C-\><C-n>:q!<CR>
+" bind: "§" desc: "Quite terminal in normal mode"
+nmap <silent>§ :q!<CR>
 " size of scrollback history
 autocmd TermOpen * setlocal scrollback=100000
 

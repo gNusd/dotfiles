@@ -8,6 +8,7 @@ Favorites=
 Close After Last=false
 Config Revision=10
 Days Meta Infos=30
+Expand Tabs=true
 Modified Notification=true
 Quick Open List Mode=0
 Quick Open Search Mode=0
@@ -18,11 +19,13 @@ Show Full Path in Title=false
 Show Menu Bar=true
 Show Status Bar=true
 Show Tab Bar=true
+Show Tabs Close Button=true
 Startup Session=last
+Tabbar Tab Limit=0
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/tmp/test.py,file:$HOME/.local/git/code/applications/lsbind/lsbind.py,file:$HOME/.local/git/dotfiles/.config/nvim/init.vim,file:$HOME/.local/git/code/applications/matsedel/tmp.py,file:$HOME/.local/git/code/applications/matsedel/select.py,file:$HOME/.local/git/code/applications/matsedel/mat.yaml,file:$HOME/.local/git/code/python/anagram.py
-Recent URLs[$e]=file:$HOME/.local/git/code/python/,file:$HOME/.local/git/code/applications/matsedel/,file:$HOME/.local/git/code/applications/,file:$HOME/.local/git/dotfiles/.config/nvim/,file:$HOME/tmp/,file:$HOME/.local/git/code/dev/,file:$HOME/.local/git/code/applications/lsbind/
+Recent Files[$e]=file:$HOME/.local/git/dotfiles/.config/nvim/init.vim,file:$HOME/.local/git/code/rust/learn_rust_live/ownership/src/referens_and_borrowing.rs,file:$HOME/.local/git/code/applications/matsedel/tmp.py,file:$HOME/.local/git/code/applications/matsedel/select.py,file:$HOME/.local/git/code/applications/matsedel/mat.yaml,file:$HOME/.local/git/code/python/anagram.py
+Recent URLs[$e]=file:$HOME/.local/git/code/python/,file:$HOME/.local/git/code/applications/matsedel/,file:$HOME/.local/git/code/applications/,file:$HOME/.local/git/dotfiles/.config/nvim/,file:$HOME/tmp/,file:$HOME/.local/git/code/dev/,file:$HOME/.local/git/code/rust/learn_rust_live/ownership/src/
 detailViewIconSize=16
 
 [KTextEditor Document]
@@ -127,8 +130,9 @@ SetEditor=false
 State=AAAA/wAAAAD9AAAAAAAACAAAAARFAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 eDP-1 Height 1152=1123
-eDP-1 Width 2048=2048
+eDP-1 Width 2048=1024
 eDP-1 Window-Maximized 1152x2048=true
+eDP-1 Window-Maximized 2048x1152=true
 eDP-1 XPosition=0
 eDP-1 YPosition=29
 
@@ -151,11 +155,11 @@ DiagnosticsSize=1024
 IncrementalSync=true
 Messages=true
 MessagesAutoSwitch=1
-ReferencesDeclaration=true
+ReferencesDeclaration=false
 SemanticHighlighting=true
 ServerConfiguration=
 SymbolDetails=false
 SymbolExpand=true
 SymbolSort=false
 SymbolTree=true
-TypeFormatting=true
+TypeFormatting=false

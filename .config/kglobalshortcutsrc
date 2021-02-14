@@ -44,6 +44,7 @@ display=Display\tMeta+P,Display\tMeta+P,Byt bildskärm
 [khotkeys]
 _k_friendly_name=Egen genvägstjänst
 {06f4f111-ae06-456a-9003-b3d7af0f2ea5}=none,none,Ny åtgärd
+{2218ae45-4554-4d42-8d29-dd5e11c2dae7}=Meta+W,none,bitwarden
 {62db3284-6d67-4483-ace3-43833b06eb73}=none,none,Launch Konsole
 {7546626f-2af9-4c89-941f-3740df16f8e8}=Meta+V,none,glrnvim
 {a3028e03-7f66-4276-bd99-4c6390d10966}=Alt+Return,none,alacritty

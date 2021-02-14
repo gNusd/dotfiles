@@ -74,6 +74,7 @@ source $HOME/.local/git/dotfiles/.config/nvim/config/theme.vim
 source $HOME/.local/git/dotfiles/.config/nvim/config/buffer.vim
 source $HOME/.local/git/dotfiles/.config/nvim/config/term.vim
 
+
 " Required:
 filetype plugin indent on
 syntax enable

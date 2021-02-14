@@ -13,11 +13,17 @@
     local opts = { noremap=true, silent=true }
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
+-- bind: "<leader>lh" desc: "Hover"
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>lh', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
+-- bind: "<leader>li" desc: "Implementation"
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>li', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+-- bind: "<leader>ls" desc: "Signature"
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>ls', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+-- bind: "<leader>lt" desc: "Type definition"
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>lt', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
+-- bind: "<leader>lr" desc: "Reference"
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>lr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+-- bind: "<leader>ld" desc: "Showline diagnostics"
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>ld', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
   end
   local servers = {'pyls', 'vimls', 'rls', 'rust_analyzer', 'bashls', 'yamlls'}

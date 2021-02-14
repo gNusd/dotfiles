@@ -6,7 +6,7 @@ DataCount=3
 
 [Data_1]
 Comment=KMenuEdit Global Shortcuts
-DataCount=6
+DataCount=7
 Enabled=true
 Name=KMenuEdit
 SystemGroup=1
@@ -171,6 +171,32 @@ TriggersCount=1
 Key=
 Type=SHORTCUT
 Uuid={06f4f111-ae06-456a-9003-b3d7af0f2ea5}
+
+[Data_1_7]
+Comment=Kommentar
+Enabled=true
+Name=bitwarden
+Type=SIMPLE_ACTION_DATA
+
+[Data_1_7Actions]
+ActionsCount=1
+
+[Data_1_7Actions0]
+CommandURL=com.bitwarden.desktop.desktop
+Type=MENUENTRY
+
+[Data_1_7Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_1_7Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_1_7Triggers0]
+Key=Meta+W
+Type=SHORTCUT
+Uuid={2218ae45-4554-4d42-8d29-dd5e11c2dae7}
 
 [Data_2]
 Comment=Gruppen innehåller diverse exempel som demonstrerar de flesta funktionerna i Khotkeys. (Observera att gruppen och dess åtgärder inte normalt är aktiverad.)

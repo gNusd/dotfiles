@@ -15,8 +15,8 @@ window:
         # Specified in number of columns/lines, not pixels.
         # If both are `0`, this setting is ignored.
         # dimensions:
-        #     columns: 120
-        #     lines: 30
+            # columns: 120
+            # lines: 62
 
         # Window padding (changes require restart)
         #
@@ -81,7 +81,7 @@ font:
         #   - (macOS) Menlo
         #   - (Linux) monospace
         #   - (Windows) Consolas
-        family: "Source Code pro"
+        family: "IBM Plex"
 
         # The `style` can be specified to pick a specific face.
         #style: Regular
@@ -92,7 +92,7 @@ font:
         #
         # If the bold family is not specified, it will fall back to the
         # value specified for the normal font.
-        family: "Source Code pro"
+        family: "IBM Plex"
 
         # The `style` can be specified to pick a specific face.
         #style: Bold
@@ -103,7 +103,7 @@ font:
         #
         # If the italic family is not specified, it will fall back to the
         # value specified for the normal font.
-        family: "Source Code pro"
+        family: "IBM Plex"
 
         # The `style` can be specified to pick a specific face.
         #style: Italic
@@ -281,7 +281,7 @@ colors:
                 # Values for `style`:
                 #   - ▇ Block
                 #   - _ Underline
-                #   - | Beam
+               #   - | Beam
                 style: Block
 
                 # If this is `true`, the cursor will be rendered as a hollow box when the
@@ -322,7 +322,7 @@ colors:
 #
 # Key bindings are specified as a list of objects. Each binding will specify a
 # key and modifiers required to trigger it, terminal modes where the binding is
-# applicable, and what should be done when the key binding fires. It can either
+# applicable, and hat should be done when the key binding fires. It can either
 # send a byte sequence to the running application (`chars`), execute a
 # predefined action (`action`) or fork and execute a specified command plus
 # arguments (`command`).
@@ -383,7 +383,7 @@ colors:
 #   - ScrollPageUp
 #   - ScrollPageDown
 #   - ScrollToTop
-#   - ScrollToBottom
+#   - ScrollToBotto
 #   - ClearHistory
 #   - Hide
 #   - Quit

@@ -66,6 +66,7 @@ eDP-1 Height 1152=562
 eDP-1 Width 2048=1024
 
 [Main Window]
+RestorePositionForNextInstance=false
 State=AAAA/wAAAAD9AAAAAAAACAAAAAQIAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 eDP-1 Height 1152=1123
@@ -100,9 +101,9 @@ DefaultSet=1609782063-1
 MessageUniqueIdForStorageModel=2333
 MessageUniqueIdForStorageModel15=2353
 MessageUniqueIdForStorageModel16=72
-MessageUniqueIdForStorageModel17=2451
+MessageUniqueIdForStorageModel17=2487
 MessageUniqueIdForStorageModel18=2387
-MessageUniqueIdForStorageModel24=2447
+MessageUniqueIdForStorageModel24=2489
 MessageUniqueIdForStorageModel28=2149
 MessageUniqueIdForStorageModel37=2363
 MessageUniqueIdForStorageModel42=1191

@@ -61,7 +61,7 @@ inoremap <buffer> <c-k> <esc><c-w>k i
 map <leader>ww gg2jVG :sort <CR>
 
 set encoding=UTF-8
-set shell=/usr/bin/zsh
+set shell=/bin/bash
 
 set number relativenumber                       " Show line numbers and relativnumbers
 
@@ -143,41 +143,10 @@ let g:undotree_WindowLayout = 3
 let g:undotree_ShortIndicators = 1
 let g:undotree_TreeNodeShape = '*'
 
-
-function! Compile()
-		if (&ft=="rust")
-				:!cargo build
-		elseif (&ft=="java")
-				:!javac %
-		elseif (&ft=='c' || &ft=='cpp')
-				:!gcc % -o %:r
-		endif
-endfunction
-
-map <silent> <leader>z :call Compile()<CR><CR>
-
-" npm install -g mdpdf
-" markdown to pdf and open file in zathura
-" bind: "<leader>m" desc: "export markdown file to pdf"
-map <leader>m :!mdpdf %<CR><CR>
-" bind: "<leader><shift>m" desc: "export markdown file to pdf and open in zathura"
-map <leader>M :!mdpdf % && zathura %:r.pdf &<CR><CR>
-
-" Vim-Instant-Markdown
-" Turns off auto preview
-let g:instant_markdown_autostart = 0
-" Uses qutebrowser for preview
-let g:instant_markdown_browser = "qutebrowser"
-
-" bind: "<leader>md" desc: "Starts preview of .md file in qutebrowser"
-map <leader>md :InstantMarkdownPreview<CR>
-" bind: "<leader>ms" desc: "Stops preview of .md files"
-map <leader>ms :InstantMarkdownStop<CR>
-
-" bind: "<leader>l" desc: "open file from vifm in vertical split"
-noremap <leader>l :VsplitVifm<CR>
-" bind: "<leader>h" desc: "open file from vifm in horizontal split"
-noremap <leader>h :SplitVifm<CR>
+"·bind:·"<leader>v"·desc:·"open·file·from·vifm·in·vertical·split"
+noremap <leader>v :VsplitVifm<CR>
+"·bind:·"<leader>h"·desc:·"open·file·from·vifm"
+noremap <leader>, :Edit Vifm .<CR>
 " bind: "<leader>§" desc: "toggle terminal"
 nnoremap <leader>§ :Nuake<CR>
 " bind: "<leader>T" desc: "Open terminal in vertical split"
@@ -191,6 +160,9 @@ au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 set wildignore+=*.a,*.o,*.gif,*.jpg,*.png,.git,*.swp,*.tmp,*.class
 
 source $HOME/repositories/dotfiles/.config/nvim/config/plug-plugin.vim
+" Alias files
+source $HOME/repositories/dotfiles/.config/nvim/config/alias.vim
+
 "vim-plug
 " bind: "<leader>i" desc: "install plugins with vim-plug"
 map <leader>i :PlugInstall<cr>
@@ -231,14 +203,7 @@ let g:lightline = {
 						\ },
 						\ }
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
 set completeopt-=preview
-call deoplete#custom#option('smart_case', v:true)
-
-" clang
-"let g:deoplete#auto_complete_start_length = 1
-"let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-6.0/lib/libclang.so.1'
 
 " vim table mode
 " bind: "<leader><tab>" desc: "toggle table mode"
@@ -247,23 +212,6 @@ let g:table_mode_corner="|"
 
 " supertab
 let g:SuperTabDefaultCompletionType = "context"
-
-" rust & racer
-
-let g:deoplete#sources#rust#racer_binary="$HOME/.cargo/bin/racer"
-let g:deoplete#sources#rust#rust_source_path="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
-let g:deoplete#sources#rust#show_duplicates=1
-let g:deoplete#sources#rust#disable_keymap=1
-let g:deoplete#sources#rust#documentation_max_height=20
-" bind: "gd" desc: "go to definition in rust"
-nmap <buffer> gd <plug>DeopleteRustGoToDefinitionDefault
-" bind: "K" desc: "show documentation in rust"
-nmap <buffer> K  <plug>DeopleteRustShowDocumentation
-
-" Java completion
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
-autocmd FileType java JCEnable
-let g:java_highlight_functions = 1
 
 " gitgutter
 let g:gitgutter_enabled = 1
@@ -282,51 +230,6 @@ nmap <leader>gb :Gblame<CR>
 " bind: "<leader>G" desc: "toggle on and off git blame info on the line cursor is on"
 nnoremap <silent> <leader>G :ToggleBlameLine<CR>
 
-" ctrlp
-" bind: "<leader>," desc: "bring up CtrlP for search"
-nnoremap <leader>, :CtrlP<CR>
-" bind: "<leader>b" desc: "bring up CtrlP for searching in the buffers"
-nnoremap <leader>b :CtrlPBuffer<CR>
-let g:ctrp_by_filename = 1
-let g:ctrlp_custom_ignore = 'target\|git'
-let g:ctrlp_show_hidden = 1
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_prompt_mappings = {
-						\ 'AcceptSelection("e")': [],
-						\ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
-						\ }
-
-" taglist
-" bind: "<leader>t" desc: "toggle tag list menu"
-nnoremap <leader>t :TlistToggle<CR>
-let Tlist_Use_Right_Window = 1
-let Tlist_Auto_Highlight_Tag = 1
-let Tlist_Auto_Update = 1
-let Tlist_WinWith = 50
-let Tlist_Show_Menu = 1
-let Tlist_Enable_Fold_Column = 0
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Ctags_Cmd = '/usr/bin/ctags'
-
-
-" Floating window (neovim)
-function! s:layout()
-		let buf = nvim_create_buf(v:false, v:true)
-
-		let height = &lines - (float2nr(&lines / 3))
-		let width = float2nr(&columns - (&columns * 2 / 3))
-
-		let opts = {
-								\ 'relative': 'editor',
-								\ 'row': 2,
-								\ 'col': 8,
-								\ 'width': width,
-								\ 'height': height
-								\ }
-
-		call nvim_open_win(buf, v:true, opts)
-endfunction
-let g:nnn#layout = 'call ' . string(function('<SID>layout')) . '()'
 
 "netrw
 " bind: "<leader>f" desc: "toggle side file browser"
@@ -357,85 +260,13 @@ map <leader>tk <C-w>t<C-w>K
 
 " Removes pipes | that act as seperators on splits
 set fillchars+=vert:\
-"ale
-" Shorten error/warning flags
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-" I have some custom icons for errors and warnings but feel free to change them.
-let g:ale_sign_error = '✘✘'
-let g:ale_sign_warning = '⚠⚠'
-
-" disable linting of files
-" autocmd BufEnter *.lst ALEDisable
-
-" Disable or enable loclist at the bottom of vim
-" Comes down to personal preferance.
-let g:ale_open_list = 0
-let g:ale_loclist = 0
-let g:ale_rust_rls_executable = '/home/gnus/.cargo/bin'
-
-" Setup compilers for languages
-let g:ale_linters = {
-						\  'cs':['syntax', 'semantic', 'issues'],
-						\  'python': ['autopep8', 'pylint'],
-						\  'java': ['javac'],
-						\  'rust': ['cargo', 'rustfmt'],
-						\  'shell': ['sh'],
-						\  'c':['gcc']
-						\ }
 
 let g:pear_tree_smart_openers = 1
 let g:pear_tree_smart_closers = 1
 let g:pear_tree_smart_backspace = 1
 
-" Writing
-" bind: "<leader>-" desc: "distraction-free writing in vim"
-map <silent> <leader>- :Goyo \| set bg=dark \| set linebreak<CR>
-
-" Alias files
-source $HOME/repositories/dotfiles/.config/nvim/config/alias.vim
-
-" setup rust_analyzer LSP (IDE features)
-
-lua require'nvim_lsp'.rust_analyzer.setup{}
-lua require'nvim_lsp'.rls.setup{}
-lua require'nvim_lsp'.bashls.setup{}
-lua require'nvim_lsp'.vimls.setup{}
-lua require'nvim_lsp'.gopls.setup{}
-lua require'nvim_lsp'.pyls.setup{{settings={python={linting={enabled=true}}}}}
-
-
-" Use LSP omni-completion in Rust files
-autocmd Filetype rust setlocal omnifunc=v:lua.vim.lsp.omnifunc
-autocmd Filetype sh setlocal omnifunc=v:lua.vim.lsp.omnifunc
-autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
-autocmd Filetype vim setlocal omnifunc=v:lua.vim.lsp.omnifunc
-autocmd Filetype go setlocal omnifunc=v:lua.vim.lsp.omnifunc
-
-
-" Enable deoplete autocompletion in Rust files
-let g:deoplete#enable_at_startup = 1
-
-" customise deoplete                                                                                                                                                     " maximum candidate window length
-call deoplete#custom#source('_', 'max_menu_width', 80)
+" bind:·"<leader>m"·desc:·"search·with·ripgrep"
+ nnoremap <leader>m :Rg<Space>
 
 " Press Tab to scroll _down_ a list of auto-completions
 let g:SuperTabDefaultCompletionType = "<c-n>"
-
-" rustfmt on write using autoformat
-autocmd BufWrite * :Autoformat
-
-"TODO: clippy on write
-autocmd BufWrite * :Autoformat
-
-nnoremap <leader>9 :!cargo clippy
-
-nnoremap <silent> ;dc :call lsp#text_document_declaration()<CR>
-nnoremap <silent> ;df :call lsp#text_document_definition()<CR>
-nnoremap <silent> ;h  :call lsp#text_document_hover()<CR>
-nnoremap <silent> ;i  :call lsp#text_document_implementation()<CR>
-nnoremap <silent> ;s  :call lsp#text_document_signature_help()<CR>
-nnoremap <silent> ;td :call lsp#text_document_type_definition()<CR>
-
-" deoplete required, last in file
-let g:deoplete#enable_at_startup = 1

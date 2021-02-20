@@ -36,10 +36,10 @@ alias ...='cd ../..'
 # BEETS & TORRENTS
 alias imbeet="beet import /home/media/import"
 alias imclear="rm -rf /home/media/import/*"
-alias recive="cd  /home/media/recive && ll"
+alias recive="cd  /home/media/recive && ls"
 alias ytflac="youtube-dl --extract-audio --audio-format flac --audio-quality 0"
 alias import="cd /home/media/import"
 alias mvim="mv /home/media/recive/*  /home/media/import && cd /home/media/import"
 alias beim="beet import ."
-alias video="cd /home/media/video && ll"
+alias video="cd /home/media/video && ls"
 alias mvvi="mv /home/media/recive/*  /home/media/video && cd /home/media/video"

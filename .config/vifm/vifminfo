@@ -30,30 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/gnus/hämtningar/torrent/kowalski/Autechre
-	Autechre (2008) Quaristice.Quadrange.ep.ae
-19
-d/home/gnus/hämtningar/torrent/kowalski/Autechre/Autechre (2008) Quaristice.Quadrange.ep.ae
-	01.flac
-1
-d/home/gnus/bin
-	toflac
-16
-d/home/music/Melvins/Houdini
-	13 Spread Eagle Beagle.flac
-13
-d/home/media/recive/Agalloch/2011-Whitedivisiongrey/tmp
-	split-track09.flac
-4
-d/home/music/The Caretaker/Everywhere at the End of Time - Stage 2 [HAFTWCD0103]
-	..
-0
-d/home/music/The Caretaker
-	Everywhere at the End of Time - Stage 2
-3
-d/home/music/The Caretaker/Everywhere at the End of Time - Stage 2
-	..
-0
 d/home/music/The Caretaker
 	Everywhere at the End of Time - Stage 2 [HAFTWCD0103]
 4
@@ -328,8 +304,32 @@ d/home/media/recive/1994 - Brutal Youth
 	01 Pony St..flac
 1
 d/home/media/recive
+	Shellac - Futurist (1997)
+2
+d/home/media/recive/Shellac - Futurist (1997)
+	Movement 01.mp3
+1
+d/home/music/Shellac/Dude Incredible
+	09 Surveyor.flac
+9
+d/home/music/Shellac
+	Excellent Italian Greyhound
+4
+d/home/music/Shellac/Excellent Italian Greyhound
 	..
 0
+d/home/music/Shellac
+	The End of Radio
+8
+d/home/music/Shellac/The End of Radio
+	..
+0
+d/home/media/recive
+	Steve Earle - Transcendental Blues [High Resolution]
+1
+d/home/media/recive/Steve Earle - Transcendental Blues [High Resolution]
+	01-Transcendental Blues.flac
+2
 d
 
 # Right window history (oldest to newest):
@@ -592,7 +592,7 @@ pEverywhere at the End of Time - Stage 3
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/music/.vifm-Trash-1000/000_04 Mahathgata III.mp3
+""/home/music/.vifm-Trash-1000/000_09 Surveyor.1.flac
 
 # Directory stack (oldest to newest):
 
@@ -757,6 +757,22 @@ t/home/music/.vifm-Trash-1000/000_03 Uni.mp3
 	/home/music/Dark Buddha Rising/Mathreyata/03 Uni.mp3
 t/home/music/.vifm-Trash-1000/000_04 Mahathgata III.mp3
 	/home/music/Dark Buddha Rising/Mathreyata/04 Mahathgata III.mp3
+t/home/music/.vifm-Trash-1000/000_02 Compliant.1.flac
+	/home/music/Shellac/Dude Incredible/02 Compliant.1.flac
+t/home/music/.vifm-Trash-1000/000_03 You Came in Me.flac
+	/home/music/Shellac/Dude Incredible/03 You Came in Me.flac
+t/home/music/.vifm-Trash-1000/000_04 Riding Bikes.1.flac
+	/home/music/Shellac/Dude Incredible/04 Riding Bikes.1.flac
+t/home/music/.vifm-Trash-1000/000_05 All the Surveyors.flac
+	/home/music/Shellac/Dude Incredible/05 All the Surveyors.flac
+t/home/music/.vifm-Trash-1000/000_06 The People’s Microphone.1.flac
+	/home/music/Shellac/Dude Incredible/06 The People’s Microphone.1.flac
+t/home/music/.vifm-Trash-1000/000_07 Gary.1.flac
+	/home/music/Shellac/Dude Incredible/07 Gary.1.flac
+t/home/music/.vifm-Trash-1000/000_08 Mayor_Surveyor.flac
+	/home/music/Shellac/Dude Incredible/08 Mayor_Surveyor.flac
+t/home/music/.vifm-Trash-1000/000_09 Surveyor.1.flac
+	/home/music/Shellac/Dude Incredible/09 Surveyor.1.flac
 
 # State:
 f

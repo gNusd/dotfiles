@@ -6,7 +6,7 @@ DataCount=3
 
 [Data_1]
 Comment=KMenuEdit Global Shortcuts
-DataCount=7
+DataCount=8
 Enabled=true
 Name=KMenuEdit
 SystemGroup=1
@@ -149,14 +149,14 @@ Uuid={a586445b-ed65-4dd5-9343-d8fd1aab476f}
 [Data_1_6]
 Comment=Kommentar
 Enabled=true
-Name=Ny åtgärd
+Name=bitwarden
 Type=SIMPLE_ACTION_DATA
 
 [Data_1_6Actions]
 ActionsCount=1
 
 [Data_1_6Actions0]
-CommandURL=
+CommandURL=com.bitwarden.desktop.desktop
 Type=MENUENTRY
 
 [Data_1_6Conditions]
@@ -168,21 +168,21 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_6Triggers0]
-Key=
+Key=Meta+W
 Type=SHORTCUT
-Uuid={06f4f111-ae06-456a-9003-b3d7af0f2ea5}
+Uuid={2218ae45-4554-4d42-8d29-dd5e11c2dae7}
 
 [Data_1_7]
 Comment=Kommentar
 Enabled=true
-Name=bitwarden
+Name=nvim-gtk
 Type=SIMPLE_ACTION_DATA
 
 [Data_1_7Actions]
 ActionsCount=1
 
 [Data_1_7Actions0]
-CommandURL=com.bitwarden.desktop.desktop
+CommandURL=
 Type=MENUENTRY
 
 [Data_1_7Conditions]
@@ -194,9 +194,35 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_7Triggers0]
-Key=Meta+W
+Key=Alt+V
 Type=SHORTCUT
-Uuid={2218ae45-4554-4d42-8d29-dd5e11c2dae7}
+Uuid={a03157e4-2be7-412c-9fff-2c035023b266}
+
+[Data_1_8]
+Comment=Kommentar
+Enabled=true
+Name=qutebrowser
+Type=SIMPLE_ACTION_DATA
+
+[Data_1_8Actions]
+ActionsCount=1
+
+[Data_1_8Actions0]
+CommandURL=org.qutebrowser.qutebrowser.desktop
+Type=MENUENTRY
+
+[Data_1_8Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_1_8Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_1_8Triggers0]
+Key=Alt+B
+Type=SHORTCUT
+Uuid={8beab40b-6a24-4f8d-8f7a-8204bb8440ff}
 
 [Data_2]
 Comment=Gruppen innehåller diverse exempel som demonstrerar de flesta funktionerna i Khotkeys. (Observera att gruppen och dess åtgärder inte normalt är aktiverad.)
@@ -1039,6 +1065,10 @@ Theme[$d]
 [KDE]
 ColorScheme[$d]
 widgetStyle[$d]
+
+[KDE Action Restrictions]
+action/start_new_session[$d]
+action/switch_user[$d]
 
 [Main]
 AlreadyImported=defaults,kde32b1,konqueror_gestures_kde321,konsole

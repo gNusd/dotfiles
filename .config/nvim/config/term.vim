@@ -27,37 +27,15 @@ let g:netrw_preview = 0
 let g:term_buf = 0
 let g:term_win = 0
 
-" bind: "<leader>§" desc: "Open terminal in horizontal split"
-nnoremap <silent><leader>§ :call TermToggle(12) <CR>
-" bind: "§§" desc: "Quit terminal in insert mode"
-tnoremap <silent>§§ <C-\><C-n>:q!<CR>
-" bind: "§" desc: "Quite terminal in normal mode"
-nmap <silent>§ :q!<CR>
 " size of scrollback history
 autocmd TermOpen * setlocal scrollback=100000
 
 " Terminal go back to normal mode
 tnoremap <Esc> <C-\><C-n>
 
-function! TermToggle(height)
-    if win_gotoid(g:term_win)
-        hide
-    else
-        botright new
-        exec "resize " . a:height
-        try
-            exec "buffer " . g:term_buf
-        catch
-            call termopen($SHELL, {"detach": 0})
-            let g:term_buf = bufnr("")
-            set nonumber
-            set norelativenumber
-            set signcolumn=no
-        endtry
-        startinsert!
-        let g:term_win = win_getid()
-    endif
-endfunction
+nnoremap <silent>§ :Nuake<CR>
+inoremap <silent>§ <C-\><C-n>:Nuake<CR>
+tnoremap <silent>§ <C-\><C-n>:Nuake<CR>
 
 " bind: "<leader>m" desc: "search with ripgrep"
 nnoremap <leader>m :Rg<Space>

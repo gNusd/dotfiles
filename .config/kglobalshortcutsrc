@@ -1,7 +1,3 @@
-[.desktop]
-_k_friendly_name=glrnvim
-_launch=,none,Starta glrnvim
-
 [ActivityManager]
 _k_friendly_name=Aktivitetshanterare
 switch-to-activity-b7da4ea5-feb0-4a0d-b3c9-cfd46e05c50a=none,none,Byt till aktivitet "Förval"
@@ -43,10 +39,11 @@ display=Display\tMeta+P,Display\tMeta+P,Byt bildskärm
 
 [khotkeys]
 _k_friendly_name=Egen genvägstjänst
-{06f4f111-ae06-456a-9003-b3d7af0f2ea5}=none,none,Ny åtgärd
 {2218ae45-4554-4d42-8d29-dd5e11c2dae7}=Meta+W,none,bitwarden
 {62db3284-6d67-4483-ace3-43833b06eb73}=none,none,Launch Konsole
 {7546626f-2af9-4c89-941f-3740df16f8e8}=Meta+V,none,glrnvim
+{8beab40b-6a24-4f8d-8f7a-8204bb8440ff}=Alt+B,none,qutebrowser
+{a03157e4-2be7-412c-9fff-2c035023b266}=Alt+V,none,nvim-gtk
 {a3028e03-7f66-4276-bd99-4c6390d10966}=Alt+Return,none,alacritty
 {a586445b-ed65-4dd5-9343-d8fd1aab476f}=Alt+E,none,vifm
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Sök
@@ -190,10 +187,10 @@ Window Minimize=Meta+PgDown,Meta+PgDown,Minimera fönster
 Window Move=none,none,Flytta fönster
 Window No Border=Meta+Shift+W,none,Dölj fönsterkant
 Window On All Desktops=none,none,Behåll fönster på alla skrivbord
-Window One Desktop Down=none,none,Fönster ett skrivbord ned
-Window One Desktop Up=none,none,Fönster ett skrivbord upp
-Window One Desktop to the Left=none,none,Fönster ett skrivbord åt vänster
-Window One Desktop to the Right=none,none,Fönster ett skrivbord åt höger
+Window One Desktop Down=none,Meta+Ctrl+Shift+Down,Fönster ett skrivbord ned
+Window One Desktop Up=none,Meta+Ctrl+Shift+Up,Fönster ett skrivbord upp
+Window One Desktop to the Left=none,Meta+Ctrl+Shift+Left,Fönster ett skrivbord åt vänster
+Window One Desktop to the Right=none,Meta+Ctrl+Shift+Right,Fönster ett skrivbord åt höger
 Window Operations Menu=Alt+F3,Alt+F3,Fönsterhanteringsmeny
 Window Pack Down=none,none,Samla fönster längst ner
 Window Pack Left=none,none,Samla fönster till vänster
@@ -233,9 +230,9 @@ Window to Desktop 7=Alt+7,none,Fönster till skrivbord 7
 Window to Desktop 8=Alt+8,none,Fönster till skrivbord 8
 Window to Desktop 9=Alt+9,none,Fönster till skrivbord 9
 Window to Next Desktop=none,none,Fönster till nästa skrivbord
-Window to Next Screen=none,none,Fönster till nästa skärm
+Window to Next Screen=none,Meta+Shift+Right,Fönster till nästa skärm
 Window to Previous Desktop=none,none,Fönster till föregående skrivbord
-Window to Previous Screen=none,none,Fönster till föregående skärm
+Window to Previous Screen=none,Meta+Shift+Left,Fönster till föregående skärm
 Window to Screen 0=none,none,Fönster till skärm 0
 Window to Screen 1=none,none,Fönster till skärm 1
 Window to Screen 2=none,none,Fönster till skärm 2
@@ -261,6 +258,8 @@ _k_friendly_name=Mediakontroll
 mediavolumedown=none,none,Media sänk volym
 mediavolumeup=none,none,Media höj volym
 nextmedia=Media Next,Media Next,Media spela nästa
+pausemedia=Media Pause,Media Pause,Pausa medieuppspelning
+playmedia=none,none,Medieuppspelning
 playpausemedia=Media Play,Media Play,Spela/Pausa medieuppspelning
 previousmedia=Media Previous,Media Previous,Media spela föregående
 stopmedia=Media Stop,Media Stop,Stoppa medieuppspelning

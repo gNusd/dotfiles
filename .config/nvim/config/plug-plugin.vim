@@ -31,12 +31,18 @@ Plug 'aca/completion-tabnine', { 'do': './install.sh' }
 Plug 'RishabhRD/popfix'
 Plug 'RishabhRD/nvim-lsputils'
 
+" Telescope
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 " Terminal & filesystem
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vifm/vifm.vim'
 Plug 'camspiers/animate.vim'
 Plug 'jremmen/vim-ripgrep'
+Plug 'Lenovsky/nuake'
 
 " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'

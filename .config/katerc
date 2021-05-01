@@ -1,5 +1,5 @@
 [Desktop Entry]
-DefaultProfile=Profile 1.profile
+DefaultProfile=default.profile
 
 [Favorite Profiles]
 Favorites=
@@ -24,8 +24,8 @@ Startup Session=last
 Tabbar Tab Limit=0
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/.local/git/dotfiles/.config/nvim/init.vim,file:$HOME/.local/git/code/rust/learn_rust_live/ownership/src/referens_and_borrowing.rs,file:$HOME/.local/git/code/applications/matsedel/tmp.py,file:$HOME/.local/git/code/applications/matsedel/select.py,file:$HOME/.local/git/code/applications/matsedel/mat.yaml,file:$HOME/.local/git/code/python/anagram.py
-Recent URLs[$e]=file:$HOME/.local/git/code/python/,file:$HOME/.local/git/code/applications/matsedel/,file:$HOME/.local/git/code/applications/,file:$HOME/.local/git/dotfiles/.config/nvim/,file:$HOME/tmp/,file:$HOME/.local/git/code/dev/,file:$HOME/.local/git/code/rust/learn_rust_live/ownership/src/
+Recent Files[$e]=file:$HOME/.local/git/dotfiles/.config/nvim/init.vim,file:$HOME/.local/git/dotfiles/.config/nvim/init.vim,file:$HOME/.local/git/code/rust/learn_rust_live/ownership/src/referens_and_borrowing.rs,file:$HOME/.local/git/code/applications/matsedel/tmp.py,file:$HOME/.local/git/code/applications/matsedel/select.py,file:$HOME/.local/git/code/applications/matsedel/mat.yaml,file:$HOME/.local/git/code/python/anagram.py
+Recent URLs[$e]=file:$HOME/.local/git/code/python/,file:$HOME/.local/git/code/applications/matsedel/,file:$HOME/.local/git/code/applications/,file:$HOME/.local/git/dotfiles/.config/nvim/,file:$HOME/tmp/,file:$HOME/.local/git/code/dev/,file:$HOME/.local/git/code/rust/learn_rust_live/ownership/src/,file:$HOME/.local/git/dotfiles/.config/
 detailViewIconSize=16
 
 [KTextEditor Document]
@@ -35,6 +35,7 @@ Backup Local=false
 Backup Prefix=
 Backup Remote=false
 Backup Suffix=~
+Camel Cursor=true
 Encoding=UTF-8
 End of Line=0
 Indent On Backspace=true
@@ -134,7 +135,9 @@ eDP-1 Width 2048=1024
 eDP-1 Window-Maximized 1152x2048=true
 eDP-1 Window-Maximized 2048x1152=true
 eDP-1 XPosition=0
+eDP-1 XPosition 2048x1152=0
 eDP-1 YPosition=29
+eDP-1 YPosition 2048x1152=29
 
 [filetree]
 editShade=34,84,111

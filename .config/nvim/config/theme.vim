@@ -32,8 +32,18 @@ let g:lightline = {
 						\ },
 						\ }
 
-" let g:lightline.tab_component_function = {
-" 	  \ 'filename': 'lightline#tab#filename',
-" 	  \ 'modified': 'lightline#tab#modified',
-" 	  \ 'readonly': 'lightline#tab#readonly',
-" 	  \ 'tabnum': 'lightline#tab#tabnum' }
+let g:lightline.tab_component_function = {
+	  \ 'filename': 'lightline#tab#filename',
+	  \ 'modified': 'lightline#tab#modified',
+	  \ 'readonly': 'lightline#tab#readonly',
+	  \ 'tabnum': 'lightline#tab#tabnum' }
+
+let g:startify_session_autoload = 1
+let g:startify_change_to_vcs_root = 1
+let g:startify_session_persistence = 1
+let g:startify_session_dir = '~/.local/git/dotfiles/.config/nvim/sessions'
+let g:startify_lists = [
+          \ { 'type': 'files',     'header': ['   Files']            },
+          \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
+          \ { 'type': 'sessions',  'header': ['   Sessions']       },
+          \ ]

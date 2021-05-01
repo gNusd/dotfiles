@@ -57,3 +57,13 @@ vim.lsp.handlers['textDocument/implementation'] = require'lsputil.locations'.imp
 vim.lsp.handlers['textDocument/documentSymbol'] = require'lsputil.symbols'.document_handler
 vim.lsp.handlers['workspace/symbol'] = require'lsputil.symbols'.workspace_handler
 EOF
+
+" Using lua functions
+" bind: "<leader>ff" desc: "find files"
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+" bind: "<leader>fg" desc: "grep in files"
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+" bind: "<leader>fb" desc: "find in buffer"
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+" bind: "<leader>fh" desc: "find in help files"
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>

@@ -103,7 +103,7 @@ nmap <leader>mt <Plug>MarkdownPreviewToggle
 
 " markdown to pdf
 nmap <leader>2 :! pandoc -o %:r.pdf % <CR>
-nmap <leader>22 :! pandoc -o %:r.pdf % <CR> :!zathura '%<'.pdf&;disown<cr>:redraw!<CR>
+nmap <leader>22 :! pandoc --pdf-enigne=wkhtmltopdf -o %:r.pdf % <CR> :!zathura '%<'.pdf&;disown<cr>:redraw!<CR>
 
 " auto close
 let g:pear_tree_smart_openers = 1

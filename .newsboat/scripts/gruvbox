@@ -15,6 +15,7 @@ highlight article "^(Feed|Link):.*$" 			color66  	default 	bold
 highlight article "^(Title):.*$"				color109	default		bold
 highlight article "^(Author):.*$"				color66 	default		bold
 highlight article "^(Date):.*$"					color109	default		bold
+highlight feedlist "<category:>"				color106	default		bold
 highlight article "https?://[^ ]+" 				color175  	default 	bold
 highlight article "\\[[0-9]+\\]" 				color223 	default 	bold
 highlight article "\\[image\\ [0-9]+\\]" 		color233 	default 	bold

@@ -1,8 +1,19 @@
+"query:asmr :tags # \"asmr\""
 "query:asperger :tags # \"asperger\""
+"query:cats :tags # \"cats\""
+"query:linux & FOSS :tags # \"linux\""
+"query:home automation :tags # \"home\""
+"query:meditation :tags # \"meditation\""
+"query:misc :tags # \"miscellaneous\""
+"query:music :tags # \"music\""
+"query:programming :tags # \"programming\""
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+# aspbergers
 https://www.youtube.com/feeds/videos.xml?user=AspieWorld1 "asperger"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC-FpBZR7DbpvNj5UrFN8qUA "asperger"
 
-"query:linux & FOSS :tags # \"linux\""
+# linux & FOSS
 https://www.youtube.com/feeds/videos.xml?user=kaihendry "linux & FOSS"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCtZRKfyvx7GUEi-Lr7f4Nxg "linux & FOSS"
 https://www.youtube.com/feeds/videos.xml?user=ChrisWereDigital "linux & FOSS"
@@ -20,7 +31,13 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ "li
 https://www.youtube.com/feeds/videos.xml?user=tuxreviews "linux & FOSS"
 https://www.youtube.com/feeds/videos.xml?channel_id=UChpYmMp7EFaxuogUX1eAqyw "linux & FOSS"
 
-"query:programming :tags # \"programming\""
+#home automation
+https://www.youtube.com/feeds/videos.xml?channel_id=UC75HTMhqVZs0sPOMTMQqI9g "home automation"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5ZdPKE2ckcBhljTc2R_qNA "home automation"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7G4tLa4Kt6A9e3hJ-HO8ng "home automation"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2gyzKcHbYfqoXA5xbyGXtQ "home automation"
+
+# programming
 https://www.youtube.com/feeds/videos.xml?channel_id=UCbF-4yQQAWw-UnuCd2Azfzg "programming"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXPHFM88IlFn68OmLwtPmZA "programming"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCa0tJguRNbU6I8OO3nUvXxQ "programming"
@@ -28,11 +45,14 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC_iD0xppBwwsrM9DegC5cQQ "pr
 https://www.youtube.com/feeds/videos.xml?channel_id=UCJmkfLmcC-1qVW1f9lBAsBA "programming"
 https://twitchrss.appspot.com/vod/tommcgurl "programming"
 
-"query:music :tags # \"music\""
+# music
 https://www.youtube.com/feeds/videos.xml?channel_id=UCRYhCg0DHloE9gn-PAiAYNg "music"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCChJYTwUOqk1LNgUb_pIiqA "music"
 
-"query:asmr :tags # \"asmr\""
+# cats
+https://www.youtube.com/feeds/videos.xml?user=TheCatDaddy66 "cats"
+
+# asmr
 https://www.youtube.com/feeds/videos.xml?channel_id=UCvtoEsG_bB4Cl8fcJ6SLaaQ "asmr"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHC6fhzmkO9pdwFwNaFvArw "asmr"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCDH70xAv1bBeaCt5Cc7a96A "asmr"
@@ -43,12 +63,12 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCw2rs0uJqzN0ZzfmfkQ03pQ "as
 https://www.youtube.com/feeds/videos.xml?channel_id=UCgOfiuubHnhVrc9IEcSk1Nw "asmr"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC6gLlIAnzg7eJ8VuXDCZ_vg "asmr"
 
-"query:misc :tags # \"misc\""
-https://www.youtube.com/feeds/videos.xml?channel_id=UCmDcT_Pujk8vOcxk_IcnxtQ "misc"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVzuWtYPUInm3JZ23MwYc0g "misc"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCC-UOdK8-mIjxBQm_ot1T-Q "misc"
+# misc
+https://www.youtube.com/feeds/videos.xml?channel_id=UCmDcT_Pujk8vOcxk_IcnxtQ "miscellaneous"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVzuWtYPUInm3JZ23MwYc0g "miscellaneous"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCC-UOdK8-mIjxBQm_ot1T-Q "miscellaneous"
 
-"query:meditation :tags # \"meditation\""
+# meditation
 https://www.youtube.com/feeds/videos.xml?user=jeffwarren1001 "meditation"
 https://www.youtube.com/feeds/videos.xml?user=jmetatron "meditation"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCmz8TUsT3CoV12gKIcZscAA "meditation"

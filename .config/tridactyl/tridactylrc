@@ -163,6 +163,11 @@ set searchurls.disc https://www.discogs.com/search/?type=all&q=
 " bind: "pj" desc: "search prisjakt.nu"
 set searchurls.pj https://classic.prisjakt.nu/#rparams=ss=
 
+" bind "tra" desc: "search tradera.com"
+set searchurls.tra https://www.tradera.com/search?q=
+
+" bind: "kjell" desc: "Search kjell.com"
+set searchurls.kjell https://www.kjell.com/se/sok?q=
 """""""""""""""
 " Torrents
 """""""""""""""

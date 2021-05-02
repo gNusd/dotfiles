@@ -15,6 +15,7 @@ DOTFILES="$HOME/.local/git/dotfiles"
 [ -f "$DOTFILES/.config/zsh/fzf.zsh" ] && source "$DOTFILES/.config/zsh/fzf.zsh"
 [ -f "$DOTFILES/.ssh/alias.ssh" ] && source "$DOTFILES/.ssh/alias.ssh"
 
+
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
@@ -77,7 +78,6 @@ bindkey '^e' edit-command-line
 setopt LIST_PACKED             # make completion lists more densely packed
 setopt MENU_COMPLETE           # auto-insert first possible ambiguous completion
 setopt AUTO_PARAM_SLASH        # tab completing directory appends a slash
-
 
 # Load zsh-syntax-highlighting; should be last.
 [ -f "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" 2>/dev/null

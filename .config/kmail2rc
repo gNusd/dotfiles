@@ -59,7 +59,7 @@ SearchAndHeaderHeight=294
 SearchAndHeaderWidth=1797
 
 [Internal]
-PreviousNewFeaturesMD5=iszdQzUXdey4RMTHvVGzfw==
+PreviousNewFeaturesMD5=LEqwjvX5OHzfrAzwa6HiHQ==
 
 [KFileDialog Settings]
 Recent Files[$e]=årskurs 3 termin 2.odt,file:$HOME/nextcloud/notes/jobb/ansökningar/cv.pdf,file:$HOME/nextcloud/notes/jobb/ansökningar/nämndemansgården.pdf,file:$HOME/nextcloud/dokument/skola/kunskapsskolan.pdf
@@ -75,7 +75,7 @@ RestorePositionForNextInstance=false
 State=AAAA/wAAAAD9AAAAAAAACAAAAAQAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 eDP-1 Height 1152=1123
-eDP-1 Height 2048x1152=1128
+eDP-1 Height 2048x1152=1123
 eDP-1 Width 2048=2048
 eDP-1 Width 2048x1152=2048
 eDP-1 Window-Maximized 1152x2048=true
@@ -152,7 +152,6 @@ QuotedText1=150,255,194
 QuotedText2=98,255,164
 QuotedText3=55,244,134
 ScamDetectionWhiteList=noreply@netonnet.se
-ZoomFactor=200
 attachment-strategy=smart
 defaultColors=false
 htmlLoadExternal=true

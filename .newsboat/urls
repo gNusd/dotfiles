@@ -1,12 +1,13 @@
 "query:asmr :tags # \"asmr\""
 "query:asperger :tags # \"asperger\""
 "query:cats :tags # \"cats\""
-"query:linux & FOSS :tags # \"linux\""
 "query:home automation :tags # \"home\""
+"query:linux & FOSS :tags # \"linux\""
 "query:meditation :tags # \"meditation\""
 "query:misc :tags # \"miscellaneous\""
 "query:music :tags # \"music\""
 "query:programming :tags # \"programming\""
+"query:social :tags # \"social\""
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 # aspbergers
@@ -30,11 +31,10 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCvA_wgsX6eFAOXI8Rbg_WiQ "li
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ "linux & FOSS"
 https://www.youtube.com/feeds/videos.xml?user=tuxreviews "linux & FOSS"
 https://www.youtube.com/feeds/videos.xml?channel_id=UChpYmMp7EFaxuogUX1eAqyw "linux & FOSS"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVik6mzTCurdJmvdj5dCa7A "linux & FOSS"
 
 #home automation
-https://www.youtube.com/feeds/videos.xml?channel_id=UC75HTMhqVZs0sPOMTMQqI9g "home automation"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC5ZdPKE2ckcBhljTc2R_qNA "home automation"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC7G4tLa4Kt6A9e3hJ-HO8ng "home automation"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2gyzKcHbYfqoXA5xbyGXtQ "home automation"
 
 # programming
@@ -62,6 +62,9 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCzgyo1MvMJwmsr3T0mblNZg "as
 https://www.youtube.com/feeds/videos.xml?channel_id=UCw2rs0uJqzN0ZzfmfkQ03pQ "asmr"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCgOfiuubHnhVrc9IEcSk1Nw "asmr"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC6gLlIAnzg7eJ8VuXDCZ_vg "asmr"
+
+#social science
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUkhcczDYYM3WzOj4r07rbA "social science"
 
 # misc
 https://www.youtube.com/feeds/videos.xml?channel_id=UCmDcT_Pujk8vOcxk_IcnxtQ "miscellaneous"

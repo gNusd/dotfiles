@@ -28,9 +28,11 @@ call matchadd('ColorColumn', '\%81v', 100)		" checks if you write over the 80 ch
 
 " clipboard
 " bind: "<leader>y" desc: "Yank to clipboard"
-noremap <silent><leader>y :w !xsel -i -b<CR><CR>
+" noremap <silent><leader>y :w !xsel -i -b<CR><CR> "Xorg with xsel
+noremap <silent><leader>y :w !wl-copy<CR><CR>
 " bind: "<leader>p" desc: "Paste from clipboard"
-noremap <silent><leader>p :r !xsel -o -b<CR>
+" noremap <silent><leader>p :r !xsel -o -b<CR> "Xorg with xsel
+noremap <silent><leader>p :r !wl-paste<CR>
 
 let g:highlightedyank_highlight_duration = 1000
 augroup highlight_yank

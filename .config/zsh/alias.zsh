@@ -7,7 +7,7 @@ alias x='clear'
 # bind: "xnvimswap" desc: "remove the swapfile in neovim"
 alias xnvimswap='rm $HOME/.local/share/nvim/swap/*.swp'
 # bind: "sysup" desc: "update the system"
-alias sysup='sudo dnf upgrade && sudo dnf autoremove && sudo flatpak update && sudo fwupdmgr update && rustup update'
+alias sysup='sudo zypper dup && sudo flatpak update && sudo fwupdmgr update && rustup update'
 # bind: "fwup" desc: "update only the firmware"
 alias fwup='sudo fwupdmgr update'
 # bind: "flatup" desc: "update only flatpak packages"
@@ -35,7 +35,7 @@ alias scripts='cd $HOME/.local/git/scripts && exa -la --git'
 # bind: "config" desc: "cd to .config folder"
 alias config='cd $HOME/.config'
 # bind: "bin" desc: "cd to $HOME/bin folder"
-alias bin='cd $HOME/.local/bin'
+alias bin='cd $HOME/bin'
 # bind: "repos" desc: "cd to .local/git/repositories folder"
 alias repos='cd $HOME/.local/git/repositories'
 # bind: "code" desc: "cd to .local/git/code folder"

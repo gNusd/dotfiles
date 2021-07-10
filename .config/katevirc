@@ -9,10 +9,10 @@ Macro Completions=
 Macro Contents=
 Macro Registers=
 Map Leader=\\
-Normal Mode Mapping Keys=<leader>§,<right>,<leader>\\,,?<leader>y,<leader>9,<down>,<c-l>,?<leader>p,<c-h>,<leader>A,<up>,<leader>b,<leader>t,<c-k>,<leader>h,?,<leader><f3>,<left>,<leader>T,<c-j>,<leader>l
-Normal Mode Mappings=:Nuake<cr>,<nop>,:CtrlP<cr>,:w,:!cargo,<nop>,<c-w>l,:r,<c-w>h,:call,<nop>,:CtrlPBuffer<cr>,:TlistToggle<cr>,<c-w>k,:SplitVifm<cr>,;td,:Autoformat,<nop>,:vnew,<c-w>j,:VsplitVifm<cr>
+Normal Mode Mapping Keys=<leader>\\,,<c-k>,<leader><f3>,<leader>b,<leader>h,<left>,<leader>t,?<leader>p,<c-l>,<leader>A,<up>,<leader>9,?<leader>y,<c-h>,<leader>T,?,<c-j>,<leader>l,<right>,<down>,<leader>§
+Normal Mode Mappings=:CtrlP<cr>,<c-w>k,:Autoformat,:CtrlPBuffer<cr>,:SplitVifm<cr>,<nop>,:TlistToggle<cr>,:r,<c-w>l,:call,<nop>,:!cargo,:w,<c-w>h,:vnew,;td,<c-w>j,:VsplitVifm<cr>,<nop>,<nop>,:Nuake<cr>
 Normal Mode Mappings Recursion=false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false
-ViRegisterContents=lua,        print("False: "\\, multi_items)\n,
+ViRegisterContents=main,        ext=$(EXT file)\n        case $ext in\n                flac)\n                        export AUDIO_FILE="$file"\n                        ;;\n                ape|m4a|wav|wv)\n                        export AUDIO_FILE="$file"\n                        CONVERT_FLAC\n                        ;;\n                *)\n                        echo "Could not find any valid audio files"\n                        ;;\n        esac\n,
 ViRegisterFlags=0,1,0
 ViRegisterNames=-,0,^
 Visual Mode Mapping Keys=

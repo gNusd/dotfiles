@@ -15,7 +15,6 @@ DOTFILES="$HOME/.local/git/dotfiles"
 [ -f "$DOTFILES/.config/zsh/fzf.zsh" ] && source "$DOTFILES/.config/zsh/fzf.zsh"
 [ -f "$DOTFILES/.ssh/alias.ssh" ] && source "$DOTFILES/.ssh/alias.ssh"
 
-
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000

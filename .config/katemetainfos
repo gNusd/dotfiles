@@ -1,19 +1,111 @@
-[file:///home/gnus/downloads/URLLink.acsm]
+[file:///home/gnus/.local/build/Mullvad.AppDir/AppRun]
 Bookmarks=
-Checksum=aa73c34ee6694cf08177aa8a799aa457ac948982
+Checksum=e89b9433a0791bbd1ee816355f1ea7330dba49d8
 Encoding=UTF-8
 Highlighting=None
 Highlighting Set By User=false
 Indentation Mode=normal
 Mode=Normal
 Mode Set By User=false
-Time=2021,3,31,17,11,37.8
-URL=file:///home/gnus/downloads/URLLink.acsm
+Time=2021,5,10,6,25,23.996
+URL=file:///home/gnus/.local/build/Mullvad.AppDir/AppRun
 
-[file:///tmp/messageviewer_attachment_mFNgSF/device.pub]
-Checksum=9e88dd59b49d45c515ec64e61f7a96c365dd45a2
-Time=2021,4,25,12,46,57.674
+[file:///home/gnus/.local/build/Mullvad.AppDir/Mullvad.desktop]
+Bookmarks=
+Checksum=69ca3a875afcb83f3293b6b624c13dd95d3cca4f
+Encoding=UTF-8
+Highlighting=.desktop
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=.desktop
+Mode Set By User=false
+Time=2021,5,10,6,40,11.457
+URL=file:///home/gnus/.local/build/Mullvad.AppDir/Mullvad.desktop
 
-[file:///tmp/mozilla_gnus0/motion-activated-lights-with-switch-override.json]
-Checksum=10005d0adbfd74a01a2047ae1de218e4630e8c91
-Time=2021,4,5,18,30,31.447
+[file:///home/gnus/.local/git/code/dev/au_tmp]
+Bookmarks=
+Checksum=7db9ea89fd0eeb02d70770e152cb41d1cf2f3a0b
+Encoding=UTF-8
+Highlighting=Bash
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Bash
+Mode Set By User=false
+Time=2021,5,29,17,38,28.524
+URL=file:///home/gnus/.local/git/code/dev/au_tmp
+
+[file:///home/gnus/.local/git/code/dev/audiosplit]
+Bookmarks=
+Checksum=857458850a7635bef02b5ed216e0d26c7f61a8a2
+Encoding=UTF-8
+Highlighting=Bash
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Bash
+Mode Set By User=false
+Time=2021,5,23,17,10,19.043
+URL=file:///home/gnus/.local/git/code/dev/audiosplit
+
+[file:///home/gnus/.local/git/code/dev/audiosplit_tmp]
+Bookmarks=
+Checksum=fee635fb6330f9b161786090cc34ef57d74729ac
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2021,5,23,19,30,4.535
+URL=file:///home/gnus/.local/git/code/dev/audiosplit_tmp
+
+[file:///home/gnus/.local/git/code/dev/autoscript]
+Bookmarks=
+Checksum=db792fcacbd7f816faeac6ab9e8864a153edc19f
+Encoding=UTF-8
+Highlighting=Bash
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Bash
+Mode Set By User=false
+Time=2021,5,23,17,3,43.861
+URL=file:///home/gnus/.local/git/code/dev/autoscript
+
+[file:///home/gnus/.local/git/code/dev/toflac]
+Bookmarks=
+Checksum=f9875b76d2ef0c1262e52ad93620fdccd859b9df
+Encoding=UTF-8
+Highlighting=Bash
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Bash
+Mode Set By User=false
+Time=2021,5,29,17,2,15.585
+URL=file:///home/gnus/.local/git/code/dev/toflac
+
+[file:///home/gnus/.local/git/code/python/stella_magnus_programering.py]
+Bookmarks=
+Checksum=f7004f70ea991695314043ff43002bc3dc9334a1
+Encoding=UTF-8
+Highlighting=Python
+Highlighting Set By User=false
+Indentation Mode=python
+Mode=Python
+Mode Set By User=false
+Time=2021,5,23,17,3,41.897
+URL=file:///home/gnus/.local/git/code/python/stella_magnus_programering.py
+
+[file:///tmp/mozilla_gnus0/gnus_public_key_rsa]
+Checksum=041ca32cd17cbecd63d3feb0957c3b699005e7a0
+Time=2021,5,21,19,35,32.506
+
+[sftp://192.168.1.135/home/gnus/media/eapc_backup(2020-10-10_15-34-07).cfg]
+Bookmarks=
+Checksum=b437afba9aeeb1525f9279a9a0ebb70a8db24d04
+Encoding=ISO-8859-15
+Highlighting=Nagios
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Nagios
+Mode Set By User=false
+Time=2021,5,6,19,16,24.898
+URL=sftp://192.168.1.135/home/gnus/media/eapc_backup(2020-10-10_15-34-07).cfg

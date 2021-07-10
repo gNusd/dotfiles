@@ -5,7 +5,7 @@ Size=460,320
 Default Calendar=31
 
 [CollectionTreeView]
-Expansion=c1,c27
+Expansion=c85
 HorizontalScroll=0
 VerticalScroll=0
 
@@ -17,10 +17,10 @@ Range Mode=3
 
 [GlobalCollectionSelection]
 Current=x-1
-Selection=c25,c26,c35,c34,c33,c32,c31,c30,c29,c28
+Selection=c39,c40,c93,c92,c91,c90,c89,c88,c87,c86
 
 [GlobalCollectionView]
-Expansion=
+Expansion=c85
 HorizontalScroll=0
 VerticalScroll=0
 
@@ -28,16 +28,19 @@ VerticalScroll=0
 Size=589,580
 
 [Internal Settings]
-DefaultResourceColorSeed=21
+DefaultResourceColorSeed=23
 
 [KOrganizer Geometry]
-Separator1=407,616
-Separator2=275,0,344,411
+Separator1=462,699
+Separator2=312,0,391,467
 
 [MainWindow]
-RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAAAABAAAAAQIAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAQAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAJABrAG8AcgBnAGEAbgBpAHoAZQByAF8AdABvAG8AbABiAGEAcgEAAANP/////wAAAAAAAAAAAAAAIABzAGMAaABlAGQAdQBsAGUAXwB0AG8AbwBsAGIAYQByAAAAAAD/////AAAAAAAAAAAAAAAcAGYAaQBsAHQAZQByAF8AdABvAG8AbABiAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABIoAAASUAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAQAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAJABrAG8AcgBnAGEAbgBpAHoAZQByAF8AdABvAG8AbABiAGEAcgEAAANX/////wAAAAAAAAAAAAAAIABzAGMAaABlAGQAdQBsAGUAXwB0AG8AbwBsAGIAYQByAAAAAAD/////AAAAAAAAAAAAAAAcAGYAaQBsAHQAZQByAF8AdABvAG8AbABiAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
+XWAYLAND0 Height 2320x1307=1271
+XWAYLAND0 Width 2320x1307=1162
+XWAYLAND0 XPosition 2320x1307=1162
+XWAYLAND0 YPosition 2320x1307=36
 eDP-1 Height 1152=1123
 eDP-1 Height 2048x1152=1123
 eDP-1 Width 2048=1024
@@ -85,5 +88,5 @@ Selection=
 VerticalScroll=0
 
 [Views]
-Separator AgendaView=168,839
+Separator AgendaView=191,956
 ShownDatesCount=7

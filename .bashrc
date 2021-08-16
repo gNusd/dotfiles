@@ -17,7 +17,7 @@ case $- in
 esac
 
 # color man-pages
-export PAGER='most'
+export PAGER='less'
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -104,8 +104,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f $HOME/repositories/dotfiles/.bash_aliases ]; then
+    . $HOME/repositories/dotfiles/.bash_aliases
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -124,13 +124,4 @@ export VISUAL=nvim
 export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
 export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
-eval "$(ntfy shell-integration)"
-export AUTO_NTFY_DONE_IGNORE="vim screen meld"
-
-source $HOME/.ssh/ssh_alias
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export FZF_DEFAULT_OPS="--extended"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-source /home/gnus/.config/broot/launcher/bash/br
+[ -f $HOME/repositories/.ssh/alias.ssh ] && source ~$HOME/repositories/.ssh/alias.ssh

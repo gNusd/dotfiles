@@ -102,8 +102,13 @@ alias l='ls -CF'
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
+<<<<<<< HEAD
 if [ -f $HOME/.local/git/local/dotfiles/.bash_aliases ]; then
     . $HOME/.local/git/local/dotfiles/.bash_aliases
+=======
+if [ -f $HOME/repositories/dotfiles/.bash_aliases ]; then
+    . $HOME/repositories/dotfiles/.bash_aliases
+>>>>>>> e6d334818396378d0e17a5883bfd6577c6424c70
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -120,7 +125,13 @@ fi
 export EDITOR=nvim
 export VISUAL=nvim
 export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
+<<<<<<< HEAD
 export PATH="$HOME/.local/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
 source $HOME/.local/git/local/dotfiles/.ssh/alias.ssh
 . "$HOME/.cargo/env"
+=======
+export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
+
+[ -f $HOME/repositories/.ssh/alias.ssh ] && source ~$HOME/repositories/.ssh/alias.ssh
+>>>>>>> e6d334818396378d0e17a5883bfd6577c6424c70

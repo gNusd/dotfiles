@@ -6,11 +6,5 @@
 
 config_version: 2
 settings:
-  content.geolocation:
-    https://www.bauhaus.se: false
-  content.notifications:
-    https://www.qnap.com: false
-  statusbar.show:
-    global: never
-  tabs.show:
-    global: always
+  backend:
+    global: webengine

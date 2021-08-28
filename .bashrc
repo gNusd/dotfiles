@@ -17,7 +17,7 @@ case $- in
 esac
 
 # color man-pages
-export PAGER='most'
+export PAGER='less'
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -64,7 +64,8 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-source $HOME/repositories/scripts/git-promt_bash.sh
+source $HOME/.local/git/local/scripts/git-promt_bash.sh
+
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
@@ -96,16 +97,13 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f $HOME/.local/git/local/dotfiles/.bash_aliases ]; then
+    . $HOME/.local/git/local/dotfiles/.bash_aliases
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -122,15 +120,7 @@ fi
 export EDITOR=nvim
 export VISUAL=nvim
 export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
-export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
-eval "$(ntfy shell-integration)"
-export AUTO_NTFY_DONE_IGNORE="vim screen meld"
-
-source $HOME/.ssh/ssh_alias
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export FZF_DEFAULT_OPS="--extended"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-source /home/gnus/.config/broot/launcher/bash/br
+source $HOME/.local/git/local/dotfiles/.ssh/alias.ssh
+. "$HOME/.cargo/env"

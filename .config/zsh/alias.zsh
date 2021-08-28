@@ -7,7 +7,7 @@ alias x='clear'
 # bind: "xnvimswap" desc: "remove the swapfile in neovim"
 alias xnvimswap='rm $HOME/.local/share/nvim/swap/*.swp'
 # bind: "sysup" desc: "update the system"
-alias sysup='sudo zypper dup && sudo flatpak update && sudo fwupdmgr update && rustup update'
+alias sysup='sudo apt update && sudo apt dist-upgrade && sudo flatpak update && sudo fwupdmgr update && rustup update'
 # bind: "fwup" desc: "update only the firmware"
 alias fwup='sudo fwupdmgr update'
 # bind: "flatup" desc: "update only flatpak packages"
@@ -27,17 +27,17 @@ alias ...="cd ../.."
 
 # alias to directories
 # bind: "dotfiles" desc: "cd to dotfiles folder"
-alias dotfiles='cd $HOME/.local/git/dotfiles && exa -la --git'
+alias dotfiles='cd $HOME/.local/git/local/dotfiles && exa -la --git'
 # bind: "nvimrc" desc: "cd to nvim's config folder"
-alias nvimrc='cd $HOME/.local/git/dotfiles/.config/nvim/config && exa -la --git'
+alias nvimrc='cd $HOME/.local/git/local/dotfiles/.config/nvim/config && exa -la --git'
 # bind: "scripts" desc: "cd to scripts files folder"
-alias scripts='cd $HOME/.local/git/scripts && exa -la --git'
+alias scripts='cd $HOME/.local/git/local/scripts && exa -la --git'
 # bind: "config" desc: "cd to .config folder"
 alias config='cd $HOME/.config'
 # bind: "bin" desc: "cd to $HOME/bin folder"
-alias bin='cd $HOME/bin'
+alias bin='cd $HOME/.local/bin'
 # bind: "repos" desc: "cd to .local/git/repositories folder"
-alias repos='cd $HOME/.local/git/repositories'
+alias repos='cd $HOME/.local/git/remote'
 # bind: "code" desc: "cd to .local/git/code folder"
 alias code='cd $HOME/.local/git/code'
 # bind: "lbin" desc: "cd to /usr/local/bin folder"
@@ -63,27 +63,27 @@ alias stella='cd $HOME/hugo/stella.work'
 
 # alias to files
 # bind: "vimrc" desc: "open and edit neovim's config file init.vim"
-alias vimrc='$EDITOR $HOME/.local/git/dotfiles/.config/nvim/init.vim'
+alias vimrc='$EDITOR $HOME/.local/git/local/dotfiles/.config/nvim/init.vim'
 # bind: "trirc" desc: "open and edit tridactyls config file tridactylrc"
-alias trirc='$EDITOR $HOME/.local/git/dotfiles/.config/tridactyl/tridactylrc'
+alias trirc='$EDITOR $HOME/.local/git/local/dotfiles/.config/tridactyl/tridactylrc'
 # bind: "tmuxrc" desc: "open and edit tmux's config file tmux.conf"
-alias tmuxrc='$EDITOR $HOME/.local/git/dotfiles/.tmux.conf'
+alias tmuxrc='$EDITOR $HOME/.local/git/local/dotfiles/.tmux.conf'
 # bind: "zshrc" desc: "open and edit zsh's config file .zshrc"
-alias zshrc='$EDITOR $HOME/.local/git/dotfiles/.zshrc'
+alias zshrc='$EDITOR $HOME/.local/git/local/dotfiles/.zshrc'
 # bind: "zshalias" desc: "open and edit alias.zsh"
-alias zshalias='$EDITOR $HOME/.local/git/dotfiles/.config/zsh/alias.zsh'
+alias zshalias='$EDITOR $HOME/.local/git/local/dotfiles/.config/zsh/alias.zsh'
 # bind: "zshkey" desc: "open and edit keybindings.zsh"
-alias zshkey='$EDITOR $HOME/.local/git/dotfiles/.config/zsh/keybindings.zsh'
+alias zshkey='$EDITOR $HOME/.local/git/local/dotfiles/.config/zsh/keybindings.zsh'
 # bind: "inputrc" desc: "open and edit .inputrc"
-alias inputrc='$EDITOR $HOME/.local/git/dotfiles/.inputrc'
+alias inputrc='$EDITOR $HOME/.local/git/local/dotfiles/.inputrc'
 # bind: "alacr" desc: "open and edit alacritty's config file alacritty.yml"
-alias alacr='$EDITOR $HOME/.local/git/dotfiles/.config/alacritty/alacritty.yml'
+alias alacr='$EDITOR $HOME/.local/git/local/dotfiles/.config/alacritty/alacritty.yml'
 # bind: "shop" desc: "open and edit the shopping list"
 alias shop='$EDITOR $HOME/nextcloud/dokument/inköpslistor/Shopping+List.lst'
 # bind: "SSH" desc: "open and edit the ssh alias file"
-alias SSH='$EDITOR $HOME/.ssh/alias.ssh'
+alias sshalias='$EDITOR $HOME/.local/git/local/dotfiles/.ssh/alias.ssh'
 # bind: "usch" desc: "open and edit the userChrome.css script"
-alias usch='$EDITOR $HOME/.local/git//dotfiles/.mozilla/firefox/current/chrome/userChrome.css'
+alias usch='$EDITOR $HOME/.local/git/local/dotfiles/.mozilla/firefox/current/chrome/userChrome.css'
 
 # alias to add to applications
 alias grep='grep --color=auto'

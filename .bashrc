@@ -15,6 +15,22 @@ case $- in
     *i*) ;;
       *) return;;
 esac
+##
+## TMUX auto attach
+##
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then      # if this is an SSH session
+    if which tmux >/dev/null 2>&1; then                 # check if tmux is installed
+            if [[ -z "$TMUX" ]] ;then                   # do not allow "tmux in tmux"
+                    ID="$( tmux ls | grep -vm1 attached | cut -d: -f1 )"    # get the id of a deattached session
+                    if [[ -z "$ID" ]] ;then                                 # if not available create a new one
+                            tmux new-session
+                    else
+                            tmux attach-session -t "$ID"                    # if available, attach to it
+                    fi
+            fi
+    fi
+fi
+
 
 # color man-pages
 export PAGER='less'
@@ -29,6 +45,9 @@ shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
+
+# After each command, append to the history file and reread it
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND; history -a; history -c; history -r}"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -84,7 +103,7 @@ if [ -x /usr/bin/dircolors ]; then
     #alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
+    alias fgrep='fgrep --olor=auto'
     alias egrep='egrep --color=auto'
 fi
 

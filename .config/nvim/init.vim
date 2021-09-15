@@ -9,7 +9,7 @@ set nocompatible						        " be iMproved, required
 " bind: "<leader> Space" desc: "leader modification key"
 let mapleader = " "
 set encoding=UTF-8
-set shell=/usr/bin/zsh
+set shell=/usr/bin/bash
 set number relativenumber 						" Show line numbers and relativnumbers
 set tabstop=4 									" Tabs 4 spaces
 set mouse= 			 							" Disable mouse. Enable the use of the mouse mouse=a.
@@ -20,7 +20,6 @@ set path+=**									" Searches current directory recursively.
 set undodir=~/.cache/nvim/undodir/ 				" Setting undodir
 set undofile 									" setting undofile for permanent undo
 set wildignore+=*.a,*.o,*.gif,*.jpg,*.png,.git,*.swp,*.tmp,*.class 	" file to ignore
-set listchars=tab:>-,trail:·,extends:>,precedes:<,space:· 	" show tabs and spaces, not using end of line (eol:⏎,)
 set list
 
 autocmd BufWritePre * %s/\s\+$//e 				" Remove trailing whitespace
@@ -65,16 +64,16 @@ endfunction
 
 map <silent> <leader>z :call Compile()<CR><CR>
 
-source $HOME/.local/git/dotfiles/.config/nvim/config/plug-plugin.vim
-source $HOME/.local/git/dotfiles/.config/nvim/config/lsp.vim
-source $HOME/.local/git/dotfiles/.config/nvim/config/alias.vim
-source $HOME/.local/git/dotfiles/.config/nvim/config/ab.vim
-source $HOME/.local/git/dotfiles/.config/nvim/config/completion.vim
-source $HOME/.local/git/dotfiles/.config/nvim/config/nav.vim
-source $HOME/.local/git/dotfiles/.config/nvim/config/git.vim
-source $HOME/.local/git/dotfiles/.config/nvim/config/theme.vim
-source $HOME/.local/git/dotfiles/.config/nvim/config/buffer.vim
-source $HOME/.local/git/dotfiles/.config/nvim/config/term.vim
+source $HOME/.local/git/local/dotfiles/.config/nvim/config/plug-plugin.vim
+source $HOME/.local/git/local/dotfiles/.config/nvim/config/lsp.vim
+source $HOME/.local/git/local/dotfiles/.config/nvim/config/alias.vim
+source $HOME/.local/git/local/dotfiles/.config/nvim/config/ab.vim
+source $HOME/.local/git/local/dotfiles/.config/nvim/config/completion.vim
+source $HOME/.local/git/local/dotfiles/.config/nvim/config/nav.vim
+source $HOME/.local/git/local/dotfiles/.config/nvim/config/git.vim
+source $HOME/.local/git/local/dotfiles/.config/nvim/config/theme.vim
+source $HOME/.local/git/local/dotfiles/.config/nvim/config/buffer.vim
+source $HOME/.local/git/local/dotfiles/.config/nvim/config/term.vim
 
 
 " Required:

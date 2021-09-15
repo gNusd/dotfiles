@@ -40,4 +40,4 @@ autocmd Filetype sh setlocal omnifunc=v:lua.vim.lsp.omnifunc
 autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
 autocmd Filetype vim setlocal omnifunc=v:lua.vim.lsp.omnifunc
 autocmd Filetype yaml setlocal omnifunc=v:lua.vim.lsp.omnifunc
-autocmd Filetype lua setlocal omnifunc=v:lua.vim.lsp.omnifunc
+" autocmd Filetype lua setlocal omnifunc=v:lua.vim.lsp.omnifunc

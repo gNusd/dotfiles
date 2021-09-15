@@ -90,10 +90,10 @@ c.colors.completion.scrollbar.bg = c.colors.completion.category.bg
 ### Context menu
 
 # Background color of disabled items in the context menu.
-c.colors.contextmenu.disabled.bg = bg3
+# c.colors.contextmenu.disabled.bg = bg3
 
 # Foreground color of disabled items in the context menu.
-c.colors.contextmenu.disabled.fg = fg3
+# c.colors.contextmenu.disabled.fg = fg3
 
 # Background color of the context menu. If set to null, the Qt default is used.
 c.colors.contextmenu.menu.bg = bg0

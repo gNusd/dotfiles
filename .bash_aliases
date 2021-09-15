@@ -34,12 +34,12 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 # BEETS & TORRENTS
-alias imbeet="beet import /home/media/import"
-alias imclear="rm -rf /home/media/import/*"
-alias recive="cd  /home/media/recive && ls"
+alias imbeet="beet import /home/gnus/mnt/media/import"
+alias imclear="rm -rf /home/gnus/mnt/media/import/*"
+alias recive="cd  /home/gnus/mnt/media/recive && ls"
 alias ytflac="youtube-dl --extract-audio --audio-format flac --audio-quality 0"
-alias import="cd /home/media/import"
-alias mvim="mv /home/media/recive/*  /home/media/import && cd /home/media/import"
+alias import="cd /home/gnus/mnt/media/import"
+alias mvim="mv /home/gnus/mnt/media/recive/*  /home/gnus/mnt/media/import && cd /home/gnus/mnt/media/import"
 alias beim="beet import ."
-alias video="cd /home/media/video && ls"
-alias mvvi="mv /home/media/recive/*  /home/media/video && cd /home/media/video"
+alias video="cd /home/gnus/mnt/media/video && ls"
+alias mvvi="mv /home/gnus/mntmedia/recive/*  /home/gnus/mnt/media/video && cd /home/gnus/mnt/media/video"

@@ -37,18 +37,6 @@ d/home/music/The Caretaker/Everywhere at the End of Time - Stage 2 [HAFTWCD0103]
 	..
 0
 d/home/music/The Caretaker
-	Everywhere at the End of Time - Stage 2
-3
-d/home/music/The Caretaker/Everywhere at the End of Time - Stage 2
-	..
-0
-d/home/music/The Caretaker
-	Everywhere at the End of Time - Stage 2 [HAFTWCD0103]
-4
-d/home/music/The Caretaker/Everywhere at the End of Time - Stage 2 [HAFTWCD0103]
-	..
-0
-d/home/music/The Caretaker
 	Everywhere at the End of Time - Stage 3
 4
 d/home/music/The Caretaker/Everywhere at the End of Time - Stage 3
@@ -330,6 +318,18 @@ d/home/media/recive
 d/home/media/recive/Steve Earle - Transcendental Blues [High Resolution]
 	01-Transcendental Blues.flac
 2
+d/home
+	gnus
+1
+d/home/gnus
+	mnt
+3
+d/home/gnus/mnt
+	music
+3
+d/home/gnus/mnt/music
+	Allen Ravenstine
+28
 d
 
 # Right window history (oldest to newest):

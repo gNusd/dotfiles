@@ -10,9 +10,20 @@ alias dotfiles='cd $HOME/repositories/dotfiles && ls -la'
 alias config='cd $HOME/.config'
 alias repos='cd $HOME/repositories'
 alias localbin='cd /usr/local/bin'
+alias music='cd $HOME/mnt/downloads/music'
+alias import='cd $HOME/mnt/downloads/imports'
+alias bin='cd $HOME/bin'
 
 alias vimrc='$EDITOR $HOME/repositories/dotfiles/.config/nvim/init.vim'
 alias tmuxrc='$EDITOR $HOME/repositories/dotfiles/.tmux.conf'
 alias bashrc='$EDITOR $HOME/repositories/dotfiles/.bashrc'
 alias bashalias='$EDITOR $HOME/repositories/dotfiles/.bash_aliases'
 alias inputrc='$EDITOR $HOME/repositories/dotfiles/.inputrc'
+
+alias imclear="rm -rf $HOME/mnt/downloads/imports/*"
+alias mvim="mv $HOME/mnt/downloads/music/* $HOME/mnt/downloads/imports && cd $HOME/mnt/downloads/imports"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+

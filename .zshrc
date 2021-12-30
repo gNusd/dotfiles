@@ -15,6 +15,10 @@ DOTFILES="$HOME/.local/git/local/dotfiles"
 [ -f "$DOTFILES/.config/zsh/fzf.zsh" ] && source "$DOTFILES/.config/zsh/fzf.zsh"
 [ -f "$DOTFILES/.ssh/alias.ssh" ] && source "$DOTFILES/.ssh/alias.ssh"
 
+# After each command, append to the history file and reread it
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND; history -a; history -c; history -r}"
+
+
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000

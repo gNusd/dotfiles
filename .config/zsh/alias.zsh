@@ -14,18 +14,23 @@ alias fwup='sudo fwupdmgr update'
 alias flatup='sudo flatpak update'
 # bind: "vim" desc: "starts nvim"
 alias vim='nvim'
+# bind: "sudo vim" desc: "starts sudo nvim"
+alias suvim='sudo -e '
 # bind: "" desc: ""
 alias sudo='sudo '
 # bind: "pyserv" desc: "create a simple python server"
 alias pyserv="python3 -m http.server 8000 --bind 192.168.2.120"
 # bind: "nb" desc: "start newsboat & reload feeds"
 alias nb="newsboat -r"
+alias mpv="flatpak run io.mpv.Mpv"
 
 # alias for navigation
 alias ..="cd .."
 alias ...="cd ../.."
 
 # alias to directories
+# bind: "remote" desc: "cd to remote git folder"
+alias remote='cd $HOME/.local/git/remote && exa -la --git'
 # bind: "dotfiles" desc: "cd to dotfiles folder"
 alias dotfiles='cd $HOME/.local/git/local/dotfiles && exa -la --git'
 # bind: "nvimrc" desc: "cd to nvim's config folder"
@@ -38,8 +43,8 @@ alias config='cd $HOME/.config'
 alias bin='cd $HOME/.local/bin'
 # bind: "repos" desc: "cd to .local/git/repositories folder"
 alias repos='cd $HOME/.local/git/remote'
-# bind: "code" desc: "cd to .local/git/code folder"
-alias code='cd $HOME/.local/git/code'
+# bind: "code" desc: "cd to .local/git/local/code folder"
+alias code='cd $HOME/.local/git/local/code'
 # bind: "lbin" desc: "cd to /usr/local/bin folder"
 alias lbin='cd /usr/local/bin'
 # bind: "py" desc: "cd to project folder - python"
@@ -56,6 +61,8 @@ alias doc='cd $HOME/nextcloud/dokument'
 alias notes='cd $HOME/nextcloud/notes'
 # bind: "dl" desc: "cd to download folder"
 alias dl='cd $HOME/downloads'
+# bind: "iso" desc: "cd to iso folder"
+alias iso='cd $HOME/iso'
 # bind: "gnus" desc: "cd to gnus.xyz folder"
 alias gnus='cd $HOME/hugo/gnusd.xyz'
 # bind: "stella" desc: "cd to stella.work folder"
@@ -84,6 +91,11 @@ alias shop='$EDITOR $HOME/nextcloud/dokument/inköpslistor/Shopping+List.lst'
 alias sshalias='$EDITOR $HOME/.local/git/local/dotfiles/.ssh/alias.ssh'
 # bind: "usch" desc: "open and edit the userChrome.css script"
 alias usch='$EDITOR $HOME/.local/git/local/dotfiles/.mozilla/firefox/current/chrome/userChrome.css'
+# bind: "urls" desc: "exit newsboats urls file"
+alias urls='$EDITOR $HOME/.local/git/local/dotfiles/.newsboat/urls'
+# bind: "svtplay" desc: "open and edit the download list for svtplay"
+alias svtplay='$EDITOR /run/user/1000/kio-fuse-hrhzPP/sftp/gnus@192.168.1.18:22/mnt/bob/downloads/svtplay/files/urls'
+
 
 # alias to add to applications
 alias grep='grep --color=auto'

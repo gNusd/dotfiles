@@ -25,6 +25,7 @@ call plug#begin('~/.config/nvim/plugged/')
 
 " LSP & completion
 Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
 Plug 'nvim-lua/completion-nvim'
 Plug 'steelsojka/completion-buffers'
 Plug 'aca/completion-tabnine', { 'do': './install.sh' }
@@ -41,7 +42,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vifm/vifm.vim'
 Plug 'camspiers/animate.vim'
-Plug 'jremmen/vim-ripgrep'
+" Plug 'jremmen/vim-ripgrep'
 Plug 'Lenovsky/nuake'
 
 " Tmux integration

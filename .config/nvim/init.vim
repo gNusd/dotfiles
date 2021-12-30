@@ -25,12 +25,12 @@ set list
 autocmd BufWritePre * %s/\s\+$//e 				" Remove trailing whitespace
 call matchadd('ColorColumn', '\%81v', 100)		" checks if you write over the 80 character line
 
-" clipboard
+" clipboard for both wayland and x
 " bind: "<leader>y" desc: "Yank to clipboard"
-" noremap <silent><leader>y :w !xsel -i -b<CR><CR> "Xorg with xsel
+noremap <silent><leader>y :w !xsel -i -b<CR><CR>
 noremap <silent><leader>y :w !wl-copy<CR><CR>
 " bind: "<leader>p" desc: "Paste from clipboard"
-" noremap <silent><leader>p :r !xsel -o -b<CR> "Xorg with xsel
+noremap <silent><leader>p :r !xsel -o -b<CR>
 noremap <silent><leader>p :r !wl-paste<CR>
 
 let g:highlightedyank_highlight_duration = 1000
@@ -65,7 +65,6 @@ endfunction
 map <silent> <leader>z :call Compile()<CR><CR>
 
 source $HOME/.local/git/local/dotfiles/.config/nvim/config/plug-plugin.vim
-source $HOME/.local/git/local/dotfiles/.config/nvim/config/lsp.vim
 source $HOME/.local/git/local/dotfiles/.config/nvim/config/alias.vim
 source $HOME/.local/git/local/dotfiles/.config/nvim/config/ab.vim
 source $HOME/.local/git/local/dotfiles/.config/nvim/config/completion.vim
@@ -74,7 +73,15 @@ source $HOME/.local/git/local/dotfiles/.config/nvim/config/git.vim
 source $HOME/.local/git/local/dotfiles/.config/nvim/config/theme.vim
 source $HOME/.local/git/local/dotfiles/.config/nvim/config/buffer.vim
 source $HOME/.local/git/local/dotfiles/.config/nvim/config/term.vim
+source $HOME/.local/git/local/dotfiles/.config/nvim/config/lsp.lua
 
+" Use LSP omni-completion
+autocmd Filetype rust setlocal omnifunc=v:lua.vim.lsp.omnifunc
+autocmd Filetype sh setlocal omnifunc=v:lua.vim.lsp.omnifunc
+autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
+autocmd Filetype vim setlocal omnifunc=v:lua.vim.lsp.omnifunc
+autocmd Filetype yaml setlocal omnifunc=v:lua.vim.lsp.omnifunc
+" autocmd Filetype lua setlocal omnifunc=v:lua.vim.lsp.omnifunc
 
 " Required:
 filetype plugin indent on

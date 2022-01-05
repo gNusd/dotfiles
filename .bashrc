@@ -125,16 +125,16 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 repo_path="$HOME/repositories/dotfiles"
 
 if [ -f $repo_path/.bash_aliases ]; then
-    . $repo_path/.bash_aliases 
+    . $repo_path/.bash_aliases
 fi
 if [ -f $repo_path/.exports ]; then
-    . $repo_path/.exports 
+    . $repo_path/.exports
 fi
 if [ -f $repo_path/.ssh/alias.ssh ]; then
-    . $repo_path/.ssh/alias.ssh 
+    . $repo_path/.ssh/alias.ssh
 fi
 if [ -f $repo_path/.bash_functions ]; then
-    . $repo_path/.bash_functions 
+    . $repo_path/.bash_functions
 fi
 
 # enable programmable completion features (you don't need to enable

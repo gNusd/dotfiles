@@ -12,7 +12,7 @@ set encoding=UTF-8
 set shell=/usr/bin/bash
 set number relativenumber 						" Show line numbers and relativnumbers
 set tabstop=4 									" Tabs 4 spaces
-set mouse= 			 							" Disable mouse. Enable the use of the mouse mouse=a.
+set mouse=a 			 							" Disable mouse. Enable the use of the mouse mouse=a.
 set splitbelow splitright						" adds new window split to the right annd below
 set confirm										" confirm changes (Yes, No, Cancel) instead of error
 set fillchars+=vert:\ 							" Removes pipes that act as seperators on splits
@@ -64,16 +64,26 @@ endfunction
 
 map <silent> <leader>z :call Compile()<CR><CR>
 
-source $HOME/.local/git/local/dotfiles/.config/nvim/config/plug-plugin.vim
-source $HOME/.local/git/local/dotfiles/.config/nvim/config/alias.vim
-source $HOME/.local/git/local/dotfiles/.config/nvim/config/ab.vim
-source $HOME/.local/git/local/dotfiles/.config/nvim/config/completion.vim
-source $HOME/.local/git/local/dotfiles/.config/nvim/config/nav.vim
-source $HOME/.local/git/local/dotfiles/.config/nvim/config/git.vim
-source $HOME/.local/git/local/dotfiles/.config/nvim/config/theme.vim
-source $HOME/.local/git/local/dotfiles/.config/nvim/config/buffer.vim
-source $HOME/.local/git/local/dotfiles/.config/nvim/config/term.vim
-source $HOME/.local/git/local/dotfiles/.config/nvim/config/lsp.lua
+if exists('g:vscode')
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/plug-plugin.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/alias.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/ab.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/buffer.vim
+else
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/plug-plugin.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/alias.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/ab.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/completion.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/nav.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/git.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/theme.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/buffer.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/term.vim
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/lsp.lua
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/cmp.lua
+	source $HOME/.local/git/local/dotfiles/.config/nvim/config/treesitter.lua
+endif
+
 
 " Use LSP omni-completion
 autocmd Filetype rust setlocal omnifunc=v:lua.vim.lsp.omnifunc

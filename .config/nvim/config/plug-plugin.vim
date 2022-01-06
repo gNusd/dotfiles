@@ -26,11 +26,17 @@ call plug#begin('~/.config/nvim/plugged/')
 " LSP & completion
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
-Plug 'nvim-lua/completion-nvim'
-Plug 'steelsojka/completion-buffers'
-Plug 'aca/completion-tabnine', { 'do': './install.sh' }
 Plug 'RishabhRD/popfix'
 Plug 'RishabhRD/nvim-lsputils'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
+
+" Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 " Telescope
 Plug 'nvim-lua/popup.nvim'
@@ -42,12 +48,11 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vifm/vifm.vim'
 Plug 'camspiers/animate.vim'
-" Plug 'jremmen/vim-ripgrep'
+Plug 'jremmen/vim-ripgrep'
 Plug 'Lenovsky/nuake'
 
 " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'albertoCaroM/completion-tmux'
 
 " git plugins
 Plug 'tpope/vim-fugitive'

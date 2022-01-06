@@ -12,23 +12,11 @@ set shortmess+=c                             " Avoid showing message extra messa
 set complete+=kspell,w,b,u                 	 " Spell checking
 
 " setting up complition in every buffer
-autocmd BufEnter * lua require'completion'.on_attach()
+" autocmd BufEnter * lua require'completion'.on_attach()
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy', 'all']
-let g:completion_chain_complete_list = {
-      \ 'default' : {
-      \   'default': [
-      \       {'complete_items': ['lsp', 'buffers', 'tabnine', 'tmux' ]},
-      \       {'mode': '<c-p>'},
-      \       {'mode': '<c-n>'},
-      \   ],
-      \   'string' : [
-      \       {'complete_items': ['path'], 'triggered_only': ['/']}]
-      \   }}
 
 " bind: "<leader>s" desc: "swedish spelling check"
 map <leader>s :setlocal spell! spelllang=sv spellfile=~/.config/nvim/spell/sv.utf-8.add<CR>
@@ -46,17 +34,6 @@ nmap <leader>n ]s
 nmap <leader>a zg
 " bind: "<leader>a" desc: "delete word from dictionary"
 nmap <leader>d zug
-
-:lua <<EOF
-vim.lsp.handlers['textDocument/codeAction'] = require'lsputil.codeAction'.code_action_handler
-vim.lsp.handlers['textDocument/references'] = require'lsputil.locations'.references_handler
-vim.lsp.handlers['textDocument/definition'] = require'lsputil.locations'.definition_handler
-vim.lsp.handlers['textDocument/declaration'] = require'lsputil.locations'.declaration_handler
-vim.lsp.handlers['textDocument/typeDefinition'] = require'lsputil.locations'.typeDefinition_handler
-vim.lsp.handlers['textDocument/implementation'] = require'lsputil.locations'.implementation_handler
-vim.lsp.handlers['textDocument/documentSymbol'] = require'lsputil.symbols'.document_handler
-vim.lsp.handlers['workspace/symbol'] = require'lsputil.symbols'.workspace_handler
-EOF
 
 " Using lua functions
 " bind: "<leader>ff" desc: "find files"

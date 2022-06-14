@@ -43,5 +43,5 @@ alias mvim="mv /home/gnus/mnt/media/recive/*  /home/gnus/mnt/media/import && cd 
 alias beim="beet import ."
 alias video="cd /home/gnus/mnt/media/video && ls"
 alias mvvi="mv /home/gnus/mntmedia/recive/*  /home/gnus/mnt/media/video && cd /home/gnus/mnt/media/video"
-alias play="cd $HOME/mnt/bob/downloads/play-dl"
-alias urls="$EDITOR $HOME/mnt/bob/downloads/play-dl/files/urls"
+alias play="cd $HOME/mnt/downloads/play-dl"
+alias urls="$EDITOR $HOME/mnt/downloads/play-dl/files/urls"

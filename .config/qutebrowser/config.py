@@ -15,15 +15,15 @@ yellow   = "#ffdb00"
 
 # tabs
 c.tabs.background = True
-c.tabs.favicons.scale = 1
+c.tabs.favicons.scale = 1 
 c.tabs.indicator.padding = {"top": 0, "right": 0, "bottom": 0, "left": 0}
 c.tabs.indicator.width = 0
-c.tabs.padding = {"top": 2, "right": 2, "bottom": 2, "left": 2}
+c.tabs.padding = {"top": 1, "right": 1, "bottom": 1, "left": 1}
 c.tabs.position = "left"
 c.tabs.show = "switching"
 c.tabs.title.format = '{index:>02}'
 c.tabs.title.format_pinned = '{index:>02}'
-c.tabs.width = 54
+c.tabs.width = 38
 c.colors.tabs.bar.bg = black
 c.colors.tabs.even.bg = midgrey
 c.colors.tabs.even.fg = c.colors.tabs.odd.fg
@@ -211,7 +211,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 #   - true
 #   - false
 #   - ask
-config.set('content.notifications', True, 'https://www.reddit.com')
+#config.set('content.notifications', true, 'https://www.reddit.com')
 
 # Allow websites to show notifications.
 # Type: BoolAsk
@@ -219,7 +219,7 @@ config.set('content.notifications', True, 'https://www.reddit.com')
 #   - true
 #   - false
 #   - ask
-config.set('content.notifications', True, 'https://www.youtube.com')
+#config.set('content.notifications', true, 'https://www.youtube.com')
 
 # Directory to save downloads to. If unset, a sensible OS-specific
 # default is used.
@@ -288,15 +288,15 @@ c.fonts.default_family = 'Source Code Pro'
 # either a float value with a "pt" suffix, or an integer value with a
 # "px" suffix.
 # Type: String
-c.fonts.default_size = '11pt'
+c.fonts.default_size = '9pt'
 
 # Font used in the completion widget.
 # Type: Font
-c.fonts.completion.entry = '11pt "Source Code Pro"'
+c.fonts.completion.entry = '9pt "Source Code Pro"'
 
 # Font used for the debugging console.
 # Type: Font
-c.fonts.debug_console = '11pt "Source Code Pro"'
+c.fonts.debug_console = '9pt "Source Code Pro"'
 
 # Font used for prompts.
 # Type: Font
@@ -304,10 +304,10 @@ c.fonts.prompts = 'default_size sans-serif'
 
 # Font used in the statusbar.
 # Type: Font
-c.fonts.statusbar = '11pt "Source Code Pro"'
+c.fonts.statusbar = '9pt "Source Code Pro"'
 
 # Bindings for normal mode
-config.bind(',v', 'hint links spawn flatpak run io.mpv.Mpv {hint-url}')
+config.bind(',v', 'hint links spawn mpv --ontop {hint-url}')
 # bind: "xb" desc: "Toggle statusbar"
 config.bind(',s', 'config-cycle statusbar.show always never')
 # bind: "xt" desc: "Toggle tabbar"
@@ -317,6 +317,8 @@ config.bind('t', 'set-cmd-text -s :open -t ')
 
 # userscripts
 config.bind(',bw', 'spawn --userscript qute-bitwarden')
+
+config.set("colors.webpage.darkmode.enabled", True)
 
 # Bindings for cycling through CSS stylesheets from Solarized Everything CSS:
 # https://github.com/alphapapa/solarized-everything-css

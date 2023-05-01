@@ -1,4 +1,4 @@
-##/**************************************************************/
+#/**************************************************************/
 #/*                            _               _               */
 #/*   __ _ _ __  _   _ ___    | |__   __ _ ___| |__  _ __ ___  */
 #/*  / _` | '_ \| | | / __|   | '_ \ / _` / __| '_ \| '__/ __| */
@@ -112,9 +112,9 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -alFh'
+alias la='ls -Ah'
+alias l='ls -CFh'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -141,6 +141,10 @@ export VISUAL=nvim
 export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
 export PATH="$HOME/.local/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
+export CC="clang"
+export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow"
+export LDLIBS="-lcrypt -lcs50 -lm"
 export PATH="$HOME/bin:$HOME/.cargo/bin:/snap/bin:$PATH"
 
 [ -f $HOME/repositories/.ssh/alias.ssh ] && source ~$HOME/repositories/.ssh/alias.ssh
+. "$HOME/.cargo/env"

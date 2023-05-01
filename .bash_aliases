@@ -9,6 +9,7 @@ alias vim="nvim"
 alias vi="nvim"
 alias xnvimswap='rm $HOME/.local/share/nvim/swap/*.swp'
 alias sysup='sudo apt update && sudo apt upgrade && sudo apt autoremove'
+alias alacritty="env -u WAYLAND_DISPLAY alacritty"
 
 alias dotfiles='cd $REPO/local/dotfiles && ls -la'
 alias config='cd $HOME/.config'
